@@ -1,5 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss'
+
+export default {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -15,5 +16,6 @@ module.exports = {
       }
     }
   },
-  plugins: []
-}
+  plugins: [require('tw-elements/dist/plugin.cjs')],
+  darkMode: 'class'
+} satisfies Config

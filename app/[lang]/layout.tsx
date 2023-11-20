@@ -1,17 +1,15 @@
 import './globals.css'
-import type { Metadata } from 'next'
-import { Locale, i18n } from '@/i18n.config'
-import Header from './components/Header'
+import 'tw-elements/dist/css/tw-elements.min.css'
 
+import type { Metadata } from 'next'
+import { Locale } from '@/i18n.config'
 import { Inter } from 'next/font/google'
+import { ThemeProvider } from '../providers/ThemeProvider'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "MistyBlunch's Briefcase",
-}
-
-export async function generateStaticParams() {
-  return i18n.locales.map(locale => ({ lang: locale }))
+  title: "MistyBlunch's Briefcase"
 }
 
 export default function RootLayout({
@@ -22,10 +20,11 @@ export default function RootLayout({
   params: { lang: Locale }
 }) {
   return (
-    <html lang={params.lang}>
+    <html lang={params.lang} suppressHydrationWarning>
       <body className={inter.className}>
-        <Header lang={params.lang} />
-        <main>{children}</main>
+        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+          <main>{children}</main>
+        </ThemeProvider>
       </body>
     </html>
   )

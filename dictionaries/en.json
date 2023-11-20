@@ -1,16 +1,14 @@
 {
-  "navigation": {
-    "home": "Home",
-    "about": "About"
-  },
+  "navigation": [
+    { "name": "About", "href": "#about", "current": false },
+    { "name": "Experience", "href": "#experience", "current": false },
+    { "name": "Project", "href": "#project", "current": false },
+    { "name": "Contact", "href": "#contact", "current": false }
+  ],
   "page": {
     "home": {
-      "title": "Welcome to NextJs i18n",
-      "description": "Internationalization in NextJs 13 App router"
-    },
-    "about": {
-      "title": "About Us",
-      "description": "This is the about page"
+      "title": "Hello",
+      "description": "world"
     }
   }
 }
