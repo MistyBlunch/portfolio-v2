@@ -5,7 +5,7 @@ import { LocaleSwitcher } from '../elements/LocaleSwitcher'
 import Image from 'next/image'
 
 export default async function Header({ lang }: { lang: Locale }) {
-  const { navigation } = await getDictionary(lang)
+  const { header } = await getDictionary(lang)
 
   return (
     <>
@@ -24,7 +24,7 @@ export default async function Header({ lang }: { lang: Locale }) {
             <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
               <div className='ml-6 mr-4 hidden sm:block'>
                 <div className='flex space-x-4'>
-                  {navigation.map(item => (
+                  {header.navigation.map(item => (
                     <Link
                       key={item.name}
                       href={item.href}

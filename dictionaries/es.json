@@ -1,14 +1,16 @@
 {
-  "navigation": [
-    { "name": "Acerca de mí", "href": "#about", "current": false },
-    { "name": "Experiencia", "href": "#experience", "current": false },
-    { "name": "Proyectos", "href": "#project", "current": false },
-    { "name": "Contacto", "href": "#contact", "current": false }
-  ],
-  "page": {
-    "home": {
-      "title": "Hola",
-      "description": "Mundo"
+  "header": {
+    "navigation": [
+      { "name": "Acerca de mí", "href": "#about", "current": false },
+      { "name": "Experiencia", "href": "#experience", "current": false },
+      { "name": "Proyectos", "href": "#project", "current": false },
+      { "name": "Contacto", "href": "#contact", "current": false }
+    ]
+  },
+  "sections": {
+    "hero": {
+      "greeting": "Hola, mi nickname es",
+      "nickname": "Misty Blunch"
     }
   }
 }
