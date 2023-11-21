@@ -1,9 +1,9 @@
 'use client'
 import Link from 'next/link'
 import { useEffect } from 'react'
-import { i18n } from '@/i18n.config'
+import { i18n } from '../../types/i18n.types'
 import { usePathname } from 'next/navigation'
-import { redirectedPathName } from '@/lib/localeSwitcher'
+import { redirectedPathName } from '@/app/lib/localeSwitcher'
 
 export const LocaleSwitcher = () => {
   const pathName = usePathname()

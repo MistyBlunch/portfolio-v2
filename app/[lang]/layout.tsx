@@ -2,7 +2,7 @@ import './globals.css'
 import 'tw-elements/dist/css/tw-elements.min.css'
 
 import type { Metadata } from 'next'
-import { Locale } from '@/i18n.config'
+import { Locale } from '../types/i18n.types'
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from '../providers/ThemeProvider'
 

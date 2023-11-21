@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { Locale } from '@/i18n.config'
-import { getDictionary } from '@/lib/dictionary'
+import { Locale } from '../../types/i18n.types'
+import { getDictionary } from '@/app/lib/dictionary'
 import { LocaleSwitcher } from '../elements/LocaleSwitcher'
 import Image from 'next/image'
 

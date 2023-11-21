@@ -1,4 +1,4 @@
-import { Locale } from '@/i18n.config'
+import { Locale } from '../types/i18n.types'
 
 import Header from './components/Header'
 import { ThemeSwitcher } from './elements/ThemeSwitcher'
