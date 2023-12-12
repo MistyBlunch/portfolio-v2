@@ -2,9 +2,9 @@ import './globals.css'
 import 'tw-elements/dist/css/tw-elements.min.css'
 
 import type { Metadata } from 'next'
-import { Locale } from '../types/i18n.types'
 import { Inter } from 'next/font/google'
-import { ThemeProvider } from '../providers/ThemeProvider'
+
+import { ThemeProvider } from './src/providers/ThemeProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,14 +13,12 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children,
-  params
+  children
 }: {
   children: React.ReactNode
-  params: { lang: Locale }
 }) {
   return (
-    <html lang={params.lang} suppressHydrationWarning>
+    <html suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           <main>{children}</main>

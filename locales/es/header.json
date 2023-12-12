@@ -1,0 +1,8 @@
+{
+  "navigation": [
+    { "name": "Acerca de mí", "href": "#about", "current": false },
+    { "name": "Experiencia", "href": "#experience", "current": false },
+    { "name": "Proyectos", "href": "#project", "current": false },
+    { "name": "Contacto", "href": "#contact", "current": false }
+  ]
+}

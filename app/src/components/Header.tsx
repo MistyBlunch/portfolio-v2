@@ -1,15 +1,21 @@
 import Link from 'next/link'
-import { Locale } from '../../types/i18n.types'
-import { getDictionary } from '@/app/lib/dictionary'
-import { LocaleSwitcher } from '../elements/LocaleSwitcher'
 import Image from 'next/image'
+import useTranslation from 'next-translate/useTranslation'
 
-export default async function Header({ lang }: { lang: Locale }) {
-  const { header } = await getDictionary(lang)
+import { IHeader } from '../interfaces/locales/header.interface'
+import { LocaleSwitcher } from '../elements/LocaleSwitcher'
+
+export default function Header() {
+  const { t } = useTranslation('header')
+  const navigation = t(
+    'header:navigation',
+    {},
+    { returnObjects: true }
+  ) as IHeader[]
 
   return (
     <>
-      <nav className='fixed left-0 top-0 w-full bg-transparent'>
+      <nav className='left-0 top-0 w-full bg-transparent'>
         <div className='mx-auto max-w-7xl px-4 py-2 sm:px-8'>
           <div className='relative flex h-16 items-center justify-between'>
             <div className='justify-space-between flex flex-1 items-center sm:items-stretch sm:justify-start'>
@@ -24,7 +30,7 @@ export default async function Header({ lang }: { lang: Locale }) {
             <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
               <div className='ml-6 mr-4 hidden sm:block'>
                 <div className='flex space-x-4'>
-                  {header.navigation.map(item => (
+                  {navigation.map(item => (
                     <Link
                       key={item.name}
                       href={item.href}
@@ -35,10 +41,10 @@ export default async function Header({ lang }: { lang: Locale }) {
                   ))}
                 </div>
               </div>
-              <LocaleSwitcher />
             </div>
           </div>
         </div>
+        <LocaleSwitcher />
       </nav>
     </>
   )

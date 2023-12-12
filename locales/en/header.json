@@ -1,0 +1,8 @@
+{
+  "navigation": [
+    { "name": "About", "href": "#about", "current": false },
+    { "name": "Experience", "href": "#experience", "current": false },
+    { "name": "Project", "href": "#project", "current": false },
+    { "name": "Contact", "href": "#contact", "current": false }
+  ]
+}
