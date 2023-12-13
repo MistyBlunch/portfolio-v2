@@ -1,8 +1,28 @@
 {
   "navigation": [
-    { "name": "Acerca de mí", "href": "#about", "current": false },
-    { "name": "Experiencia", "href": "#experience", "current": false },
-    { "name": "Proyectos", "href": "#project", "current": false },
-    { "name": "Contacto", "href": "#contact", "current": false }
+    {
+      "name": "Acerca de mí",
+      "icon": "aboutme",
+      "href": "#aboutme",
+      "current": false
+    },
+    {
+      "name": "Experiencia",
+      "icon": "experience",
+      "href": "#experience",
+      "current": false
+    },
+    {
+      "name": "Proyectos",
+      "icon": "project",
+      "href": "#project",
+      "current": false
+    },
+    {
+      "name": "Contacto",
+      "icon": "contact",
+      "href": "#contact",
+      "current": false
+    }
   ]
 }
