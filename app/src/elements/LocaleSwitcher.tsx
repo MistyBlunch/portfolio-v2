@@ -20,8 +20,11 @@ export const LocaleSwitcher = () => {
 
   return (
     <>
-      <div className='flex flex-col items-center py-2 lg:py-5'>
-        <LanguageIcon className='mb-1 w-8' onClick={changeLocale} />
+      <div className='flex flex-col items-center my-2'>
+        <LanguageIcon
+          className='mb-1 hidden xs:w-8 sm:flex sm:w-6 lg:w-8'
+          onClick={changeLocale}
+        />
         <div className='grid grid-cols-2 divide-x'>
           {locales.map(local => (
             <Link

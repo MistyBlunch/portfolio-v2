@@ -1,8 +1,8 @@
-export const Logo = () => {
+export const Logo = (props: { size: number }) => {
   return (
     <svg
-      width='45'
-      height='45'
+      width={props.size}
+      height={props.size}
       viewBox='0 0 19 19'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'

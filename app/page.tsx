@@ -3,7 +3,7 @@ import Hero from './src/components/Hero'
 
 export default async function Home() {
   return (
-    <div className='lg:flex lg:min-h-screen'>
+    <div className='lg:flex'>
       <Header />
       <Hero />
     </div>

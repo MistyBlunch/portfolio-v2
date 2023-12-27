@@ -7,7 +7,7 @@ export default function Hero() {
     <section>
       <div className='container'>
         <h1 className='text-3xl font-bold'>{t('hero.greeting')}</h1>
-        <p className='text-gray-500'>{t('hero.nickname')}</p>
+        <p>{t('hero.nickname')}</p>
       </div>
     </section>
   )
