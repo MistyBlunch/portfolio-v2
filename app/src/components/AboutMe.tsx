@@ -1,10 +1,10 @@
 'use client'
 import useTranslation from 'next-translate/useTranslation'
 import Trans from 'next-translate/Trans'
-import { HeroIcon } from '../elements/HeroIcon'
+import { AboutMeImageWrapper } from '../elements/AboutMeImageWrapper'
 import { Component } from 'react'
 
-export default function Hero() {
+export default function AboutMe() {
   const { t } = useTranslation('common')
 
   return (
@@ -13,13 +13,13 @@ export default function Hero() {
         <div>
           <div className='mb-4'>
             <h1 className='text-3xl font-bold text-gray-700 dark:text-slate-200'>
-              {t('hero.nickname')}, {t('hero.position')}
+              {t('about-me.nickname')}, {t('about-me.position')}
             </h1>
-            <p>{t('hero.highlight')}</p>
+            <p>{t('about-me.highlight')}</p>
           </div>
           <p className='mb-4'>
             <Trans
-              i18nKey='common:hero.intro'
+              i18nKey='common:about-me.intro'
               components={{
                 component: <Component />,
                 anchorOrganizations: (
@@ -34,7 +34,7 @@ export default function Hero() {
           </p>
           <p className='mb-4'>
             <Trans
-              i18nKey='common:hero.currently'
+              i18nKey='common:about-me.currently'
               components={{
                 component: <Component />,
                 anchorMusic: (
@@ -49,7 +49,7 @@ export default function Hero() {
           </p>
         </div>
         <div className='m-5'>
-          <HeroIcon />
+          <AboutMeImageWrapper />
         </div>
       </div>
     </section>

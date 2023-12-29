@@ -1,6 +1,6 @@
-import '../../../public/styles/hero.css'
+import '../../../public/styles/about-me.css'
 
-export const HeroIcon = () => {
+export const AboutMeImageWrapper = () => {
   return (
     <div className='container flex justify-center'>
       <div className='box'>
