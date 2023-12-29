@@ -29,6 +29,8 @@
     "eslint-config-next": "13.4.12",
     "next-translate-plugin": "^2.6.2",
     "postcss": "8.4.27",
+    "postcss-import": "^15.1.0",
+    "postcss-nesting": "^12.0.2",
     "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.4.1",
     "server-only": "^0.0.1",

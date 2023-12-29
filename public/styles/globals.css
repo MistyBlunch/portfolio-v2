@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.dark {
+  background-color: theme('colors.dark') !important;
+  color: theme('colors.slate.400') !important;
+
+  svg {
+    color: theme('colors.slate.200');
+  }
+
+  a,
+  strong {
+    color: theme('colors.slate.200');
+  }
+
+  a:hover {
+    color: theme('colors.pink');
+  }
+}
+
+html.light {
+  background-color: theme('colors.light') !important;
+  color: theme('colors.gray.600') !important;
+
+  svg {
+    color: theme('colors.gray.700');
+  }
+
+  a,
+  strong {
+    color: theme('colors.gray.700');
+  }
+
+  a:hover {
+    color: theme('colors.pink');
+  }
+}

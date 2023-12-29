@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <>
-      <nav className='sticky flex items-center justify-between border-b px-2 xs:py-2 sm:w-full sm:py-0 lg:h-screen lg:w-28 lg:flex-col lg:justify-between lg:border-r lg:border-b-transparent lg:py-8'>
+      <nav className='sticky bottom-0 top-0 flex items-center justify-between border-b bg-light px-2 dark:bg-dark xs:py-2 sm:w-full sm:py-0 lg:h-screen lg:w-28 lg:flex-col lg:justify-between lg:border-r lg:border-b-transparent lg:py-8'>
         <div className='flex items-center justify-center lg:mb-4'>
           <Logo size={45} />
           <HamburgerMenu />

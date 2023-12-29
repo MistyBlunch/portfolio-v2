@@ -1,4 +1,4 @@
-import './globals.css'
+import '../public/styles/globals.css'
 import 'tw-elements/dist/css/tw-elements.min.css'
 
 import type { Metadata } from 'next'
