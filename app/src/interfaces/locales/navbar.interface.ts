@@ -1,4 +1,4 @@
-export interface IHeader {
+export interface INavbar {
   name: string
   icon: string
   href: string

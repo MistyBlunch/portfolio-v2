@@ -26,7 +26,7 @@ export default function Hero() {
                   <a
                     href='https://linktr.ee/mistyblunch'
                     target='_blank'
-                    className='font-bold'
+                    className='font-bold content-link'
                   />
                 )
               }}
@@ -41,7 +41,7 @@ export default function Hero() {
                   <a
                     href='https://bit.ly/mistys2023songs'
                     target='_blank'
-                    className='font-bold'
+                    className='font-bold content-link'
                   />
                 )
               }}

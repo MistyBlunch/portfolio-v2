@@ -10,34 +10,35 @@ html.dark {
   background-color: theme('colors.dark') !important;
   color: theme('colors.slate.400') !important;
 
-  svg {
-    color: theme('colors.slate.200');
-  }
-
-  a,
+  a.content-link,
   strong {
     color: theme('colors.slate.200');
   }
 
-  a:hover {
+    a.content-link:hover {
     color: theme('colors.pink');
   }
+.navbar-link:hover,
+.navbar-link svg:hover {
+  color: theme('colors.slate.200');
+}
 }
 
 html.light {
   background-color: theme('colors.light') !important;
   color: theme('colors.gray.600') !important;
 
-  svg {
+  a.content-link,
+    strong {
     color: theme('colors.gray.700');
   }
 
-  a,
-  strong {
-    color: theme('colors.gray.700');
+    a.content-link:hover {
+      color: theme('colors.pink');
   }
 
-  a:hover {
-    color: theme('colors.pink');
+    .navbar-link:hover,
+    .navbar-link svg:hover {
+      color: theme('colors.gray.800');
   }
 }

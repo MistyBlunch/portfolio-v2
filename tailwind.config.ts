@@ -29,7 +29,8 @@ export default {
       },
       gray: {
         600: colors.slate[600],
-        700: colors.slate[700]
+        700: colors.slate[700],
+        800: colors.slate[800]
       }
     }
   },

@@ -3,6 +3,6 @@
   "defaultLocale": "es",
   "pages": {
     "*": ["common"],
-    "/": ["header"]
+    "/": ["navbar"]
   }
 }
