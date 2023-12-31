@@ -4,7 +4,7 @@ import Trans from 'next-translate/Trans'
 import { AboutMeImageWrapper } from '../elements/AboutMeImageWrapper'
 import { Component } from 'react'
 
-export default function AboutMe() {
+export const AboutMe = () => {
   const { t } = useTranslation('common')
 
   return (

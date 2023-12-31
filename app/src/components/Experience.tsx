@@ -11,7 +11,7 @@ import { TextColorChangeLight } from '../elements/TextColorChangeLight'
 import { TextColorChangeDark } from '../elements/TextColorChangeDark'
 import NoSsr from '../elements/NoSsr'
 
-export default function Experience() {
+export const Experience = () => {
   const { theme } = useTheme()
 
   const { t } = useTranslation('experience')
