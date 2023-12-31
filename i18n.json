@@ -2,7 +2,6 @@
   "locales": ["en", "es"],
   "defaultLocale": "es",
   "pages": {
-    "*": ["common", "experience"],
-    "/": ["navbar"]
+    "*": ["navbar", "about-me", "experience"]
   }
 }

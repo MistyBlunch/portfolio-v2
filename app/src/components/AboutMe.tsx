@@ -5,7 +5,7 @@ import { AboutMeImageWrapper } from '../elements/AboutMeImageWrapper'
 import { Component } from 'react'
 
 export default function AboutMe() {
-  const { t } = useTranslation('common')
+  const { t } = useTranslation('about-me')
 
   return (
     <section
@@ -16,13 +16,13 @@ export default function AboutMe() {
         <div>
           <div className='mb-4'>
             <h1 className='text-3xl font-bold text-gray-700 dark:text-slate-200'>
-              {t('about-me.nickname')}, {t('about-me.position')}
+              {t('nickname')}, {t('position')}
             </h1>
-            <p>{t('about-me.highlight')}</p>
+            <p>{t('highlight')}</p>
           </div>
           <p className='mb-4'>
             <Trans
-              i18nKey='common:about-me.intro'
+              i18nKey='about-me:intro'
               components={{
                 component: <Component />,
                 anchorOrganizations: (
@@ -37,7 +37,7 @@ export default function AboutMe() {
           </p>
           <p className='mb-4'>
             <Trans
-              i18nKey='common:about-me.currently'
+              i18nKey='about-me:currently'
               components={{
                 component: <Component />,
                 anchorMusic: (
