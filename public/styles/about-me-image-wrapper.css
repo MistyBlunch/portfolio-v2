@@ -1,6 +1,4 @@
 .box {
-  width: 320px;
-  height: 320px;
   position: relative;
 
   &::before {

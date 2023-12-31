@@ -8,7 +8,10 @@ export default function AboutMe() {
   const { t } = useTranslation('common')
 
   return (
-    <section className='md:container xs:px-8 sm:mx-auto xs:py-8 sm:p-8 lg:p-12' id='#aboutme'>
+    <section
+      className='md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:p-8 lg:p-12'
+      id='#aboutme'
+    >
       <div className='lg:flex lg:items-center'>
         <div>
           <div className='mb-4'>
@@ -26,7 +29,7 @@ export default function AboutMe() {
                   <a
                     href='https://linktr.ee/mistyblunch'
                     target='_blank'
-                    className='font-bold content-link'
+                    className='link font-bold'
                   />
                 )
               }}
@@ -41,7 +44,7 @@ export default function AboutMe() {
                   <a
                     href='https://bit.ly/mistys2023songs'
                     target='_blank'
-                    className='font-bold content-link'
+                    className='link font-bold'
                   />
                 )
               }}

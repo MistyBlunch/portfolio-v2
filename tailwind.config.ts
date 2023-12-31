@@ -20,7 +20,7 @@ export default {
       transparent: 'transparent',
       dark: '#0e162a',
       light: '#fefeff',
-      pink: '#c454ae',
+      pink: { dark: '#c454ae', light: '#db98ce' },
       slate: {
         200: colors.slate[200],
         300: colors.slate[300],

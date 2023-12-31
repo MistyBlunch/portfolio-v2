@@ -10,35 +10,31 @@ html.dark {
   background-color: theme('colors.dark') !important;
   color: theme('colors.slate.400') !important;
 
-  a.content-link,
-  strong {
+  a.link,
+  strong,
+  .navbar-link:hover,
+  .navbar-link svg:hover {
     color: theme('colors.slate.200');
   }
-
-    a.content-link:hover {
-    color: theme('colors.pink');
-  }
-.navbar-link:hover,
-.navbar-link svg:hover {
-  color: theme('colors.slate.200');
-}
 }
 
 html.light {
   background-color: theme('colors.light') !important;
   color: theme('colors.gray.600') !important;
 
-  a.content-link,
-    strong {
+  a.link,
+  strong {
     color: theme('colors.gray.700');
   }
 
-    a.content-link:hover {
-      color: theme('colors.pink');
+  .navbar-link:hover,
+  .navbar-link svg:hover {
+    color: theme('colors.gray.800');
   }
+}
 
-    .navbar-link:hover,
-    .navbar-link svg:hover {
-      color: theme('colors.gray.800');
+body {
+  a.link:hover {
+    color: theme('colors.pink.dark');
   }
 }

@@ -1,0 +1,3 @@
+.link-wrapper:hover +div .link {
+  color: theme('colors.pink.dark');
+}

@@ -8,5 +8,4 @@ module.exports = nextTranslate({
     ignoreDuringBuilds: true
   },
   reactStrictMode: true,
-  experimental: { appDir: true }
 })

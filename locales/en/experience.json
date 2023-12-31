@@ -1,0 +1,82 @@
+{
+  "title": "Experience",
+  "experience": [
+    {
+      "name": "Krowdy",
+      "position": "Front End Developer",
+      "url": "https://www.krowdy.com/",
+      "startYear": "2018",
+      "startMonth": "Apr",
+      "endYear": "2019",
+      "endMonth": "Jul",
+      "summary": "Krowdy is a Human Resources company specialized in automating recruitment processes. My functions were to create landing pages and forms for different companies, update and implement new functionalities in Laborum's platform, support the sending of mass mailings, and upload banners to the web platforms they had.",
+      "keywords": [
+        "React",
+        "Angular",
+        "HTML5",
+        "Amazon S3",
+        "CSS3",
+        "TypeScript",
+        "JavaScript",
+        "emBlue",
+        "HubSpot",
+        "Google Ad Manager"
+      ]
+    },
+    {
+      "name": "Devant",
+      "location": "Perú",
+      "position": "Front End Developer",
+      "url": "https://www.devant.pe/",
+      "startMonth": "Sep",
+      "startYear": "2020",
+      "endYear": "2020",
+      "endMonth": "Dec",
+      "summary": "Devant is a group of developers committed to devising technology solutions for various companies. As a freelance, I was in charge of the implementation of forms for the medication of cancer patients for the biotech company Roche.",
+      "keywords": ["NodeJS", "TypeScript", "Angular", "Angular Material"]
+    },
+    {
+      "name": "Minsky",
+      "location": "Perú",
+      "position": "Full Stack Developer",
+      "url": "https://minsky.cc/es",
+      "startYear": "2021",
+      "startMonth": "May",
+      "endYear": "2021",
+      "endMonth": "Aug",
+      "summary": "Minsky is a development group dedicated to creating technology solutions. My role at Minsky was to build interfaces and put together the business logic for the companies that worked with Minsky.",
+      "keywords": [
+        "Express",
+        "Typescript",
+        "NodeJS",
+        "NextJS",
+        "React",
+        "ChakraUI",
+        "GraphQL"
+      ]
+    },
+    {
+      "name": "Destacame",
+      "location": "Chile",
+      "position": "Full Stack Developer",
+      "url": "https://www.destacame.cl/",
+      "startYear": "2022",
+      "startMonth": "Feb",
+      "endYear": "2023",
+      "endMonth": "Jul",
+      "summary": "Destacame is a well-positioned Fintech in Chile that provides various benefits to its customers. My main role consists in the improvement and maintenance of the different projects it has with Santander Bank, as well as bug fixing, code refactoring, and process optimization with the help of cloud technologies.",
+      "keywords": [
+        "Django",
+        "VueJS",
+        "TypeScript",
+        "AWS Lambda",
+        "Amazon S3",
+        "Vuetify",
+        "PostgreSQL",
+        "DynamoDB"
+      ]
+    }
+  ],
+  "cto-text": "View full Resume",
+  "resume-link": "/pdfs/misty_blunch_resume_en.pdf"
+}
