@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className='lg:flex'>
       <Navbar />
-      <div>
+      <div className='mx-auto'>
         <AboutMe />
         <Experience />
       </div>
