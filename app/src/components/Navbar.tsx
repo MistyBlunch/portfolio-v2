@@ -9,7 +9,7 @@ import { RenderIcon } from '../elements/RenderIcon'
 import { HamburgerMenu } from '../elements/HamburgerMenu'
 import { Logo } from '../elements/icons/Logo'
 
-export default function Navbar() {
+export const Navbar = () => {
   const { t } = useTranslation('navbar')
 
   const navigation = t(
