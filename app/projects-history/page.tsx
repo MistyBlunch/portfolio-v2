@@ -24,8 +24,8 @@ const ProjectHistory = () => {
   ) as IProjectHistory[]
 
   return (
-    <section className='relative md:container max-sm:mx-4 max-sm:my-8 sm:m-8 sm:mx-auto lg:m-12'>
-      <div className='absolute right-0 top-0 flex md:pr-8 max-sm:-translate-y-4'>
+    <section className='relative md:container max-sm:px-4 max-sm:py-8 sm:p-8 sm:mx-auto lg:pmd:container max-sm:-12'>
+      <div className='absolute right-0 top-0 flex pt-8 sm:pr-8 max-sm:-translate-y-4 max-sm:pr-4'>
         <ThemeSwitcher />
         <LocaleSwitcher />
       </div>
