@@ -1,0 +1,58 @@
+{
+  "title": "Projects",
+  "projects": [
+    {
+      "name": "Misty Blunch's Portfolio v2",
+      "link": "https://github.com/MistyBlunch/portfolio-v2",
+      "image": "/images/projects/portfolio-v2.webp",
+      "description": "My updated portfolio with internationalization, themes and much more.",
+      "tools": [
+        "Node",
+        "Next",
+        "React",
+        "Tailwind",
+        "Framer Motion",
+        "Typescript"
+      ]
+    },
+    {
+      "name": "Elegimos.pe",
+      "link": "https://github.com/ELECCIONES-PERU-PROYECTO/webpage",
+      "image": "/images/projects/elegimos.webp",
+      "description": "Web page with which you will be able to filter presidential and congressional candidates for the Peruvian elections of 2021.",
+      "tools": [
+        "Javascript",
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "HTML",
+        "CSS",
+        "UIkit"
+      ]
+    },
+    {
+      "name": "Misty Blunch's Portfolio v1",
+      "link": "mistyblunch.github.io/",
+      "image": "/images/projects/portfolio-v1.webp",
+      "description": "My first portfolio with internationalization using VanillaJS.",
+      "tools": ["Angular", "Typescript", "Ionic", "Firebase", "CSS"]
+    },
+    {
+      "name": "Leauty Web Scraping",
+      "link": "https://github.com/MistyBlunch/leauty",
+      "image": "/images/projects/leauty.webp",
+      "description": "Website to search and list libgen books with a more user-friendly interface.",
+      "tools": [
+        "Javascript",
+        "Python",
+        "Flask",
+        "BeautifulSoup",
+        "HTML5",
+        "CSS3",
+        "Bulma"
+      ]
+    }
+  ],
+  "projects-link": "/projects-history", 
+  "cto-text": "Project History"
+}

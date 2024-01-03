@@ -1,6 +1,7 @@
 import { AboutMe } from './src/components/AboutMe'
-import { Experience } from './src/components/Experience'
 import { Navbar } from './src/components/Navbar'
+import { Experience } from './src/components/Experience'
+import { Projects } from './src/components/Projects'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <div className='mx-auto'>
         <AboutMe />
         <Experience />
+        <Projects />
       </div>
     </div>
   )

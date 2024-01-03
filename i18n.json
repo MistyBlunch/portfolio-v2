@@ -2,6 +2,6 @@
   "locales": ["en", "es"],
   "defaultLocale": "es",
   "pages": {
-    "*": ["navbar", "about-me", "experience"]
+    "*": ["navbar", "about-me", "experience", "projects", "projects-history"]
   }
 }

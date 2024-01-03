@@ -1,0 +1,203 @@
+{
+  "title": "All Projects",
+  "subtitle": "Misty Blunch",
+  "navigation": [
+    {
+      "name": "Year",
+      "class": "py-4 pr-8 text-sm font-semibold dark:text-slate-200 text-gray-700"
+    },
+    {
+      "name": "Project",
+      "class": "py-4 pr-8 text-sm font-semibold dark:text-slate-200 text-gray-700"
+    },
+    {
+      "name": "Build with",
+      "class": "py-4 pr-8 text-sm font-semibold dark:text-slate-200 text-gray-700 max-md:hidden"
+    },
+    {
+      "name": "Source",
+      "class": "py-4 pr-8 text-sm font-semibold dark:text-slate-200 text-gray-700 max-md:hidden"
+    },
+    {
+      "name": "Description",
+      "class": "py-4 pr-8 text-sm font-semibold dark:text-slate-200 text-gray-700 max-lg:hidden"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Misty Blunch's Portfolio v2",
+      "year": 2023,
+      "source": "Github",
+      "link": "https://github.com/MistyBlunch/portfolio-v2",
+      "description": "My updated portfolio with internationalization, themes and much more.",
+      "tools": [
+        "Node",
+        "Next",
+        "React",
+        "Tailwind",
+        "Framer Motion",
+        "Typescript"
+      ]
+    },
+    {
+      "name": "Yapo - Your Favorite Songs",
+      "year": 2023,
+      "source": "",
+      "link": "",
+      "description": "Backend for querying songs from the iTunes API that allows you to save a song as a bookmark.",
+      "tools": [
+        "Node",
+        "Express",
+        "Angular",
+        "Axios",
+        "Bulma",
+        "Typescript",
+        "Mongo"
+      ]
+    },
+    {
+      "name": "Card Tokenization",
+      "year": 2023,
+      "source": "",
+      "link": "",
+      "description": "Lambda function to create, validate and store an encrypted credit card that returns a token.",
+      "tools": ["Node", "Typescript", "Serverless", "Redis", "Jest"]
+    },
+    {
+      "name": "Minxy Travels",
+      "year": 2022,
+      "source": "",
+      "link": "",
+      "description": "Manage your transportation company's trips, drivers, passengers and journeys.",
+      "tools": ["Django", "Python", "Axios", "Vue", "Vuetify", "Sass"]
+    },
+    {
+      "name": "Elegimos.pe",
+      "year": 2021,
+      "source": "Github",
+      "link": "https://github.com/ELECCIONES-PERU-PROYECTO/webpage",
+      "description": "Web page with which you will be able to filter presidential and congressional candidates for the Peruvian elections of 2021.",
+      "tools": [
+        "Javascript",
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "HTML",
+        "CSS",
+        "UIkit"
+      ]
+    },
+    {
+      "name": "Susy Todos Manager",
+      "year": 2020,
+      "source": "Github",
+      "link": "https://github.com/cs2b01-lab1-01-2020-2/To-dos-Manager-CSERN",
+      "description": "Create and search your pending tasks, change the status of your tasks and create common tasks with other people.",
+      "tools": ["Python", "Flask", "PostgreSQL", "UIkit", "CSS", "Javascript"]
+    },
+    {
+      "name": "Tic Tac Toe C++",
+      "year": 2020,
+      "source": "Github",
+      "link": "https://github.com/MistyBlunch/tic-tac-toe-cpp",
+      "description": "Play Tic Tac Toe from your console and change the size of the board if you want to challenge yourself.",
+      "tools": ["C++"]
+    },
+    {
+      "name": "Blog with Redux",
+      "year": 2020,
+      "source": "Github",
+      "link": "https://github.com/MistyBlunch/Blog_redux",
+      "description": "Read, create, delete and list your posts in a minimalist blog.",
+      "tools": ["React", "Redux", "Node", "Axios", "CSS"]
+    },
+    {
+      "name": "UTEC Cybersecurity Club Page",
+      "year": 2020,
+      "source": "Github",
+      "link": "https://github.com/MistyBlunch/CyberSecurityClub",
+      "description": "Website developed in workshops for UTEC's Cybersecurity Club.",
+      "tools": ["React", "Javascript", "Materialize", "CSS"]
+    },
+    {
+      "name": "Badges Registration",
+      "year": 2019,
+      "source": "Github",
+      "link": "https://github.com/MistyBlunch/badgesRegistration",
+      "description": "Register your badge to attend the 2019 Platzi Conf.",
+      "tools": ["React", "Bootstrap", "CSS"]
+    },
+    {
+      "name": "Movies App",
+      "year": 2019,
+      "source": "Github",
+      "link": "https://github.com/MistyBlunch/moviesApp",
+      "description": "Watch themoviedb API's trending movies in detail.",
+      "tools": ["React", "CSS"]
+    },
+    {
+      "name": "Misty Blunch's Portfolio v1",
+      "year": 2019,
+      "source": "mistyblunch.github",
+      "link": "mistyblunch.github.io/",
+      "description": "My first portfolio with internationalization using VanillaJS.",
+      "tools": ["Angular", "Typescript", "Ionic", "Firebase", "CSS"]
+    },
+    {
+      "name": "Yearbook",
+      "year": 2019,
+      "source": "Github",
+      "link": "https://github.com/MistyBlunch/basic-yearbook",
+      "description": "Sample yearbook for the web development workshop of the Telésforo Catacora school in Santa Clara - Ate.",
+      "tools": ["Javascript", "HTML", "CSS"]
+    },
+    {
+      "name": "Leauty Web Scraping",
+      "year": 2018,
+      "source": "Github",
+      "link": "https://github.com/MistyBlunch/leauty",
+      "description": "Website to search and list libgen books with a more user-friendly interface.",
+      "tools": [
+        "Javascript",
+        "Python",
+        "Flask",
+        "BeautifulSoup",
+        "HTML5",
+        "CSS3",
+        "Bulma"
+      ]
+    },
+    {
+      "name": "Styve App",
+      "year": 2018,
+      "source": "Github",
+      "link": "https://github.com/MistyBlunch/styve_app",
+      "description": "Application to find people to help you with your homework in any subject.",
+      "tools": ["Angular", "Typescript", "Ionic", "Firebase", "CSS"]
+    },
+    {
+      "name": "Palindrome Numbers",
+      "year": 2018,
+      "source": "Github",
+      "link": "https://github.com/MistyBlunch/palindrome_numbers",
+      "description": "Find out if a word or number is palindrome.",
+      "tools": ["Javascript", "HTML", "Bulma"]
+    },
+    {
+      "name": "Testing P5.js",
+      "year": 2018,
+      "source": "Github",
+      "link": "https://github.com/MistyBlunch/examples-with-p5.js",
+      "description": "Simple exercises to test P5.js.",
+      "tools": ["Javascript", "P5.js"]
+    },
+    {
+      "name": "My First Blog",
+      "year": 2018,
+      "source": "Github",
+      "link": "https://github.com/MistyBlunch/my_first_blog",
+      "description": "My first blog following Django Girls' guide.",
+      "tools": ["Python", "Django", "Flask", "HTML", "CSS"]
+    }
+  ]
+}
