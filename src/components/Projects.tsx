@@ -20,7 +20,7 @@ export const Projects = () => {
 
   return (
     <section
-      className='md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:p-8 lg:p-12'
+      className='mt-12 md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:p-8 lg:p-12'
       id='#projects'
     >
       <h5 className='mb-4 p-4 font-bold uppercase tracking-wide text-gray-700 dark:text-slate-200 lg:hidden'>
@@ -79,7 +79,6 @@ export const Projects = () => {
         <div className='mr-auto p-4 lg:w-4/5'>
           <Link
             href={t('projects-href')}
-            as={t('projects-as')}
             className='link flex w-fit font-semibold'
           >
             <NoSsr>

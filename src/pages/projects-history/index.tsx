@@ -39,12 +39,12 @@ const ProjectHistory = (
         <ArrowLeftIcon className='mr-1 w-4' />
         {t('common:nickname')}
       </Link>
-      <h3 className='mb-4 text-3xl font-bold text-gray-700 dark:text-slate-200'>
+      <h3 className='font-bold text-gray-700 dark:text-slate-200 max-md:mb-2 max-md:text-2xl md:mb-4 md:text-3xl'>
         {t('title')}
       </h3>
       <table
         id='content'
-        className='mt-6 w-full border-collapse text-left md:mt-12'
+        className='mt-6 w-full border-collapse text-left md:mt-12 max-md:mt-5'
       >
         <thead className='bg-slate-900/75 sticky top-0 z-10 px-6 py-5 backdrop-blur'>
           <tr>

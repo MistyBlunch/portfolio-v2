@@ -33,6 +33,9 @@ export const AboutMe = () => {
                 )
               }}
             />
+            <span className='inline max-md:hidden'>
+              {' ' + t('denouement')}
+            </span>
           </p>
           <p className='mb-4'>
             <Trans
