@@ -1,35 +1,34 @@
 {
-  "title": "All Projects",
-  "subtitle": "Misty Blunch",
+  "title": "Todos los proyectos",
   "navigation": [
     {
-      "name": "Year",
+      "name": "Año",
       "class": "py-4 pr-8 text-sm font-semibold dark:text-slate-200 text-gray-700"
     },
     {
-      "name": "Project",
+      "name": "Proyecto",
       "class": "py-4 pr-8 text-sm font-semibold dark:text-slate-200 text-gray-700"
     },
     {
-      "name": "Build with",
+      "name": "Hecho con",
       "class": "py-4 pr-8 text-sm font-semibold dark:text-slate-200 text-gray-700 max-md:hidden"
     },
     {
-      "name": "Source",
-      "class": "py-4 pr-8 text-sm font-semibold dark:text-slate-200 text-gray-700 max-md:hidden"
+      "name": "Fuente",
+      "class": "py-4 pr-8 text-sm font-semibold dark:text-slate-200 text-gray-700 max-sm:hidden"
     },
     {
-      "name": "Description",
+      "name": "Descripción",
       "class": "py-4 pr-8 text-sm font-semibold dark:text-slate-200 text-gray-700 max-lg:hidden"
     }
   ],
   "projects": [
     {
-      "name": "Misty Blunch's Portfolio v2",
+      "name": "Misty Blunch's Portafolio v2",
       "year": 2023,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/portfolio-v2",
-      "description": "My updated portfolio with internationalization, themes and much more.",
+      "description": "Mi portafolio actualizado con internacionalización, temas y mucho más.",
       "tools": [
         "Node",
         "Next",
@@ -40,11 +39,11 @@
       ]
     },
     {
-      "name": "Yapo - Your Favorite Songs",
+      "name": "Yapo - Tus canciones favoritas",
       "year": 2023,
       "source": "",
       "link": "",
-      "description": "Backend for querying songs from the iTunes API that allows you to save a song as a bookmark.",
+      "description": "Backend para consultar canciones desde la API de iTunes que te permite guardar una canción como favoritos.",
       "tools": [
         "Node",
         "Express",
@@ -56,19 +55,19 @@
       ]
     },
     {
-      "name": "Card Tokenization",
+      "name": "Tokenización de Tarjetas",
       "year": 2023,
       "source": "",
       "link": "",
-      "description": "Lambda function to create, validate and store an encrypted credit card that returns a token.",
+      "description": "Función lambda para crear, validar y guardar una tarjeta de crédito encriptada que devuelve un token.",
       "tools": ["Node", "Typescript", "Serverless", "Redis", "Jest"]
     },
     {
-      "name": "Minxy Travels",
+      "name": "Minxy Viajes",
       "year": 2022,
       "source": "",
       "link": "",
-      "description": "Manage your transportation company's trips, drivers, passengers and journeys.",
+      "description": "Gestiona los viajes, conductores, pasajeros y trayectos de tu empresa de transporte.",
       "tools": ["Django", "Python", "Axios", "Vue", "Vuetify", "Sass"]
     },
     {
@@ -76,7 +75,7 @@
       "year": 2021,
       "source": "Github",
       "link": "https://github.com/ELECCIONES-PERU-PROYECTO/webpage",
-      "description": "Web page with which you will be able to filter presidential and congressional candidates for the Peruvian elections of 2021.",
+      "description": "Página web con la que podrás filtrar a candidatos presidenciales y congresales de las elecciones peruanas del 2021.",
       "tools": [
         "Javascript",
         "Python",
@@ -92,7 +91,7 @@
       "year": 2020,
       "source": "Github",
       "link": "https://github.com/cs2b01-lab1-01-2020-2/To-dos-Manager-CSERN",
-      "description": "Create and search your pending tasks, change the status of your tasks and create common tasks with other people.",
+      "description": "Crea y busca las tareas que tienes pendientes, cambia el estado de tus tareas y crea tareas en común con otras personas.",
       "tools": ["Python", "Flask", "PostgreSQL", "UIkit", "CSS", "Javascript"]
     },
     {
@@ -100,55 +99,55 @@
       "year": 2020,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/tic-tac-toe-cpp",
-      "description": "Play Tic Tac Toe from your console and change the size of the board if you want to challenge yourself.",
+      "description": "Juega Tic Tac Toe desde tu consola y cambia el tamaño del tablero si desear retarte a ti mismo.",
       "tools": ["C++"]
     },
     {
-      "name": "Blog with Redux",
+      "name": "Blog con Redux",
       "year": 2020,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/Blog_redux",
-      "description": "Read, create, delete and list your posts in a minimalist blog.",
+      "description": "Lee, crea, borra y lista tus post en un blog minimalista.",
       "tools": ["React", "Redux", "Node", "Axios", "CSS"]
     },
     {
-      "name": "UTEC Cybersecurity Club Page",
+      "name": "Página del club de Ciberseguridad de UTEC",
       "year": 2020,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/CyberSecurityClub",
-      "description": "Website developed in workshops for UTEC's Cybersecurity Club.",
+      "description": "Página web desarrollada en unos talleres para el Club de Ciberguridad de UTEC",
       "tools": ["React", "Javascript", "Materialize", "CSS"]
     },
     {
-      "name": "Badges Registration",
+      "name": "Registro de Badges",
       "year": 2019,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/badgesRegistration",
-      "description": "Register your badge to attend the 2019 Platzi Conf.",
-      "tools": ["React", "Bootstrap", "CSS"]
+      "description": "Registra tu badge para asistir a la Platzi Conf del 2019.",
+      "tools": ["React", "Javascript", "Bootstrap", "CSS"]
     },
     {
       "name": "Movies App",
       "year": 2019,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/moviesApp",
-      "description": "Watch themoviedb API's trending movies in detail.",
+      "description": "Mira a detalle las películas en tendencia de themoviedb API.",
       "tools": ["React", "CSS"]
     },
     {
-      "name": "Misty Blunch's Portfolio v1",
+      "name": "Misty Blunch's Portafolio v1",
       "year": 2019,
       "source": "mistyblunch.github",
       "link": "mistyblunch.github.io/",
-      "description": "My first portfolio with internationalization using VanillaJS.",
-      "tools": ["Angular", "Typescript", "Ionic", "Firebase", "CSS"]
+      "description": "Mi primer portafolio con internacionalización usando VanillaJS.",
+      "tools": ["Javascript", "HTML", "CSS", "Bulma"]
     },
     {
       "name": "Yearbook",
       "year": 2019,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/basic-yearbook",
-      "description": "Sample yearbook for the web development workshop of the Telésforo Catacora school in Santa Clara - Ate.",
+      "description": "Anuario de ejemplo para el taller de desarrollo web del colegio Telésforo Catacora en Santa Clara - Ate.",
       "tools": ["Javascript", "HTML", "CSS"]
     },
     {
@@ -156,11 +155,11 @@
       "year": 2018,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/leauty",
-      "description": "Website to search and list libgen books with a more user-friendly interface.",
+      "description": "Página web para buscar y listar libros de libgen con una interfaz más amigable.",
       "tools": [
-        "Javascript",
         "Python",
         "Flask",
+        "Javascript",
         "BeautifulSoup",
         "HTML5",
         "CSS3",
@@ -172,31 +171,31 @@
       "year": 2018,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/styve_app",
-      "description": "Application to find people to help you with your homework in any subject.",
+      "description": "Aplicación para encontrar personas que te ayuden con tus tareas de cualquier materia.",
       "tools": ["Angular", "Typescript", "Ionic", "Firebase", "CSS"]
     },
     {
-      "name": "Palindrome Numbers",
+      "name": "Números Palíndromos",
       "year": 2018,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/palindrome_numbers",
-      "description": "Find out if a word or number is palindrome.",
+      "description": "Descubre si una palabra o número es palíndromo.",
       "tools": ["Javascript", "HTML", "Bulma"]
     },
     {
-      "name": "Testing P5.js",
+      "name": "Probando P5.js",
       "year": 2018,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/examples-with-p5.js",
-      "description": "Simple exercises to test P5.js.",
+      "description": "Ejercicios simples para probar P5.js.",
       "tools": ["Javascript", "P5.js"]
     },
     {
-      "name": "My First Blog",
+      "name": "Mi Primer Blog",
       "year": 2018,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/my_first_blog",
-      "description": "My first blog following Django Girls' guide.",
+      "description": "Mi primer blog siguiendo la guía de Django Girls.",
       "tools": ["Python", "Django", "Flask", "HTML", "CSS"]
     }
   ]

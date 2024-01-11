@@ -1,11 +1,10 @@
 'use client'
-import useTranslation from 'next-translate/useTranslation'
-import Trans from 'next-translate/Trans'
+import { Trans, useTranslation } from 'next-i18next'
 import { AboutMeImageWrapper } from '../elements/AboutMeImageWrapper'
 import { Component } from 'react'
 
 export const AboutMe = () => {
-  const { t } = useTranslation('about-me')
+  const { t } = useTranslation(['about-me', 'common'])
 
   return (
     <section
@@ -16,7 +15,7 @@ export const AboutMe = () => {
         <div>
           <div className='mb-4'>
             <h1 className='text-3xl font-bold text-gray-700 dark:text-slate-200'>
-              {t('nickname')}, {t('position')}
+              {t('common:nickname')}, {t('position')}
             </h1>
             <p>{t('highlight')}</p>
           </div>

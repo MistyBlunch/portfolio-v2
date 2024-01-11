@@ -1,5 +1,3 @@
-import '../../../public/styles/text-color-change.css'
-
 import { motion } from 'framer-motion'
 import { ArrowRightIcon } from '@heroicons/react/24/outline'
 

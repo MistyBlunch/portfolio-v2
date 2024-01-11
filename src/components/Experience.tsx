@@ -1,35 +1,36 @@
 'use client'
 
-import '../../../public/styles/projects.css'
-
-import useTranslation from 'next-translate/useTranslation'
-import { IProject } from '../interfaces/locales/project.interface'
-import { motion } from 'framer-motion'
+// TODO: Actualizar
+import { useTranslation } from 'next-i18next'
 import { useTheme } from 'next-themes'
+
+import { motion } from 'framer-motion'
+
+import { IExperience } from '../interfaces/locales/experience.interface'
+
 import { TextColorChangeLight } from '../elements/TextColorChangeLight'
 import { TextColorChangeDark } from '../elements/TextColorChangeDark'
 import NoSsr from '../elements/NoSsr'
-import Image from 'next/image'
 
-export const Projects = () => {
+import { processDate } from '../utils/processDate'
+
+export const Experience = () => {
   const { theme } = useTheme()
-
-  const { t } = useTranslation('projects')
-
-  const projects = t('projects', {}, { returnObjects: true }) as IProject[]
+  const { t } = useTranslation('experience')
+  const experience = t('experience', { returnObjects: true }) as IExperience[]
 
   return (
     <section
       className='md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:p-8 lg:p-12'
-      id='#projects'
+      id='#experience'
     >
       <h5 className='mb-4 p-4 font-bold uppercase tracking-wide text-gray-700 dark:text-slate-200 lg:hidden'>
         {t('title')}
       </h5>
       <div className='flex flex-col items-center'>
         <ul>
-          {projects.map((project, i) => (
-            <li key={i} className='flex justify-center'>
+          {experience.map(exp => (
+            <li key={exp.name} className='flex justify-center'>
               <div className='relative mb-4 flex p-4 lg:w-4/5'>
                 <motion.a
                   className='link-wrapper absolute m-[-14px] h-full w-full rounded-lg max-lg:hidden'
@@ -37,35 +38,31 @@ export const Projects = () => {
                     transition: { duration: 0.5 },
                     backgroundColor: 'rgba(219, 152, 206, .05)'
                   }}
-                  href={project.link}
+                  href={exp.url}
                   target='_blank'
                 ></motion.a>
-                <div className='grid max-md:gap-y-2 md:grid-cols-8 md:gap-x-5'>
-                  <div className='text-sm uppercase max-md:w-3/5 max-sm:w-4/5 sm:col-span-3 md:col-span-2'>
-                    <Image
-                      src={project.image}
-                      alt={project.name}
-                      width={740}
-                      height={150}
-                      className='border-gray-500 project-img rounded-sm border-2 dark:border-slate-200'
-                    ></Image>
+                <div className='grid max-md:gap-y-2 md:grid-cols-5 md:gap-x-5'>
+                  <div className='text-sm uppercase'>
+                    <span>{processDate(exp)}</span>
                   </div>
-                  <div className='max-md:col-start-1 max-md:row-start-1 sm:col-span-5 md:col-span-6'>
+                  <div className='md:col-span-4'>
                     <div className='mb-2'>
                       <a
                         className='link font-bold text-gray-700 dark:text-slate-200'
-                        href={project.link}
+                        href={exp.url}
                         target='_blank'
                       >
-                        <span>{project.name}</span>
+                        <span>
+                          {exp.position} · {exp.name}
+                        </span>
                       </a>
                     </div>
-                    <p className='mb-2 text-sm'>{project.description}</p>
+                    <p className='mb-2 text-sm'>{exp.summary}</p>
                     <ul className='flex -translate-y-1.5 flex-wrap '>
-                      {project.tools.map((tool, i) => (
-                        <li key={i} className='mr-1.5 mt-1.5'>
+                      {exp.keywords.map(keyword => (
+                        <li key={keyword} className='mr-1.5 mt-1.5'>
                           <div className='rounded-full bg-pink-light/10 px-3 py-1 text-xs font-semibold leading-5 text-pink-dark'>
-                            {tool}
+                            {keyword}
                           </div>
                         </li>
                       ))}
@@ -78,7 +75,7 @@ export const Projects = () => {
         </ul>
         <div className='mr-auto p-4 lg:w-4/5'>
           <motion.a
-            href={t('projects-link')}
+            href={t('resume-link')}
             className='link flex w-fit font-semibold'
           >
             <NoSsr>

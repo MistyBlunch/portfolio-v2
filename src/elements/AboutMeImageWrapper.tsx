@@ -1,5 +1,3 @@
-import '../../../public/styles/about-me-image-wrapper.css'
-
 export const AboutMeImageWrapper = () => {
   return (
     <div className='container flex justify-center'>

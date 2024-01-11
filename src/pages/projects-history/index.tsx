@@ -1,37 +1,43 @@
 'use client'
 
-import useTranslation from 'next-translate/useTranslation'
-import { IProjectHistory } from '../src/interfaces/locales/project.history.interface'
-import { IProjectHistoryNavigation } from '../src/interfaces/locales/project.history.navigation.interface'
-import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline'
+import type { GetStaticProps } from 'next'
+import { InferGetStaticPropsType } from 'next'
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
-import { ThemeSwitcher } from '../src/elements/ThemeSwitcher'
-import { LocaleSwitcher } from '../src/elements/LocaleSwitcher'
+import nextI18nextConfig from '@/next-i18next.config'
 
-const ProjectHistory = () => {
-  const { t } = useTranslation('projects-history')
+import { IProjectHistory } from '../../interfaces/locales/project.history.interface'
+import { IProjectHistoryNavigation } from '../../interfaces/locales/project.history.navigation.interface'
 
-  const navigation = t(
-    'navigation',
-    {},
-    { returnObjects: true }
-  ) as IProjectHistoryNavigation[]
+import { ThemeSwitcher } from '../../elements/ThemeSwitcher'
+import { LocaleSwitcher } from '../../elements/LocaleSwitcher'
 
-  const projects = t(
-    'projects',
-    {},
-    { returnObjects: true }
-  ) as IProjectHistory[]
+import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline'
+
+const ProjectHistory = (
+  _props: InferGetStaticPropsType<typeof getStaticProps>
+) => {
+  const { t } = useTranslation(['projects-history', 'common'])
+
+  const navigation = t('navigation', {
+    returnObjects: true
+  }) as IProjectHistoryNavigation[]
+
+  const projects = t('projects', { returnObjects: true }) as IProjectHistory[]
 
   return (
-    <section className='relative md:container max-sm:px-4 max-sm:py-8 sm:p-8 sm:mx-auto lg:pmd:container max-sm:-12'>
-      <div className='absolute right-0 top-0 flex pt-8 sm:pr-8 max-sm:-translate-y-4 max-sm:pr-4'>
+    <section className='lg:pmd:container max-sm:-12 relative md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:p-8'>
+      <div className='absolute right-0 top-0 flex pt-8 max-sm:-translate-y-4 max-sm:pr-4 sm:pr-8'>
         <ThemeSwitcher />
-        <LocaleSwitcher />
+        <LocaleSwitcher icon={false} />
       </div>
-      <Link href='/' className='inline-flex text-sm font-medium text-pink-dark'>
+      <Link
+        href={t('common:home-url')}
+        className='inline-flex text-sm font-medium text-pink-dark'
+      >
         <ArrowLeftIcon className='mr-1 w-4' />
-        {t('subtitle')}
+        {t('common:nickname')}
       </Link>
       <h3 className='mb-4 text-3xl font-bold text-gray-700 dark:text-slate-200'>
         {t('title')}
@@ -114,5 +120,15 @@ const ProjectHistory = () => {
     </section>
   )
 }
+
+const locales = nextI18nextConfig.i18n.locales
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? locales[0], [
+      'common',
+      'projects-history'
+    ]))
+  }
+})
 
 export default ProjectHistory
