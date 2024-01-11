@@ -16,15 +16,15 @@ export const ThemeSwitcher = () => {
   if (!mounted) return null
 
   return (
-    <div className='flex justify-center sm:my-2 lg:mt-5 lg:mb-0'>
+    <div className='flex justify-center mx-2'>
       <button
         className='mx-2 w-fit bg-transparent lg:mx-0'
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       >
         {theme === 'light' ? (
-          <MoonIcon className='max-lg:w-6 lg:w-8 navbar-link' />
+          <MoonIcon className='navbar-link max-lg:w-6 lg:w-8' />
         ) : (
-            <SunIcon className='max-lg:w-6 lg:w-8 navbar-link' />
+          <SunIcon className='navbar-link max-lg:w-6 lg:w-8' />
         )}
       </button>
     </div>

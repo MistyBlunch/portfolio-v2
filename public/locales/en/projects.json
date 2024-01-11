@@ -35,7 +35,7 @@
       "link": "mistyblunch.github.io/",
       "image": "/images/projects/portfolio-v1.webp",
       "description": "My first portfolio with internationalization using VanillaJS.",
-      "tools": ["Angular", "Typescript", "Ionic", "Firebase", "CSS"]
+      "tools": ["Javascript", "HTML", "CSS", "Bulma"]
     },
     {
       "name": "Leauty Web Scraping",
@@ -53,6 +53,7 @@
       ]
     }
   ],
-  "projects-link": "/projects-history", 
+  "projects-href": "/projects-history?lang=en",
+  "projects-as": "/en/projects-history",
   "cto-text": "Project History"
 }

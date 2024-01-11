@@ -53,6 +53,7 @@
       ]
     }
   ],
-  "projects-link": "/projects-history",
+  "projects-href": "/projects-history?lang=es",
+  "projects-as": "/es/projects-history",
   "cto-text": "Historial de proyectos"
 }

@@ -1,7 +1,8 @@
 import Link from 'next/link'
-import useTranslation from 'next-translate/useTranslation'
+import { useTranslation } from 'next-i18next'
 
 import { INavbar } from '../interfaces/locales/navbar.interface'
+
 import { LocaleSwitcher } from '../elements/LocaleSwitcher'
 import { ThemeSwitcher } from '../elements/ThemeSwitcher'
 
@@ -10,19 +11,14 @@ import { HamburgerMenu } from '../elements/HamburgerMenu'
 import { Logo } from '../elements/icons/Logo'
 
 export const Navbar = () => {
-  const { t } = useTranslation('navbar')
-
-  const navigation = t(
-    'navbar:navigation',
-    {},
-    { returnObjects: true }
-  ) as INavbar[]
+  const { t } = useTranslation(['navbar', 'common'])
+  const navigation = t('navigation', { returnObjects: true }) as INavbar[]
 
   return (
     <>
       <nav className='sticky bottom-0 top-0 z-10 flex items-center justify-between border-b bg-light px-2 dark:bg-dark xs:py-2 sm:w-full sm:py-0 lg:h-screen lg:w-28 lg:flex-col lg:justify-between lg:border-r lg:border-b-transparent lg:py-8'>
         <div className='flex items-center justify-center lg:mb-4'>
-          <Link href='/' className='navbar-link'>
+          <Link href={t('common:home-url')} className='navbar-link'>
             <Logo size={45} />
           </Link>
           <HamburgerMenu />
@@ -38,8 +34,10 @@ export const Navbar = () => {
           ))}
         </div>
         <div className='flex lg:block'>
-          <LocaleSwitcher />
-          <ThemeSwitcher />
+          <LocaleSwitcher icon={true} />
+          <div className='flex justify-center lg:mb-0 lg:mt-5'>
+            <ThemeSwitcher />
+          </div>
         </div>
       </nav>
     </>

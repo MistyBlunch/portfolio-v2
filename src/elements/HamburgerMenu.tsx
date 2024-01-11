@@ -1,14 +1,16 @@
 'use client'
 
+import { useState, useRef } from 'react'
+import { useClickAway } from 'react-use'
+
+import Link from 'next/link'
+import { useTranslation } from 'next-i18next'
+
 import { AnimatePresence, motion } from 'framer-motion'
+
 import { INavbar } from '../interfaces/locales/navbar.interface'
 import { RenderIcon } from './RenderIcon'
 import { Squash as Hamburger } from 'hamburger-react'
-import { useClickAway } from 'react-use'
-import { useState, useRef } from 'react'
-
-import Link from 'next/link'
-import useTranslation from 'next-translate/useTranslation'
 
 export const HamburgerMenu = () => {
   const [isOpen, setOpen] = useState(false)
@@ -17,15 +19,13 @@ export const HamburgerMenu = () => {
 
   useClickAway(ref, () => setOpen(false))
 
-  const navigation = t(
-    'navbar:navigation',
-    {},
-    { returnObjects: true }
-  ) as INavbar[]
+  const navigation = t('navbar:navigation', {
+    returnObjects: true
+  }) as INavbar[]
 
   return (
     <div ref={ref} className='ml-2 flex w-8 sm:hidden'>
-      <div className={!isOpen ? 'navbar-link' : 'z-50 navbar-link'}>
+      <div className={!isOpen ? 'navbar-link' : 'navbar-link z-50'}>
         <Hamburger toggled={isOpen} size={20} toggle={setOpen} />
       </div>
       <AnimatePresence>
