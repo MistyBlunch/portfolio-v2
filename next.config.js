@@ -1,11 +1,8 @@
-const nextTranslate = require('next-translate-plugin')
+const { i18n } = require('./next-i18next.config.js')
 
-module.exports = nextTranslate({
-  env: {
-    REACT_APP_API: 'http://localhost:3000'
-  },
-  eslint: {
-    ignoreDuringBuilds: true
-  },
-  reactStrictMode: true,
-})
+const nextConfig = {
+  i18n,
+  reactStrictMode: true
+}
+
+module.exports = nextConfig

@@ -34,7 +34,8 @@ html.light {
 }
 
 body {
-  a.link:hover {
+  a.link:hover,
+  .text-link-wrapper:hover svg {
     color: theme('colors.pink.dark');
   }
 }
