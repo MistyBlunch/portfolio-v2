@@ -1,20 +1,15 @@
 'use client'
 
 import { useTranslation } from 'next-i18next'
-import { useTheme } from 'next-themes'
 import Image from 'next/image'
-import Link from 'next/link'
 
 import { motion } from 'framer-motion'
 
 import { IProject } from '../interfaces/locales/project.interface'
 
-import { TextColorChangeLight } from '../elements/TextColorChangeLight'
-import { TextColorChangeDark } from '../elements/TextColorChangeDark'
-import NoSsr from '../elements/NoSsr'
+import { TextButtonChangeColorHover } from '../elements/TextButtonChangeColorHover'
 
 export const Projects = () => {
-  const { theme } = useTheme()
   const { t } = useTranslation('projects')
   const projects = t('projects', { returnObjects: true }) as IProject[]
 
@@ -23,14 +18,14 @@ export const Projects = () => {
       className='mt-12 md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:p-8 lg:p-12'
       id='#projects'
     >
-      <h5 className='mb-4 p-4 font-bold uppercase tracking-wide text-gray-700 dark:text-slate-200 lg:hidden'>
+      <h5 className='p-4 font-bold uppercase tracking-wide text-gray-700 dark:text-slate-200 lg:hidden'>
         {t('title')}
       </h5>
       <div className='flex flex-col items-center'>
         <ul>
           {projects.map((project, i) => (
             <li key={i} className='flex justify-center'>
-              <div className='relative mb-4 flex p-4 lg:w-4/5'>
+              <div className='relative flex p-4 lg:w-4/5'>
                 <motion.a
                   className='link-wrapper absolute m-[-14px] h-full w-full rounded-lg max-lg:hidden'
                   whileHover={{
@@ -47,7 +42,7 @@ export const Projects = () => {
                       alt={project.name}
                       width={740}
                       height={150}
-                      className='border-gray-500 project-img rounded-sm border-2 dark:border-slate-200'
+                      className='border-gray-500 project-img rounded-md border-2 dark:border-slate-200'
                     ></Image>
                   </div>
                   <div className='max-md:col-start-1 max-md:row-start-1 sm:col-span-5 md:col-span-6'>
@@ -76,20 +71,7 @@ export const Projects = () => {
             </li>
           ))}
         </ul>
-        <div className='mr-auto p-4 lg:w-4/5'>
-          <Link
-            href={t('projects-href')}
-            className='link flex w-fit font-semibold'
-          >
-            <NoSsr>
-              {theme === 'dark' ? (
-                <TextColorChangeDark text={t('cto-text')} />
-              ) : (
-                <TextColorChangeLight text={t('cto-text')} />
-              )}
-            </NoSsr>
-          </Link>
-        </div>
+        <TextButtonChangeColorHover translateDoc='projects' />
       </div>
     </section>
   )

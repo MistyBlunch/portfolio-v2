@@ -19,14 +19,14 @@ export const AboutMe = () => {
             </h1>
             <p>{t('highlight')}</p>
           </div>
-          <p className='mb-4'>
+          <div className='mb-4'>
             <Trans
               i18nKey='about-me:intro'
               components={{
                 component: <Component />,
                 anchorOrganizations: (
                   <a
-                    href='https://linktr.ee/mistyblunch'
+                    href={t('anchorOrganizations')}
                     target='_blank'
                     className='link font-bold'
                   />
@@ -36,22 +36,25 @@ export const AboutMe = () => {
             <span className='inline max-md:hidden'>
               {' ' + t('denouement')}
             </span>
-          </p>
-          <p className='mb-4'>
-            <Trans
-              i18nKey='about-me:currently'
-              components={{
-                component: <Component />,
-                anchorMusic: (
-                  <a
-                    href='https://bit.ly/mistys2023songs'
-                    target='_blank'
-                    className='link font-bold'
-                  />
-                )
-              }}
-            />
-          </p>
+          </div>
+          <div className='mb-4'>
+            <span>{t('currently') + ' '}</span>
+            <div className='inline max-md:hidden'>
+              <Trans
+                i18nKey='about-me:hobbies'
+                components={{
+                  component: <Component />,
+                  anchorMusic: (
+                    <a
+                      href={t('anchorOrganizations')}
+                      target='_blank'
+                      className='link font-bold'
+                    />
+                  )
+                }}
+              />
+            </div>
+          </div>
         </div>
         <div className='m-5'>
           <AboutMeImageWrapper />

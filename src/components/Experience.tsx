@@ -1,21 +1,15 @@
 'use client'
 
-// TODO: Actualizar
 import { useTranslation } from 'next-i18next'
-import { useTheme } from 'next-themes'
 
 import { motion } from 'framer-motion'
 
 import { IExperience } from '../interfaces/locales/experience.interface'
-
-import { TextColorChangeLight } from '../elements/TextColorChangeLight'
-import { TextColorChangeDark } from '../elements/TextColorChangeDark'
-import NoSsr from '../elements/NoSsr'
+import { TextButtonChangeColorHover } from '../elements/TextButtonChangeColorHover'
 
 import { processDate } from '../utils/processDate'
 
 export const Experience = () => {
-  const { theme } = useTheme()
   const { t } = useTranslation('experience')
   const experience = t('experience', { returnObjects: true }) as IExperience[]
 
@@ -24,14 +18,14 @@ export const Experience = () => {
       className='md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:p-8 lg:p-12 mt-5'
       id='#experience'
     >
-      <h5 className='mb-4 p-4 font-bold uppercase tracking-wide text-gray-700 dark:text-slate-200 lg:hidden'>
+      <h5 className='p-4 font-bold uppercase tracking-wide text-gray-700 dark:text-slate-200 lg:hidden'>
         {t('title')}
       </h5>
       <div className='flex flex-col items-center'>
         <ul>
           {experience.map(exp => (
             <li key={exp.name} className='flex justify-center'>
-              <div className='relative mb-4 flex p-4 lg:w-4/5'>
+              <div className='relative flex p-4 lg:w-4/5'>
                 <motion.a
                   className='link-wrapper absolute m-[-14px] h-full w-full rounded-lg max-lg:hidden'
                   whileHover={{
@@ -73,20 +67,7 @@ export const Experience = () => {
             </li>
           ))}
         </ul>
-        <div className='mr-auto p-4 lg:w-4/5'>
-          <motion.a
-            href={t('resume-link')}
-            className='link flex w-fit font-semibold'
-          >
-            <NoSsr>
-              {theme === 'dark' ? (
-                <TextColorChangeDark text={t('cto-text')} />
-              ) : (
-                <TextColorChangeLight text={t('cto-text')} />
-              )}
-            </NoSsr>
-          </motion.a>
-        </div>
+        <TextButtonChangeColorHover translateDoc='experience'/>
       </div>
     </section>
   )

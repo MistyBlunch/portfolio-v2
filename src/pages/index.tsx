@@ -6,6 +6,7 @@ import { AboutMe } from '../components/AboutMe'
 import { Navbar } from '../components/Navbar'
 import { Experience } from '../components/Experience'
 import { Projects } from '../components/Projects'
+import { References } from '../components/References'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <AboutMe />
         <Experience />
         <Projects />
+        <References />
       </div>
     </div>
   )
@@ -29,6 +31,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => ({
       'about-me',
       'experience',
       'projects',
+      'references'
     ]))
   }
 })

@@ -24,7 +24,7 @@ export const TextColorChangeDark = (props: { text: string }) => {
           <motion.h5
             key={index}
             variants={darkTextVariants}
-            className='whitespace-pre text-lg'
+            className='whitespace-pre text-md'
           >
             {char}
           </motion.h5>

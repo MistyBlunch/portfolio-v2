@@ -25,10 +25,10 @@ export const Navbar = () => {
         </div>
         <div className='hidden sm:flex lg:block'>
           {navigation.map(item => (
-            <Link key={item.name} href={item.href} className='navbar-link'>
+            <Link key={item.name} href={'#' + item.name} className='navbar-link'>
               <div className='mx-3 flex flex-col items-center py-2 lg:mx-0 lg:py-4'>
-                <RenderIcon icon={item.icon} />
-                <h5 className='text-center text-sm'>{item.name}</h5>
+                <RenderIcon icon={item.name} />
+                <h5 className='text-center text-sm'>{item.title}</h5>
               </div>
             </Link>
           ))}
