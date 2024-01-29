@@ -6,13 +6,20 @@ import { INavbar } from '../interfaces/locales/navbar.interface'
 import { LocaleSwitcher } from '../elements/LocaleSwitcher'
 import { ThemeSwitcher } from '../elements/ThemeSwitcher'
 
-import { RenderIcon } from '../elements/RenderIcon'
+import { RenderNavbarIcon } from '../elements/RenderNavbarIcon'
 import { HamburgerMenu } from '../elements/HamburgerMenu'
 import { Logo } from '../elements/icons/Logo'
+import { useEffect, useState } from 'react'
 
 export const Navbar = () => {
   const { t } = useTranslation(['navbar', 'common'])
-  const navigation = t('navigation', { returnObjects: true }) as INavbar[]
+  const [navbarData, setNavbarData] = useState<INavbar[]>([])
+
+  useEffect(() => {
+    setNavbarData(
+      t('navigation', { returnObjects: true }) as INavbar[]
+    )
+  }, [t])
 
   return (
     <>
@@ -24,10 +31,10 @@ export const Navbar = () => {
           <HamburgerMenu />
         </div>
         <div className='hidden sm:flex lg:block'>
-          {navigation.map(item => (
+          {navbarData.map(item => (
             <Link key={item.name} href={'#' + item.name} className='navbar-link'>
               <div className='mx-3 flex flex-col items-center py-2 lg:mx-0 lg:py-4'>
-                <RenderIcon icon={item.name} />
+                <RenderNavbarIcon icon={item.name} />
                 <h5 className='text-center text-sm'>{item.title}</h5>
               </div>
             </Link>

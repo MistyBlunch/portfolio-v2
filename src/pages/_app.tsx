@@ -4,6 +4,7 @@ import '../../public/styles/globals.css'
 import '../../public/styles/about-me-image-wrapper.css'
 import '../../public/styles/experience.css'
 import '../../public/styles/projects.css'
+import '../../public/styles/social-media.css'
 
 import type { NextPage } from 'next'
 import type { AppProps } from 'next/app'

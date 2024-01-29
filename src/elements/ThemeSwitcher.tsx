@@ -16,7 +16,7 @@ export const ThemeSwitcher = () => {
   if (!mounted) return null
 
   return (
-    <div className='flex justify-center mx-2'>
+    <div className='flex justify-center'>
       <button
         className='mx-2 w-fit bg-transparent lg:mx-0'
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}

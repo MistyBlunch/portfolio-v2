@@ -1,0 +1,7 @@
+.dark .social-icon {
+  color: theme('colors.slate.200');
+}
+
+.light .social-icon {
+  color: theme('colors.gray.700');
+}

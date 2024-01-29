@@ -14,17 +14,22 @@ import { ThemeSwitcher } from '../../elements/ThemeSwitcher'
 import { LocaleSwitcher } from '../../elements/LocaleSwitcher'
 
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline'
+import { useEffect, useState } from 'react'
 
-const ProjectHistory = (
-  _props: InferGetStaticPropsType<typeof getStaticProps>
-) => {
+const ProjectHistory = () => {
   const { t } = useTranslation(['projects-history', 'common'])
+  const [navigationData, setNavigationData] = useState<IProjectHistoryNavigation[]>([])
+  const [projectsData, setProjectsData] = useState<IProjectHistory[]>([])
 
-  const navigation = t('navigation', {
+  useEffect(() => {
+    setNavigationData(
+      t('navigation', {
     returnObjects: true
   }) as IProjectHistoryNavigation[]
+    )
 
-  const projects = t('projects', { returnObjects: true }) as IProjectHistory[]
+    setProjectsData(t('projects', { returnObjects: true }) as IProjectHistory[])
+  }, [t])
 
   return (
     <section className='lg:pmd:container max-sm:-12 relative md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:p-8'>
@@ -48,7 +53,7 @@ const ProjectHistory = (
       >
         <thead className='bg-slate-900/75 sticky top-0 z-10 px-6 py-5 backdrop-blur'>
           <tr>
-            {navigation.map((nav, i) => (
+            {navigationData.map((nav, i) => (
               <th key={i} className={nav.class}>
                 {nav.name}
               </th>
@@ -56,7 +61,7 @@ const ProjectHistory = (
           </tr>
         </thead>
         <tbody>
-          {projects.map((project, i) => (
+          {projectsData.map((project, i) => (
             <tr
               key={i}
               className='border-b border-slate-300/10 last:border-none'

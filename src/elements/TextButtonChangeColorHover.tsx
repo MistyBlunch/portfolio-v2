@@ -13,7 +13,7 @@ export const TextButtonChangeColorHover = (props: { translateDoc: string }) => {
   const { t } = useTranslation(props.translateDoc)
 
   return (
-    <div className='p-4 max-lg:mr-auto lg:m-auto lg:w-4/5 mt-2'>
+    <div className='mt-2 max-lg:mr-auto max-lg:p-2 lg:m-auto lg:w-4/5 lg:p-4'>
       <Link href={t('cto-link')} className='link flex w-fit font-semibold'>
         <NoSsr>
           {theme === 'dark' ? (

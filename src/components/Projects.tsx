@@ -8,24 +8,31 @@ import { motion } from 'framer-motion'
 import { IProject } from '../interfaces/locales/project.interface'
 
 import { TextButtonChangeColorHover } from '../elements/TextButtonChangeColorHover'
+import { useEffect, useState } from 'react'
 
 export const Projects = () => {
   const { t } = useTranslation('projects')
-  const projects = t('projects', { returnObjects: true }) as IProject[]
+  const [projectsData, setProjectsData] = useState<IProject[]>([])
+
+  useEffect(() => {
+    setProjectsData(
+      t('projects', { returnObjects: true }) as IProject[]
+    )
+  }, [t])
 
   return (
     <section
       className='mt-12 md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:p-8 lg:p-12'
       id='#projects'
     >
-      <h5 className='p-4 font-bold uppercase tracking-wide text-gray-700 dark:text-slate-200 lg:hidden'>
+      <h5 className='font-bold uppercase tracking-wide text-gray-700 dark:text-slate-200 max-lg:p-2 lg:hidden lg:p-4'>
         {t('title')}
       </h5>
       <div className='flex flex-col items-center'>
         <ul>
-          {projects.map((project, i) => (
+          {projectsData.map((project, i) => (
             <li key={i} className='flex justify-center'>
-              <div className='relative flex p-4 lg:w-4/5'>
+              <div className='relative flex max-lg:p-2 lg:w-4/5 lg:p-4'>
                 <motion.a
                   className='link-wrapper absolute m-[-14px] h-full w-full rounded-lg max-lg:hidden'
                   whileHover={{

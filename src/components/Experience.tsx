@@ -8,24 +8,31 @@ import { IExperience } from '../interfaces/locales/experience.interface'
 import { TextButtonChangeColorHover } from '../elements/TextButtonChangeColorHover'
 
 import { processDate } from '../utils/processDate'
+import { useEffect, useState } from 'react'
 
 export const Experience = () => {
   const { t } = useTranslation('experience')
-  const experience = t('experience', { returnObjects: true }) as IExperience[]
+  const [experienceData, setExperienceData] = useState<IExperience[]>([])
+
+  useEffect(() => {
+    setExperienceData(
+      t('experience', { returnObjects: true }) as IExperience[]
+    )
+  }, [t])
 
   return (
     <section
-      className='md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:p-8 lg:p-12 mt-5'
+      className='mt-5 md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:p-8 lg:p-12'
       id='#experience'
     >
-      <h5 className='p-4 font-bold uppercase tracking-wide text-gray-700 dark:text-slate-200 lg:hidden'>
+      <h5 className='font-bold uppercase tracking-wide text-gray-700 dark:text-slate-200 max-lg:p-2 lg:hidden lg:p-4'>
         {t('title')}
       </h5>
       <div className='flex flex-col items-center'>
         <ul>
-          {experience.map(exp => (
+          {experienceData.map(exp => (
             <li key={exp.name} className='flex justify-center'>
-              <div className='relative flex p-4 lg:w-4/5'>
+              <div className='relative flex max-lg:p-2 lg:w-4/5 lg:p-4'>
                 <motion.a
                   className='link-wrapper absolute m-[-14px] h-full w-full rounded-lg max-lg:hidden'
                   whileHover={{
@@ -67,7 +74,7 @@ export const Experience = () => {
             </li>
           ))}
         </ul>
-        <TextButtonChangeColorHover translateDoc='experience'/>
+        <TextButtonChangeColorHover translateDoc='experience' />
       </div>
     </section>
   )

@@ -5,7 +5,7 @@ import {
   PhoneIcon
 } from '@heroicons/react/24/outline'
 
-export const RenderIcon = (props: { icon: string }) => {
+export const RenderNavbarIcon = (props: { icon: string }) => {
   if (props.icon === 'aboutme')
     return <UserCircleIcon className='xs:w-8 sm:w-6 lg:w-8' />
   if (props.icon === 'experience')

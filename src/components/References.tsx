@@ -10,7 +10,7 @@ export const References = () => {
       className='md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:p-8 lg:p-12'
       id='#references'
     >
-      <div className='px-4 pb-4'>
+      <div className='lg:px-4 max-lg:p-2'>
         <p className='text-sm text-gray-700 opacity-60 dark:text-slate-400'>
           <Trans
             i18nKey='references:designRef'
