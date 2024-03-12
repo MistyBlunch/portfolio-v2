@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.xxx {
+  color: greenyellow
+}
+
 html.dark {
   background-color: theme('colors.dark') !important;
   color: theme('colors.slate.400') !important;

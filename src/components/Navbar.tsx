@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState } from 'react'
 
 import { INavbar } from '../interfaces/locales/navbar.interface'
 
@@ -17,6 +17,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     setNavbarData(t('navigation', { returnObjects: true }) as INavbar[])
+    console.log('xd')
   }, [t])
 
   return (
@@ -29,9 +30,9 @@ export const Navbar = () => {
           <HamburgerMenu />
         </div>
         <div className='hidden sm:flex lg:block'>
-          {navbarData.map(item => (
+          {navbarData.map((item, key) => (
             <Link
-              key={item.name}
+              key={key}
               href={'#' + item.name}
               scroll={false}
               className='navbar-link'
