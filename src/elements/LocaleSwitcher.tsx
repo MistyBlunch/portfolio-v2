@@ -14,9 +14,10 @@ export const LocaleSwitcher = (props?: { icon: Boolean }) => {
 
   return (
     <>
-      <div className='my-2 flex flex-col items-center'>
+      <div className='my-1 flex flex-col items-center'>
         {icon && (
           <Link
+            scroll={false}
             href={router.pathname}
             locale={changeTo}
             className='navbar-link mb-1 hidden cursor-pointer xs:w-8 sm:flex sm:w-6 lg:w-8'
@@ -27,6 +28,7 @@ export const LocaleSwitcher = (props?: { icon: Boolean }) => {
         <div className='grid grid-cols-2 divide-x'>
           {locales.map((locale, i) => (
             <Link
+              scroll={false}
               href={router.pathname}
               locale={locale}
               key={i}

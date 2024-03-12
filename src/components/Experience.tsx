@@ -22,8 +22,8 @@ export const Experience = () => {
 
   return (
     <section
-      className='mt-5 md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:p-8 lg:p-12'
-      id='#experience'
+      className='mt-5 md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:px-8 sm:pt-16 lg:p-12'
+      id='experience'
     >
       <h5 className='font-bold uppercase tracking-wide text-gray-700 dark:text-slate-200 max-lg:p-2 lg:hidden lg:p-4'>
         {t('title')}

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useClickAway } from 'react-use'
 
 import Link from 'next/link'
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'next-i18next'
 
 import { AnimatePresence, motion } from 'framer-motion'
 

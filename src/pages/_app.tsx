@@ -6,32 +6,21 @@ import '../../public/styles/experience.css'
 import '../../public/styles/projects.css'
 import '../../public/styles/social-media.css'
 
-import type { NextPage } from 'next'
 import type { AppProps } from 'next/app'
 import { Inter } from 'next/font/google'
-import { appWithTranslation } from 'next-i18next'
-import { ReactElement, ReactNode } from 'react'
+import { appWithTranslation, useTranslation } from 'next-i18next'
 import { ThemeProvider } from '../providers/ThemeProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
-  getLayout?: (page: ReactElement) => ReactNode
-}
-
-type AppPropsWithLayout = AppProps & {
-  Component: NextPageWithLayout
-}
-
-const MyApp = ({ Component, pageProps }: AppPropsWithLayout) => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-      <main className={inter.className}>
-        <Component {...pageProps} />
-      </main>
+        <main className={inter.className}>
+          <Component {...pageProps} />
+        </main>
     </ThemeProvider>
   )
 }
-
 
 export default appWithTranslation(MyApp)

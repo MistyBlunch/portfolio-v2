@@ -10,7 +10,7 @@ export const RenderNavbarIcon = (props: { icon: string }) => {
     return <UserCircleIcon className='xs:w-8 sm:w-6 lg:w-8' />
   if (props.icon === 'experience')
     return <BeakerIcon className='xs:w-8 sm:w-6 lg:w-8' />
-  if (props.icon === 'project')
+  if (props.icon === 'projects')
     return <BoltIcon className='xs:w-8 sm:w-6 lg:w-8' />
   if (props.icon === 'contact')
     return <PhoneIcon className='xs:w-8 sm:w-6 lg:w-8' />

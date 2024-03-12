@@ -8,7 +8,7 @@ export const References = () => {
   return (
     <section
       className='md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:p-8 lg:p-12'
-      id='#references'
+      id='references'
     >
       <div className='lg:px-4 max-lg:p-2'>
         <p className='text-sm text-gray-700 opacity-60 dark:text-slate-400'>

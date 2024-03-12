@@ -8,8 +8,8 @@ export const AboutMe = () => {
 
   return (
     <section
-      className='md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:p-8 lg:p-12'
-      id='#aboutme'
+      className='md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:px-8 sm:pt-16 lg:p-12'
+      id='aboutme'
     >
       <div className='lg:flex lg:items-center'>
         <div>
