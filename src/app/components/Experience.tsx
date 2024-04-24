@@ -29,9 +29,10 @@ export const Experience = () => {
       <div className='flex flex-col items-center'>
         <ul>
           {experienceData.map(exp => (
-            <li key={exp.name} className='flex justify-center'>
+            <li key={exp.name} className='mb-2 flex justify-center'>
               <div className='relative flex max-lg:p-2 lg:w-4/5 lg:p-4'>
                 <motion.a
+                  aria-label={exp.name}
                   className='link-wrapper absolute m-[-14px] h-full w-full rounded-lg max-lg:hidden'
                   whileHover={{
                     transition: { duration: 0.3 },
@@ -49,6 +50,7 @@ export const Experience = () => {
                       <a
                         className='link font-bold text-gray-700 dark:text-slate-200'
                         href={exp.url}
+                        aria-label={exp.name}
                         target='_blank'
                       >
                         <span>

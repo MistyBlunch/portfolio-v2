@@ -76,9 +76,9 @@
   integrity sha512-Ag+9YM4ocKQx9AarydN0KY2j0ErMHNIocPDrVo8zAE44xLTjEtz81OdR68/cydGtk6m6jDb5Za3r2useMzYmSw==
 
 "@heroicons/react@^2.0.18":
-  version "2.0.18"
-  resolved "https://registry.npmjs.org/@heroicons/react/-/react-2.0.18.tgz"
-  integrity sha512-7TyMjRrZZMBPa+/5Y8lN0iyvUU/01PeMGX2+RE7cQWpEUIcb4QotzUObFkJDejj/HUH4qjP/eQ0gzzKs2f+6Yw==
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-2.1.3.tgz#78a2a7f504a7370283d07eabcddc7fec04f503db"
+  integrity sha512-fEcPfo4oN345SoqdlCDdSa4ivjaKbk0jTd+oubcgNxnNgAfzysfwWfQUr+51wigiWHQQRiZNd1Ao0M5Y3M2EGg==
 
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.11"
@@ -1419,6 +1419,11 @@ i18next@^23.7.16:
   integrity sha512-SrqFkMn9W6Wb43ZJ9qrO6U2U4S80RsFMA7VYFSqp7oc7RllQOYDCdRfsse6A7Cq/V8MnpxKvJCYgM8++27n4Fw==
   dependencies:
     "@babel/runtime" "^7.23.2"
+
+iconoir-react@^7.6.0:
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/iconoir-react/-/iconoir-react-7.6.0.tgz#d22686ffd44924096e47c605521a1ba7d5a5ee5f"
+  integrity sha512-BxXCCcE3xsTu+d6LMW7aITv/KTLT/KeWlcvI1qQcsYw9G9CKjUwDoxlhIyrBbrlwOkwyiLsJo0AmJOp/Q66L/Q==
 
 ignore@^5.2.0:
   version "5.2.4"

@@ -1,29 +1,24 @@
 'use client'
 
-import { useTheme } from 'next-themes'
-
-import { Github } from '@/public/images/social-media/github'
-import { Instagram } from '@/public/images/social-media/instagram'
-import { LinkedIn } from '@/public/images/social-media/linkedin'
-import { Gmail } from '@/public/images/social-media/gmail'
-import { YouTube } from '@/public/images/social-media/youtube'
-
+import { GithubCircle, Instagram, Linkedin, Mail, Youtube } from 'iconoir-react'
 import NoSsr from './NoSsr'
 
 export const RenderSocialMediaIcon = (props: { icon: string }) => {
-  const { theme } = useTheme()
-
-  const lightColor = '#fefeff'
-  const darkColor = '#334155'
-  const color = theme === 'dark' ? lightColor : darkColor
-
   return (
     <NoSsr>
-      {props.icon === 'github' && <Github color={color} />}
-      {props.icon === 'instagram' && <Instagram color={color} />}
-      {props.icon === 'linkedin' && <LinkedIn color={color} />}
-      {props.icon === 'gmail' && <Gmail color={color} />}
-      {props.icon === 'youtube' && <YouTube color={color} />}
+      {props.icon === 'github' && (
+        <GithubCircle className='social-icon h-10 w-10' />
+      )}
+      {props.icon === 'instagram' && (
+        <Instagram className='social-icon h-10 w-10' />
+      )}
+      {props.icon === 'linkedin' && (
+        <Linkedin className='social-icon h-10 w-10' />
+      )}
+      {props.icon === 'gmail' && <Mail className='social-icon h-10 w-10' />}
+      {props.icon === 'youtube' && (
+        <Youtube className='social-icon h-10 w-10' />
+      )}
     </NoSsr>
   )
 }

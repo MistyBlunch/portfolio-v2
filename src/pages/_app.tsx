@@ -5,10 +5,10 @@ import '../../public/styles/projects.css'
 import '../../public/styles/social-media.css'
 
 import type { AppProps } from 'next/app'
+import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import { appWithTranslation, useTranslation } from 'next-i18next'
 import { ThemeProvider } from '../app/providers/ThemeProvider'
-import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 

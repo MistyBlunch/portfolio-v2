@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className='lg:flex'>
       <Navbar />
-      <div className='mx-auto'>
+      <div className='container'>
         <AboutMe />
         <Experience />
         <Projects />

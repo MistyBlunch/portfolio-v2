@@ -15,9 +15,7 @@ export const Projects = () => {
   const [projectsData, setProjectsData] = useState<IProject[]>([])
 
   useEffect(() => {
-    setProjectsData(
-      t('projects', { returnObjects: true }) as IProject[]
-    )
+    setProjectsData(t('projects', { returnObjects: true }) as IProject[])
   }, [t])
 
   return (
@@ -31,9 +29,10 @@ export const Projects = () => {
       <div className='flex flex-col items-center'>
         <ul>
           {projectsData.map((project, i) => (
-            <li key={i} className='flex justify-center'>
+            <li key={i} className='mb-2 flex justify-start lg:justify-center'>
               <div className='relative flex max-lg:p-2 lg:w-4/5 lg:p-4'>
                 <motion.a
+                  aria-label={project.name}
                   className='link-wrapper absolute m-[-14px] h-full w-full rounded-lg max-lg:hidden'
                   whileHover={{
                     transition: { duration: 0.3 },
@@ -43,19 +42,21 @@ export const Projects = () => {
                   target='_blank'
                 ></motion.a>
                 <div className='grid max-md:gap-y-2 md:grid-cols-8 md:gap-x-5'>
-                  <div className='text-sm uppercase max-md:w-3/5 max-sm:w-4/5 sm:col-span-3 md:col-span-2'>
+                  <div className='max-md:w-3/5 max-sm:w-4/5 sm:col-span-3 md:col-span-2'>
                     <Image
                       src={project.image}
                       alt={project.name}
-                      width={740}
-                      height={150}
-                      className='border-gray-500 project-img rounded-md border-2 dark:border-slate-200'
-                    ></Image>
+                      width={150}
+                      height={70}
+                      loading='lazy'
+                      className='border-gray-500 project-img aspect-auto h-auto w-auto rounded-md border-2 dark:border-slate-200'
+                    />
                   </div>
                   <div className='max-md:col-start-1 max-md:row-start-1 sm:col-span-5 md:col-span-6'>
                     <div className='mb-2'>
                       <a
                         className='link font-bold text-gray-700 dark:text-slate-200'
+                        aria-label={project.name}
                         href={project.link}
                         target='_blank'
                       >

@@ -1,17 +1,12 @@
-import {
-  BeakerIcon,
-  UserCircleIcon,
-  BoltIcon,
-  PhoneIcon
-} from '@heroicons/react/24/outline'
+import { Flask, HexagonDice, Mail, UserCircle } from 'iconoir-react'
 
 export const RenderNavbarIcon = (props: { icon: string }) => {
   if (props.icon === 'aboutme')
-    return <UserCircleIcon className='xs:w-8 sm:w-6 lg:w-8' />
+    return <UserCircle className='max-lg:h-6 max-lg:w-6 lg:h-8 lg:w-8' />
   if (props.icon === 'experience')
-    return <BeakerIcon className='xs:w-8 sm:w-6 lg:w-8' />
+    return <Flask className='max-lg:h-6 max-lg:w-6 lg:h-8 lg:w-8' />
   if (props.icon === 'projects')
-    return <BoltIcon className='xs:w-8 sm:w-6 lg:w-8' />
+    return <HexagonDice className='max-lg:h-6 max-lg:w-6 lg:h-8 lg:w-8' />
   if (props.icon === 'contact')
-    return <PhoneIcon className='xs:w-8 sm:w-6 lg:w-8' />
+    return <Mail className='max-lg:h-6 max-lg:w-6 lg:h-8 lg:w-8' />
 }

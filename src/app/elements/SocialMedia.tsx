@@ -10,8 +10,8 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 import { ISocialMedia } from '../interfaces/locales/social.media.interface'
 
-import { AtSymbolIcon } from '@heroicons/react/24/outline'
 import { RenderSocialMediaIcon } from './RenderSocialMediaIcon'
+import { AtSign } from 'iconoir-react'
 
 export const SocialMedia = () => {
   const [isOpen, setOpen] = useState(false)
@@ -50,34 +50,11 @@ export const SocialMedia = () => {
     }
   }
 
-  // const socialMediaIconContainer = {
-  //   open: {
-  //     transition: { staggerChildren: 0.07, delayChildren: 0.2 }
-  //   },
-  //   closed: {
-  //     transition: { staggerChildren: 0.05, staggerDirection: -1 }
-  //   }
-  // }
-
-  // const socialMediaIcon = {
-  //   open: {
-  //     y: 0,
-  //     opacity: 1,
-  //     transition: {
-  //       y: { stiffness: 1000, velocity: -100 }
-  //     }
-  //   },
-  //   closed: {
-  //     y: 50,
-  //     opacity: 0,
-  //     transition: {
-  //       y: { stiffness: 1000 }
-  //     }
-  //   }
-  // }
-
   return (
-    <div ref={ref} className='fixed bottom-2 right-2 z-10 w-fit'>
+    <div
+      ref={ref}
+      className='fixed bottom-2 right-2 z-10 flex w-fit flex-col justify-center'
+    >
       <AnimatePresence>
         {isOpen && (
           <motion.ul className='my-2 grid gap-y-2'>
@@ -89,27 +66,15 @@ export const SocialMedia = () => {
                 onClick={() => setOpen(false)}
               >
                 <motion.li
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                  initial={{
-                    opacity: 0,
-                    y: 100
+                  initial={{ scale: 0, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  exit={{ scale: 0, opacity: 0 }}
+                  transition={{
+                    type: 'spring',
+                    stiffness: 260,
+                    damping: 20,
+                    delay: 0.1 + id / 10
                   }}
-                  animate={{
-                    opacity: 1,
-                    y: 0,
-                    transition: {
-                      duration: 0.3
-                    }
-                  }}
-                  exit={{
-                    y: 100,
-                    transition: {
-                      duration: 0.3
-                    },
-                    opacity: 0
-                  }}
-                  className='bg-light dark:bg-dark'
                 >
                   <RenderSocialMediaIcon icon={item.name} />
                 </motion.li>
@@ -126,9 +91,9 @@ export const SocialMedia = () => {
         animate='visible'
         id='social-media-button'
         aria-label='Social Media button'
-        className='rounded-full border border-gray-700  bg-light  dark:border-slate-200 dark:bg-dark max-lg:p-1 lg:p-1.5'
+        className='rounded-full border-2 border-gray-700  bg-light  dark:border-slate-200 dark:bg-dark max-lg:p-1 lg:p-1.5'
       >
-        <AtSymbolIcon className='social-icon max-lg:w-5 lg:w-6' />
+        <AtSign className='social-icon max-lg:w-5 lg:w-6' />
       </motion.button>
     </div>
   )

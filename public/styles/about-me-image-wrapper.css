@@ -2,7 +2,7 @@
   position: relative;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -32,8 +32,8 @@
 }
 
 .bd {
-  width: 142%;
-  height: 142%;
+  width: 150%;
+  height: 150%;
   position: absolute;
   left: -21%;
   top: -21%;

@@ -33,12 +33,13 @@ export const AboutMe = () => {
                 )
               }}
             />
+          </div>
+          <div className='mb-4'>
             <span className='inline max-md:hidden'>
               {' ' + t('denouement')}
             </span>
           </div>
           <div className='mb-4'>
-            <span>{t('currently') + ' '}</span>
             <div className='inline max-md:hidden'>
               <Trans
                 i18nKey='about-me:hobbies'
@@ -63,9 +64,7 @@ export const AboutMe = () => {
             </div>
           </div>
         </div>
-        <div className='m-5'>
-          <AboutMeImageWrapper />
-        </div>
+        <div className='m-5'>{/* <AboutMeImageWrapper /> */}</div>
       </div>
     </section>
   )

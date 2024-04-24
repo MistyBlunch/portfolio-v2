@@ -54,12 +54,13 @@ export const HamburgerMenu = () => {
                       delay: 0.1 + id / 10
                     }}
                     key={id}
-                    className='w-24 rounded-xl p-[0.08rem]'
+                    className='w-24 p-[0.08rem]'
                   >
                     <Link
                       href={'#' + item.name}
                       onClick={() => setOpen(false)}
                       className='navbar-link'
+                      aria-label='Navigate to section'
                     >
                       <div className='mx-3 flex flex-col items-center py-2 lg:mx-0 lg:py-4'>
                         <RenderNavbarIcon icon={item.name} />

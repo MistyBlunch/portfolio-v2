@@ -1,7 +1,6 @@
 'use client'
 
 import type { GetStaticProps } from 'next'
-import { InferGetStaticPropsType } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
@@ -13,8 +12,8 @@ import { IProjectHistoryNavigation } from '../../app/interfaces/locales/project.
 import { ThemeSwitcher } from '../../app/elements/ThemeSwitcher'
 import { LocaleSwitcher } from '../../app/elements/LocaleSwitcher'
 
-import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline'
 import { useEffect, useState } from 'react'
+import { ArrowLeft, ArrowRight } from 'iconoir-react'
 
 const ProjectHistory = () => {
   const { t } = useTranslation(['projects-history', 'common'])
@@ -43,7 +42,7 @@ const ProjectHistory = () => {
         href={t('common:home-url')}
         className='inline-flex text-sm font-medium text-pink-dark'
       >
-        <ArrowLeftIcon className='mr-1 w-4' />
+        <ArrowLeft className='mr-1 w-4' />
         {t('common:nickname')}
       </Link>
       <h3 className='font-bold text-gray-700 dark:text-slate-200 max-md:mb-2 max-md:text-2xl md:mb-4 md:text-3xl'>
@@ -80,7 +79,7 @@ const ProjectHistory = () => {
                     aria-label={project.link}
                   >
                     <span className='inline-block'>{project.name}</span>
-                    <ArrowRightIcon className='ml-1 w-4 sm:hidden' />
+                    <ArrowRight className='ml-1 w-4 sm:hidden' />
                   </a>
                 ) : (
                   <span className='text-sm font-medium leading-tight text-gray-700 dark:text-slate-200'>

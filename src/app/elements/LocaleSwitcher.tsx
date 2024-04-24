@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import nextI18nextConfig from '@/next-i18next.config'
-import { LanguageIcon } from '@heroicons/react/24/outline'
+import { Translate } from 'iconoir-react'
 
 export const LocaleSwitcher = (props?: { icon: Boolean }) => {
   const router = useRouter()
@@ -20,9 +20,10 @@ export const LocaleSwitcher = (props?: { icon: Boolean }) => {
             scroll={false}
             href={router.pathname}
             locale={changeTo}
-            className='navbar-link mb-1 hidden cursor-pointer xs:w-8 sm:flex sm:w-6 lg:w-8'
+            aria-label='Language Switcher'
+            className='navbar-link mb-1 hidden cursor-pointer sm:flex sm:justify-center '
           >
-            <LanguageIcon />
+            <Translate className='max-lg:w-6 lg:w-8 max-lg:h-6 lg:h-8' />
           </Link>
         )}
         <div className='grid grid-cols-2 divide-x'>
@@ -37,6 +38,7 @@ export const LocaleSwitcher = (props?: { icon: Boolean }) => {
                   ? 'navbar-link px-2 font-bold'
                   : 'navbar-link px-2'
               }
+              aria-label='Locale Switcher'
             >
               <h5>{locale}</h5>
             </Link>
