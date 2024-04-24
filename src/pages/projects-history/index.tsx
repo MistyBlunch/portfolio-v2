@@ -1,5 +1,7 @@
 'use client'
 
+import { useEffect, useState } from 'react'
+
 import type { GetStaticProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -12,7 +14,6 @@ import { IProjectHistoryNavigation } from '../../app/interfaces/locales/project.
 import { ThemeSwitcher } from '../../app/elements/ThemeSwitcher'
 import { LocaleSwitcher } from '../../app/elements/LocaleSwitcher'
 
-import { useEffect, useState } from 'react'
 import { ArrowLeft, ArrowRight } from 'iconoir-react'
 
 const ProjectHistory = () => {

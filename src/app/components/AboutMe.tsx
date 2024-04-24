@@ -1,4 +1,5 @@
 'use client'
+
 import { Trans, useTranslation } from 'next-i18next'
 import { AboutMeImageWrapper } from '../elements/AboutMeImageWrapper'
 import { Component } from 'react'
@@ -64,7 +65,9 @@ export const AboutMe = () => {
             </div>
           </div>
         </div>
-        <div className='m-5'>{/* <AboutMeImageWrapper /> */}</div>
+        <div className='m-5'>
+          <AboutMeImageWrapper />
+        </div>
       </div>
     </section>
   )

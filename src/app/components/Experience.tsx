@@ -1,7 +1,6 @@
 'use client'
 
 import { useTranslation } from 'next-i18next'
-
 import { motion } from 'framer-motion'
 
 import { IExperience } from '../interfaces/locales/experience.interface'

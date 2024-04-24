@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import nextI18nextConfig from '@/next-i18next.config'
+
 import { Translate } from 'iconoir-react'
 
 export const LocaleSwitcher = (props?: { icon: Boolean }) => {

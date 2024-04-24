@@ -2,11 +2,11 @@
 
 import { useTranslation } from 'next-i18next'
 import { useTheme } from 'next-themes'
+import Link from 'next/link'
 
 import { TextColorChangeLight } from './TextColorChangeLight'
 import { TextColorChangeDark } from './TextColorChangeDark'
 import NoSsr from './NoSsr'
-import Link from 'next/link'
 
 export const TextButtonChangeColorHover = (props: { translateDoc: string }) => {
   const { theme } = useTheme()
