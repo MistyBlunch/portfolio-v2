@@ -50,6 +50,13 @@ export const AboutMe = () => {
                       target='_blank'
                       className='link font-bold'
                     />
+                  ),
+                  anchorEmma: (
+                    <a
+                      href={t('anchorEmma')}
+                      target='_blank'
+                      className='link font-bold'
+                    />
                   )
                 }}
               />

@@ -34,6 +34,6 @@ export default {
       }
     }
   },
-  plugins: [require('tw-elements/dist/plugin.cjs')],
+  plugins: [],
   darkMode: 'class'
 } satisfies Config

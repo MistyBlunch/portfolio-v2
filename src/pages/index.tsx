@@ -2,12 +2,12 @@ import { GetStaticProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import nextI18nextConfig from '@/next-i18next.config'
 
-import { AboutMe } from '../components/AboutMe'
-import { Navbar } from '../components/Navbar'
-import { Experience } from '../components/Experience'
-import { Projects } from '../components/Projects'
-import { References } from '../components/References'
-import { SocialMedia } from '../elements/SocialMedia'
+import { AboutMe } from '../app/components/AboutMe'
+import { Navbar } from '../app/components/Navbar'
+import { Experience } from '../app/components/Experience'
+import { Projects } from '../app/components/Projects'
+import { References } from '../app/components/References'
+import { SocialMedia } from '../app/elements/SocialMedia'
 
 export default function Home() {
   return (

@@ -77,10 +77,7 @@ export const SocialMedia = () => {
   // }
 
   return (
-    <div
-      ref={ref}
-      className='fixed bottom-2 right-2 z-10 w-fit'
-    >
+    <div ref={ref} className='fixed bottom-2 right-2 z-10 w-fit'>
       <AnimatePresence>
         {isOpen && (
           <motion.ul className='my-2 grid gap-y-2'>
@@ -96,7 +93,7 @@ export const SocialMedia = () => {
                   whileTap={{ scale: 0.95 }}
                   initial={{
                     opacity: 0,
-                    y: 100,
+                    y: 100
                   }}
                   animate={{
                     opacity: 1,
@@ -110,7 +107,7 @@ export const SocialMedia = () => {
                     transition: {
                       duration: 0.3
                     },
-                    opacity: 0,
+                    opacity: 0
                   }}
                   className='bg-light dark:bg-dark'
                 >
@@ -127,7 +124,9 @@ export const SocialMedia = () => {
         variants={buttonSocialMedia}
         initial='hidden'
         animate='visible'
-        className='rounded-full border border-gray-700  dark:border-slate-200  max-lg:p-1 lg:p-1.5 bg-light dark:bg-dark'
+        id='social-media-button'
+        aria-label='Social Media button'
+        className='rounded-full border border-gray-700  bg-light  dark:border-slate-200 dark:bg-dark max-lg:p-1 lg:p-1.5'
       >
         <AtSymbolIcon className='social-icon max-lg:w-5 lg:w-6' />
       </motion.button>

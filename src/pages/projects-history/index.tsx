@@ -7,25 +7,27 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
 import nextI18nextConfig from '@/next-i18next.config'
 
-import { IProjectHistory } from '../../interfaces/locales/project.history.interface'
-import { IProjectHistoryNavigation } from '../../interfaces/locales/project.history.navigation.interface'
+import { IProjectHistory } from '../../app/interfaces/locales/project.history.interface'
+import { IProjectHistoryNavigation } from '../../app/interfaces/locales/project.history.navigation.interface'
 
-import { ThemeSwitcher } from '../../elements/ThemeSwitcher'
-import { LocaleSwitcher } from '../../elements/LocaleSwitcher'
+import { ThemeSwitcher } from '../../app/elements/ThemeSwitcher'
+import { LocaleSwitcher } from '../../app/elements/LocaleSwitcher'
 
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline'
 import { useEffect, useState } from 'react'
 
 const ProjectHistory = () => {
   const { t } = useTranslation(['projects-history', 'common'])
-  const [navigationData, setNavigationData] = useState<IProjectHistoryNavigation[]>([])
+  const [navigationData, setNavigationData] = useState<
+    IProjectHistoryNavigation[]
+  >([])
   const [projectsData, setProjectsData] = useState<IProjectHistory[]>([])
 
   useEffect(() => {
     setNavigationData(
       t('navigation', {
-    returnObjects: true
-  }) as IProjectHistoryNavigation[]
+        returnObjects: true
+      }) as IProjectHistoryNavigation[]
     )
 
     setProjectsData(t('projects', { returnObjects: true }) as IProjectHistory[])
@@ -49,7 +51,7 @@ const ProjectHistory = () => {
       </h3>
       <table
         id='content'
-        className='mt-6 w-full border-collapse text-left md:mt-12 max-md:mt-5'
+        className='mt-6 w-full border-collapse text-left max-md:mt-5 md:mt-12'
       >
         <thead className='bg-slate-900/75 sticky top-0 z-10 px-6 py-5 backdrop-blur'>
           <tr>

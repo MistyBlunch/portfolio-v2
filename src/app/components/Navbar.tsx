@@ -17,7 +17,6 @@ export const Navbar = () => {
 
   useEffect(() => {
     setNavbarData(t('navigation', { returnObjects: true }) as INavbar[])
-    console.log('xd')
   }, [t])
 
   return (

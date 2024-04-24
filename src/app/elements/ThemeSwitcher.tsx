@@ -18,6 +18,8 @@ export const ThemeSwitcher = () => {
   return (
     <div className='flex justify-center'>
       <button
+        id='theme-switcher-button'
+        aria-label='Switch theme button'
         className='mx-2 w-fit bg-transparent lg:mx-0'
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       >

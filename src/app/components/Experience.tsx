@@ -15,9 +15,7 @@ export const Experience = () => {
   const [experienceData, setExperienceData] = useState<IExperience[]>([])
 
   useEffect(() => {
-    setExperienceData(
-      t('experience', { returnObjects: true }) as IExperience[]
-    )
+    setExperienceData(t('experience', { returnObjects: true }) as IExperience[])
   }, [t])
 
   return (
@@ -36,7 +34,7 @@ export const Experience = () => {
                 <motion.a
                   className='link-wrapper absolute m-[-14px] h-full w-full rounded-lg max-lg:hidden'
                   whileHover={{
-                    transition: { duration: 0.5 },
+                    transition: { duration: 0.3 },
                     backgroundColor: 'rgba(219, 152, 206, .05)'
                   }}
                   href={exp.url}
