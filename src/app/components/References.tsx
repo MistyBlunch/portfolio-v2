@@ -22,9 +22,9 @@ export const References = () => {
                 className='link font-bold'
               />
             ),
-            anchorRefPage: (
+            anchorRefAngular: (
               <a
-                href={t('anchorRefPage')}
+                href={t('anchorRefAngular')}
                 target='_blank'
                 className='link font-bold'
               />

@@ -36,7 +36,7 @@ export const Navbar = () => {
           {navbarData.map((item, key) => (
             <Link
               key={key}
-              href={'#' + item.name}
+              href={item.url}
               scroll={false}
               className='navbar-link'
               aria-label='Navigate to section'

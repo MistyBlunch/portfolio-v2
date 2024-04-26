@@ -3,21 +3,25 @@
     {
       "title": "Acerca de mí",
       "name": "aboutme",
+      "url": "#aboutme",
       "current": false
     },
     {
       "title": "Experiencia",
       "name": "experience",
+      "url": "#experience",
       "current": false
     },
     {
       "title": "Proyectos",
       "name": "projects",
+      "url": "#projects",
       "current": false
     },
     {
       "title": "Contacto",
       "name": "contact",
+      "url": "mailto:gracenikole@gmail.com",
       "current": false
     }
   ]

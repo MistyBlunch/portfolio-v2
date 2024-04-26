@@ -8,12 +8,14 @@ import { Experience } from '../app/components/Experience'
 import { Projects } from '../app/components/Projects'
 import { References } from '../app/components/References'
 import { SocialMedia } from '../app/elements/SocialMedia'
+import { LikeButton } from '../app/elements/LikeButton'
 
 export default function Home() {
   return (
     <div className='lg:flex'>
       <Navbar />
       <div className='container'>
+        <LikeButton />
         <AboutMe />
         <Experience />
         <Projects />

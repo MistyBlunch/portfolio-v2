@@ -3,21 +3,25 @@
     {
       "title": "About Me",
       "name": "aboutme",
+      "url": "#aboutme",
       "current": false
     },
     {
       "title": "Experience",
       "name": "experience",
+      "url": "#experience",
       "current": false
     },
     {
       "title": "Projects",
       "name": "projects",
+      "url": "#projects",
       "current": false
     },
     {
       "title": "Contact",
       "name": "contact",
+      "url": "mailto:gracenikole@gmail.com",
       "current": false
     }
   ]
