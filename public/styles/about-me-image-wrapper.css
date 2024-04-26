@@ -2,7 +2,7 @@
   position: relative;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -32,12 +32,11 @@
 }
 
 .bd {
-  width: 142%;
-  height: 142%;
+  width: 150%;
+  height: 150%;
   position: absolute;
   left: -21%;
   top: -21%;
-  background: url('/images/about-me/caricature.jpg');
   background-size: 100%;
   background-position: center center;
   display: flex;

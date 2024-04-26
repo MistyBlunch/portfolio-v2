@@ -1,6 +1,6 @@
 export interface INavbar {
   name: string
-  icon: string
-  href: string
+  title: string
+  url: string
   current: boolean
 } 

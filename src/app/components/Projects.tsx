@@ -1,59 +1,62 @@
 'use client'
 
 import { useTranslation } from 'next-i18next'
-import { useTheme } from 'next-themes'
 import Image from 'next/image'
-import Link from 'next/link'
 
 import { motion } from 'framer-motion'
 
 import { IProject } from '../interfaces/locales/project.interface'
 
-import { TextColorChangeLight } from '../elements/TextColorChangeLight'
-import { TextColorChangeDark } from '../elements/TextColorChangeDark'
-import NoSsr from '../elements/NoSsr'
+import { TextButtonChangeColorHover } from '../elements/TextButtonChangeColorHover'
+import { useEffect, useState } from 'react'
 
 export const Projects = () => {
-  const { theme } = useTheme()
   const { t } = useTranslation('projects')
-  const projects = t('projects', { returnObjects: true }) as IProject[]
+  const [projectsData, setProjectsData] = useState<IProject[]>([])
+
+  useEffect(() => {
+    setProjectsData(t('projects', { returnObjects: true }) as IProject[])
+  }, [t])
 
   return (
     <section
-      className='md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:p-8 lg:p-12'
-      id='#projects'
+      className='mt-12 md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:px-8 sm:pt-16 lg:p-12'
+      id='projects'
     >
-      <h5 className='mb-4 p-4 font-bold uppercase tracking-wide text-gray-700 dark:text-slate-200 lg:hidden'>
+      <h5 className='font-bold uppercase tracking-wide text-gray-700 dark:text-slate-200 max-lg:p-2 lg:hidden lg:p-4'>
         {t('title')}
       </h5>
       <div className='flex flex-col items-center'>
         <ul>
-          {projects.map((project, i) => (
-            <li key={i} className='flex justify-center'>
-              <div className='relative mb-4 flex p-4 lg:w-4/5'>
+          {projectsData.map((project, i) => (
+            <li key={i} className='mb-2 flex justify-start lg:justify-center'>
+              <div className='relative flex max-lg:p-2 lg:w-4/5 lg:p-4'>
                 <motion.a
+                  aria-label={project.name}
                   className='link-wrapper absolute m-[-14px] h-full w-full rounded-lg max-lg:hidden'
                   whileHover={{
-                    transition: { duration: 0.5 },
+                    transition: { duration: 0.3 },
                     backgroundColor: 'rgba(219, 152, 206, .05)'
                   }}
                   href={project.link}
                   target='_blank'
                 ></motion.a>
                 <div className='grid max-md:gap-y-2 md:grid-cols-8 md:gap-x-5'>
-                  <div className='text-sm uppercase max-md:w-3/5 max-sm:w-4/5 sm:col-span-3 md:col-span-2'>
+                  <div className='max-md:w-3/5 max-sm:w-4/5 sm:col-span-3 md:col-span-2'>
                     <Image
                       src={project.image}
                       alt={project.name}
-                      width={740}
-                      height={150}
-                      className='border-gray-500 project-img rounded-sm border-2 dark:border-slate-200'
-                    ></Image>
+                      width={150}
+                      height={70}
+                      loading='lazy'
+                      className='border-gray-500 project-img aspect-auto h-auto w-auto rounded-md border-2 dark:border-slate-200'
+                    />
                   </div>
                   <div className='max-md:col-start-1 max-md:row-start-1 sm:col-span-5 md:col-span-6'>
                     <div className='mb-2'>
                       <a
                         className='link font-bold text-gray-700 dark:text-slate-200'
+                        aria-label={project.name}
                         href={project.link}
                         target='_blank'
                       >
@@ -76,21 +79,7 @@ export const Projects = () => {
             </li>
           ))}
         </ul>
-        <div className='mr-auto p-4 lg:w-4/5'>
-          <Link
-            href={t('projects-href')}
-            as={t('projects-as')}
-            className='link flex w-fit font-semibold'
-          >
-            <NoSsr>
-              {theme === 'dark' ? (
-                <TextColorChangeDark text={t('cto-text')} />
-              ) : (
-                <TextColorChangeLight text={t('cto-text')} />
-              )}
-            </NoSsr>
-          </Link>
-        </div>
+        <TextButtonChangeColorHover translateDoc='projects' />
       </div>
     </section>
   )

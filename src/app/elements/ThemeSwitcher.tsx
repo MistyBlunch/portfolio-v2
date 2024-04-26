@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 
-import { SunIcon, MoonIcon } from '@heroicons/react/24/outline'
+import { HalfMoon, SunLight } from 'iconoir-react'
 
 export const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false)
@@ -16,15 +16,17 @@ export const ThemeSwitcher = () => {
   if (!mounted) return null
 
   return (
-    <div className='flex justify-center mx-2'>
+    <div className='flex justify-center'>
       <button
+        id='theme-switcher-button'
+        aria-label='Switch theme button'
         className='mx-2 w-fit bg-transparent lg:mx-0'
         onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       >
         {theme === 'light' ? (
-          <MoonIcon className='navbar-link max-lg:w-6 lg:w-8' />
+          <HalfMoon className='navbar-link max-lg:h-6 max-lg:w-6 lg:h-8 lg:w-8' />
         ) : (
-          <SunIcon className='navbar-link max-lg:w-6 lg:w-8' />
+          <SunLight className='navbar-link max-lg:h-6 max-lg:w-6 lg:h-8 lg:w-8' />
         )}
       </button>
     </div>

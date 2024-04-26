@@ -1,9 +1,11 @@
 import { motion } from 'framer-motion'
-import { ArrowRightIcon } from '@heroicons/react/24/outline'
+
+import { ArrowRight } from 'iconoir-react'
+import colors from 'tailwindcss/colors'
 
 export const TextColorChangeDark = (props: { text: string }) => {
   const darkTextVariants = {
-    rest: { color: '#e2e8f0' },
+    rest: { color: colors.slate[200] },
     hover: { color: '#c454ae' }
   }
 
@@ -13,7 +15,7 @@ export const TextColorChangeDark = (props: { text: string }) => {
 
   return (
     <motion.div
-      className='text-link-wrapper'
+      className='pink-wrapper-hover'
       initial='rest'
       whileHover='hover'
       variants={containerVariants}
@@ -24,12 +26,12 @@ export const TextColorChangeDark = (props: { text: string }) => {
           <motion.h5
             key={index}
             variants={darkTextVariants}
-            className='whitespace-pre text-lg'
+            className='text-md whitespace-pre'
           >
             {char}
           </motion.h5>
         ))}
-        <ArrowRightIcon className='ml-2 w-5' />
+        <ArrowRight className='ml-2 w-5' />
       </div>
     </motion.div>
   )

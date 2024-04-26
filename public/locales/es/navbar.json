@@ -1,27 +1,27 @@
 {
   "navigation": [
     {
-      "name": "Acerca de mí",
-      "icon": "aboutme",
-      "href": "#aboutme",
+      "title": "Acerca de mí",
+      "name": "aboutme",
+      "url": "#aboutme",
       "current": false
     },
     {
-      "name": "Experiencia",
-      "icon": "experience",
-      "href": "#experience",
+      "title": "Experiencia",
+      "name": "experience",
+      "url": "#experience",
       "current": false
     },
     {
-      "name": "Proyectos",
-      "icon": "project",
-      "href": "#project",
+      "title": "Proyectos",
+      "name": "projects",
+      "url": "#projects",
       "current": false
     },
     {
-      "name": "Contacto",
-      "icon": "contact",
-      "href": "#contact",
+      "title": "Contacto",
+      "name": "contact",
+      "url": "mailto:gracenikole@gmail.com",
       "current": false
     }
   ]

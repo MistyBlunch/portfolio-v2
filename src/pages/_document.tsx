@@ -9,6 +9,7 @@ class MyDocument extends Document {
       <Html lang={currentLocale}>
         <Head>
           <meta charSet='utf-8' />
+          <link rel='icon' href='images/icon.svg' />
         </Head>
         <body>
           <Main />

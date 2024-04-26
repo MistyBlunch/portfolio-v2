@@ -1,0 +1,29 @@
+{
+  "navigation": [
+    {
+      "title": "GitHub",
+      "name": "github",
+      "url": "https://github.com/MistyBlunch"
+    },
+    {
+      "title": "Instagram",
+      "name": "instagram",
+      "url": "https://www.instagram.com/mistyblunch/"
+    },
+    {
+      "title": "LinkedIn",
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/grace-nikole/"
+    },
+    {
+      "title": "Gmail",
+      "name": "gmail",
+      "url": "mailto:gracenikole@gmail.com"
+    },
+    {
+      "title": "YouTube",
+      "name": "youtube",
+      "url": "https://www.youtube.com/@mistyblunch"
+    }
+  ]
+}

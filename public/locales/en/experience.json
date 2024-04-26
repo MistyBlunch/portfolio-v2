@@ -9,7 +9,7 @@
       "startMonth": "Apr",
       "endYear": "2019",
       "endMonth": "Jul",
-      "summary": "Krowdy is a Human Resources company specialized in automating recruitment processes. My functions were to create landing pages and forms for different companies, update and implement new functionalities in Laborum's platform, support the sending of mass mailings, and upload banners to the web platforms they had.",
+      "summary": "Krowdy is a Human Resources company specialized in automating recruitment processes. My functions were to build landing pages and forms, upload banners, update and implement new features in Laborum's platform and send mass mailings.",
       "keywords": [
         "React",
         "Angular",
@@ -78,5 +78,5 @@
     }
   ],
   "cto-text": "View full Resume",
-  "resume-link": "/pdfs/misty_blunch_resume_en.pdf"
+  "cto-link": "/resume"
 }

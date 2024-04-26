@@ -53,7 +53,6 @@
       ]
     }
   ],
-  "projects-href": "/projects-history?lang=en",
-  "projects-as": "/en/projects-history",
+  "cto-link": "/projects-history",
   "cto-text": "Project History"
 }
