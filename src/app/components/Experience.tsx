@@ -6,8 +6,8 @@ import { motion } from 'framer-motion'
 import { IExperience } from '../interfaces/locales/experience.interface'
 import { TextButtonChangeColorHover } from '../elements/TextButtonChangeColorHover'
 
-import { processDate } from '../utils/processDate'
 import { useEffect, useState } from 'react'
+import { processDate } from '../utils/helpers/processDate'
 
 export const Experience = () => {
   const { t } = useTranslation('experience')

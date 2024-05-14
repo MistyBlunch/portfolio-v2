@@ -49,7 +49,7 @@ export const Projects = () => {
                       width={150}
                       height={70}
                       loading='lazy'
-                      className='border-gray-500 project-img aspect-auto h-auto w-auto rounded-md border-2 dark:border-slate-200'
+                      className='border-gray-500 project-img aspect-video h-auto w-auto rounded-md border-2 dark:border-slate-200'
                     />
                   </div>
                   <div className='max-md:col-start-1 max-md:row-start-1 sm:col-span-5 md:col-span-6'>
