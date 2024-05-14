@@ -1,5 +1,4 @@
 import '../../public/styles/globals.css'
-import '../../public/styles/about-me-image-wrapper.css'
 import '../../public/styles/experience.css'
 import '../../public/styles/projects.css'
 import '../../public/styles/social-media.css'
@@ -17,6 +16,11 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
       <Head>
         <title>Misty Blunch</title>
+        <meta
+          name="description"
+          content="Misty Blunch is a full-stack developer with a passion for creating beautiful and functional websites."
+          key="desc"
+        />
       </Head>
       <main className={inter.className}>
         <Component {...pageProps} />

@@ -34,10 +34,10 @@ export const LikeButton = () => {
       {existslikes && (
         <motion.button
           whileTap={{ scale: 0.85 }}
-          className='fixed right-0 top-0 mr-4 mt-4 cursor-pointer rounded-full border px-[.8rem] py-[.3rem]'
+          className='fixed right-0 top-0 mr-4 mt-4 cursor-pointer rounded-full border px-[.8rem] py-[.3rem] max-lg:bottom-0 max-lg:left-0 max-lg:right-auto max-lg:top-auto max-lg:mb-4 max-lg:ml-2 max-sm:hidden'
           onClick={() => iLikeIt()}
         >
-          <ThumbsUp className='m-auto h-6 w-6' />
+          <ThumbsUp className='m-auto h-6 w-6 max-lg:h-4 max-lg:w-4' />
           <div className='text-center text-xs'>{processNumber(likes)}</div>
         </motion.button>
       )}
