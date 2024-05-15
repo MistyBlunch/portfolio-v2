@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/lib/firebaseConfig.js", "src/app/utils/helpers/processNumber.ts}"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/lib/firebaseConfig.js", "src/app/utils/helpers/processNumber.ts}", "src/pages/404.js", "src/pages/_error.js"],
   "exclude": ["node_modules"]
 }
