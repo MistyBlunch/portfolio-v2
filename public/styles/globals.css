@@ -16,6 +16,16 @@ html.dark {
   .navbar-link svg:hover {
     color: theme('colors.slate.200');
   }
+
+  ::-moz-selection {
+    color: theme('colors.slate.200');
+    background: rgb(196 84 174 / 0.5);
+  }
+
+  ::selection {
+    color: theme('colors.slate.200');
+    background: rgb(196 84 174 / 0.5);
+  }
 }
 
 html.light {
@@ -31,6 +41,16 @@ html.light {
   .navbar-link svg:hover {
     color: theme('colors.gray.800');
   }
+
+  ::-moz-selection {
+    color: theme('colors.gray.700');
+    background: rgb(196 84 174 / 0.5);
+  }
+
+  ::selection {
+    color: theme('colors.gray.700');
+    background: rgb(196 84 174 / 0.5);
+  }
 }
 
 body {
@@ -38,4 +58,8 @@ body {
   .pink-wrapper-hover:hover svg {
     color: theme('colors.pink.dark');
   }
+}
+
+.highlight {
+  background: rgb(196 84 174 / 0.5);
 }

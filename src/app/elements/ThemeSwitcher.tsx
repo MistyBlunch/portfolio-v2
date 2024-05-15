@@ -11,7 +11,10 @@ export const ThemeSwitcher = () => {
 
   useEffect(() => {
     setMounted(true)
-  }, [])
+    if (theme === 'system') {
+      setTheme('dark')
+    }
+  }, [setTheme, theme])
 
   if (!mounted) return null
 

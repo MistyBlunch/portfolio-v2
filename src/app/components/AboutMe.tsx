@@ -1,6 +1,7 @@
 'use client'
 
 import { Trans, useTranslation } from 'next-i18next'
+import Image from 'next/image'
 import { Component } from 'react'
 
 export const AboutMe = () => {
@@ -12,10 +13,11 @@ export const AboutMe = () => {
       id='aboutme'
     >
       <div className='lg:flex lg:items-center'>
-        <div>
+        <div className='mr-0 basis-3/4 lg:mr-10'>
           <div className='mb-4'>
             <h1 className='text-3xl font-bold text-gray-700 dark:text-slate-200'>
-              {t('common:nickname')}, {t('position')}
+              {t('common:nickname')},{' '}
+              <span className='highlight'>{t('position')}</span>
             </h1>
             <p>{t('highlight')}</p>
           </div>
@@ -63,6 +65,14 @@ export const AboutMe = () => {
               />
             </div>
           </div>
+        </div>
+        <div className='block basis-1/4 max-xl:hidden'>
+          <Image
+            src='/images/about-me/me.svg'
+            alt='Me'
+            width={500}
+            height={500}
+          />
         </div>
       </div>
     </section>

@@ -20,7 +20,7 @@ export const Projects = () => {
 
   return (
     <section
-      className='mt-10 md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:px-8 sm:pt-16 lg:p-12'
+      className='mt-10 aspect-auto md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:px-8 sm:pt-16 lg:p-12'
       id='projects'
     >
       <h5 className='font-bold uppercase tracking-wide text-gray-700 dark:text-slate-200 max-lg:p-2 lg:hidden lg:p-4'>
@@ -46,8 +46,8 @@ export const Projects = () => {
                     <Image
                       src={project.image}
                       alt={project.name}
-                      width={150}
-                      height={70}
+                      width={1000}
+                      height={500}
                       loading='lazy'
                       className='border-gray-500 project-img aspect-video h-auto w-auto rounded-md border-2 dark:border-slate-200'
                     />
