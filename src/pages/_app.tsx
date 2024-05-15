@@ -15,12 +15,22 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
       <Head>
-        <title>Misty Blunch</title>
-        <meta
-          name="description"
-          content="Misty Blunch is a full-stack developer with a passion for creating beautiful and functional websites."
-          key="desc"
+        <title>Misty Blunch&apos;s Portfolio</title>
+        <link
+          rel='canonical'
+          href='https://portfolio-eight-alpha-63.vercel.app/en'
         />
+        <meta
+          name='description'
+          content='Full-stack developer with a passion for creating beautiful and functional websites.'
+          key='desc'
+        />
+        <meta property='og:title' content="Misty Blunch's Portfolio"></meta>
+        <meta
+          property='og:description'
+          content='Full-stack developer with a passion for creating beautiful and functional websites.'
+        />
+        <meta property='og:image' content='https://i.ibb.co/sH7DKqt/me.jpg' />
       </Head>
       <main className={inter.className}>
         <Component {...pageProps} />

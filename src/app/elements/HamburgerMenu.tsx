@@ -57,7 +57,7 @@ export const HamburgerMenu = () => {
                     className='w-24 p-[0.08rem]'
                   >
                     <Link
-                      href={'#' + item.name}
+                      href={item.url}
                       onClick={() => setOpen(false)}
                       className='navbar-link'
                       aria-label='Navigate to section'
