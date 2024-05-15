@@ -13,7 +13,7 @@ export const AboutMe = () => {
       id='aboutme'
     >
       <div className='lg:flex lg:items-center'>
-        <div className='mr-0 basis-3/4 lg:mr-10'>
+        <div className='mr-10 basis-3/4 max-xl:mr-0 max-xl:basis-full '>
           <div className='mb-4'>
             <h1 className='text-3xl font-bold text-gray-700 dark:text-slate-200'>
               {t('common:nickname')},{' '}
