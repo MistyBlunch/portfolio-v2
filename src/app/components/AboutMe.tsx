@@ -49,7 +49,7 @@ export const AboutMe = () => {
                   component: <Component />,
                   anchorMusic: (
                     <a
-                      href={t('anchorOrganizations')}
+                      href={t('anchorMusic')}
                       target='_blank'
                       className='link font-bold'
                     />
