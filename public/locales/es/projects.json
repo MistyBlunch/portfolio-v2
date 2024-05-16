@@ -32,7 +32,7 @@
     },
     {
       "name": "Misty Blunch's Portafolio v1",
-      "link": "mistyblunch.github.io/",
+      "link": "https://mistyblunch.github.io/",
       "image": "/images/projects/portfolio-v1.webp",
       "description": "Mi primer portafolio con internacionalización usando VanillaJS.",
       "tools": ["Javascript", "HTML", "CSS", "Bulma"]

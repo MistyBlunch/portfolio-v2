@@ -138,7 +138,7 @@
       "name": "Misty Blunch's Portafolio v1",
       "year": 2019,
       "source": "mistyblunch.github",
-      "link": "mistyblunch.github.io/",
+      "link": "https://mistyblunch.github.io/",
       "description": "Mi primer portafolio con internacionalización usando VanillaJS.",
       "tools": ["Javascript", "HTML", "CSS", "Bulma"]
     },
