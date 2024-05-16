@@ -103,19 +103,20 @@ const ProjectHistory = () => {
                 </ul>
               </td>
               <td className='py-4 pr-4 align-top max-sm:hidden lg:table-cell'>
-                <ul>
-                  <li className='mb-1 flex items-center'>
-                    <a
-                      className='inline-flex items-baseline text-sm font-medium leading-tight text-gray-700 hover:text-gray-800 dark:text-slate-400 dark:hover:text-slate-200'
-                      href={project.link}
-                      target='_blank'
-                      rel='noreferrer noopener'
-                      aria-label={project.link}
-                    >
-                      <span className='inline-block'>{project.source}</span>
-                    </a>
-                  </li>
-                </ul>
+                {project.source ? (
+                  <a
+                    className='inline-flex items-center text-sm font-medium leading-tight text-gray-700 hover:text-gray-800 dark:text-slate-400 dark:hover:text-slate-200'
+                    href={project.link}
+                    target='_blank'
+                    rel='noreferrer noopener'
+                    aria-label={project.link}
+                  >
+                    <span className='inline-block'>{project.source}</span>
+                    <ArrowRight className='ml-1 w-4 text-gray-700 hover:text-gray-800 dark:text-slate-400 dark:hover:text-slate-200' />
+                  </a>
+                ) : (
+                  ''
+                )}
               </td>
               <td className='py-4 pr-4 align-top text-sm text-gray-700 dark:text-slate-200 max-lg:hidden'>
                 {project.description}
