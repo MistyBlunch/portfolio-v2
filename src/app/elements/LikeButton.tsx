@@ -12,9 +12,18 @@ export const LikeButton = () => {
   const [existslikes, setExistsLikes] = useState(false)
 
   const iLikeIt = async () => {
-    const docRef = doc(db, 'application', 'data')
-    await updateDoc(docRef, { likes: likes + 1 })
-    setLikes(likes + 1)
+    let likesLocal = localStorage.getItem('likes')
+      ? parseInt(localStorage.getItem('likes')!)
+      : 0
+
+    if (likesLocal < 5) {
+      likesLocal++
+      localStorage.setItem('likes', likesLocal.toString())
+
+      const docRef = doc(db, 'application', 'data')
+      await updateDoc(docRef, { likes: likes + 1 })
+      setLikes(likes + 1)
+    }
   }
 
   useEffect(() => {
