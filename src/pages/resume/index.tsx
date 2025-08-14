@@ -5,7 +5,8 @@ import { useRouter } from 'next/router'
 const Resume = () => {
   const route = useRouter()
   const locale = route.locale
-  const pdfPath = `/pdfs/misty_blunch_resume_${locale}.pdf`
+  const pdfName = 'grace-alvarado_resume'
+  const pdfPath = `/pdfs/${pdfName}_${locale}.pdf`
   
   return (
     <div className='w-full h-screen'>
