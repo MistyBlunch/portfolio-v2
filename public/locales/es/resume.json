@@ -1,0 +1,12 @@
+{
+  "embed": {
+    "title": "Resume PDF",
+    "aria": "Documento de CV embebido"
+  },
+  "fallback": {
+    "prefix": "Si no puedes ver el PDF, puedes",
+    "open": "abrirlo en una nueva pestaña",
+    "or": "o",
+    "download": "descargarlo"
+  }
+}

@@ -28,7 +28,7 @@ export const LocaleSwitcher = (props?: { icon: Boolean }) => {
           </Link>
         )}
         <div className='grid grid-cols-2 divide-x'>
-          {locales.map((locale, i) => (
+          {locales.map((locale: string, i: number) => (
             <Link
               scroll={false}
               href={router.pathname}
