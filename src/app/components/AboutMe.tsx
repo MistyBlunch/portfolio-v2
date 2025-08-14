@@ -2,6 +2,7 @@
 
 import { Trans, useTranslation } from 'next-i18next'
 import { Component } from 'react'
+import { AboutMeImageWrapper } from '../elements/AboutMeImageWrapper'
 
 export const AboutMe = () => {
   const { t } = useTranslation(['about-me', 'common'])
@@ -63,6 +64,9 @@ export const AboutMe = () => {
               />
             </div>
           </div>
+        </div>
+        <div className='m-5'>
+          <AboutMeImageWrapper />
         </div>
       </div>
     </section>

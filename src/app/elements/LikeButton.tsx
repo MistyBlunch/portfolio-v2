@@ -12,18 +12,27 @@ export const LikeButton = () => {
   const [existslikes, setExistsLikes] = useState(false)
 
   const iLikeIt = async () => {
-    const docRef = doc(db, 'application', 'data')
-    await updateDoc(docRef, { likes: likes + 1 })
-    setLikes(likes + 1)
+    try {
+      const docRef = doc(db, 'application', 'data')
+      await updateDoc(docRef, { likes: likes + 1 })
+      setLikes(likes + 1)
+    } catch (err) {
+      console.warn('Failed to update likes. Possibly offline.', err)
+    }
   }
 
   useEffect(() => {
     const fetchItems = async () => {
-      const docRef = doc(db, 'application', 'data')
-      const docSnap = await getDoc(docRef)
-      if (docSnap.exists()) {
+      try {
+        const docRef = doc(db, 'application', 'data')
+        const docSnap = await getDoc(docRef)
+        if (docSnap.exists()) {
+          setExistsLikes(true)
+          setLikes(docSnap.data().likes)
+        }
+      } catch (err) {
+        console.warn('Failed to fetch likes. Possibly offline.', err)
         setExistsLikes(true)
-        setLikes(docSnap.data().likes)
       }
     }
     fetchItems()

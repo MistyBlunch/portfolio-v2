@@ -2,6 +2,7 @@ import '../../public/styles/globals.css'
 import '../../public/styles/experience.css'
 import '../../public/styles/projects.css'
 import '../../public/styles/social-media.css'
+import '../../public/styles/about-me-image-wrapper.css'
 
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
@@ -13,7 +14,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+    <ThemeProvider attribute='class' defaultTheme='dark' enableSystem>
       <Head>
         <title>Misty Blunch</title>
         <meta
