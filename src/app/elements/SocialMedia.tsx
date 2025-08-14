@@ -55,7 +55,7 @@ export const SocialMedia = () => {
   return (
     <div
       ref={ref}
-      className='fixed bottom-2 right-2 z-10 flex w-fit flex-col justify-center'
+      className='fixed bottom-2 right-2 z-10 flex w-fit flex-col justify-center max-lg:bottom-14'
     >
       <AnimatePresence>
         {isOpen && (
@@ -93,7 +93,7 @@ export const SocialMedia = () => {
         animate='visible'
         id='social-media-button'
         aria-label='Social Media button'
-        className='rounded-full border-2 border-gray-700  bg-light  dark:border-slate-200 dark:bg-dark max-lg:p-1 lg:p-1.5'
+        className='rounded-full border border-gray-700  bg-light  dark:border-slate-200 dark:bg-dark max-lg:px-[0.5rem] max-lg:py-[0.3rem] lg:p-1.5'
       >
         <AtSign className='social-icon max-lg:w-5 lg:w-6' />
       </motion.button>
