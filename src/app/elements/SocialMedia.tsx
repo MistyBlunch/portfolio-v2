@@ -35,6 +35,8 @@ export const SocialMedia = () => {
     visible: {
       opacity: 1,
       scale: 1,
+      display: 'flex',
+      justifyContent: 'center',
       transition: {
         delayChildren: 0.3,
         staggerChildren: 0.2,

@@ -19,6 +19,12 @@
       "current": false
     },
     {
+      "title": "CV",
+      "name": "resume",
+      "url": "/resume",
+      "current": false
+    },
+    {
       "title": "Contacto",
       "name": "contact",
       "url": "mailto:gracenikole@gmail.com",
