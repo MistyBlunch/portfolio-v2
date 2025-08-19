@@ -5,12 +5,13 @@
       "name": "Misty Blunch's Portafolio v2",
       "link": "https://github.com/MistyBlunch/portfolio-v2",
       "image": "/images/projects/portfolio-v2.webp",
-      "description": "Mi portafolio actualizado con internacionalización, temas y mucho más.",
+      "description": "Un portafolio moderno y responsive construido con Next.js y TypeScript, con internacionalización (i18n), modo oscuro y animaciones suaves.",
       "tools": [
-        "Node",
+        "NodeJS",
         "Next",
         "React",
         "Tailwind",
+        "Firestore",
         "Framer Motion",
         "Typescript"
       ]
