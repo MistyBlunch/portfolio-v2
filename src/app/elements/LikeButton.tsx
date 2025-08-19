@@ -12,27 +12,27 @@ export const LikeButton = () => {
   const [existslikes, setExistsLikes] = useState(false)
 
   const iLikeIt = async () => {
-    let likesLocal = localStorage.getItem('likes')
-      ? parseInt(localStorage.getItem('likes')!)
-      : 0
-
-    if (likesLocal < 5) {
-      likesLocal++
-      localStorage.setItem('likes', likesLocal.toString())
-
+    try {
       const docRef = doc(db, 'application', 'data')
       await updateDoc(docRef, { likes: likes + 1 })
       setLikes(likes + 1)
+    } catch (err) {
+      console.warn('Failed to update likes. Possibly offline.', err)
     }
   }
 
   useEffect(() => {
     const fetchItems = async () => {
-      const docRef = doc(db, 'application', 'data')
-      const docSnap = await getDoc(docRef)
-      if (docSnap.exists()) {
+      try {
+        const docRef = doc(db, 'application', 'data')
+        const docSnap = await getDoc(docRef)
+        if (docSnap.exists()) {
+          setExistsLikes(true)
+          setLikes(docSnap.data().likes)
+        }
+      } catch (err) {
+        console.warn('Failed to fetch likes. Possibly offline.', err)
         setExistsLikes(true)
-        setLikes(docSnap.data().likes)
       }
     }
     fetchItems()
@@ -43,7 +43,9 @@ export const LikeButton = () => {
       {existslikes && (
         <motion.button
           whileTap={{ scale: 0.85 }}
-          className='fixed right-0 top-0 mr-4 mt-4 cursor-pointer rounded-full border px-[.8rem] py-[.3rem] max-lg:bottom-0 max-lg:left-0 max-lg:right-auto max-lg:top-auto max-lg:mb-4 max-lg:ml-2 max-sm:hidden'
+          className='fixed right-0 top-0 mr-4 mt-4 cursor-pointer
+          rounded-full border bg-light px-[.8rem]
+          py-[.3rem] dark:bg-dark max-lg:bottom-2 max-lg:right-2 max-lg:top-auto max-lg:mr-0 max-lg:mt-0 max-lg:px-[.6rem] max-lg:py-[.2rem]'
           onClick={() => iLikeIt()}
         >
           <ThumbsUp className='m-auto h-6 w-6 max-lg:h-4 max-lg:w-4' />

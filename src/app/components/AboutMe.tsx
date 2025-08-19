@@ -3,6 +3,7 @@
 import { Trans, useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import { Component } from 'react'
+import { AboutMeImageWrapper } from '../elements/AboutMeImageWrapper'
 
 export const AboutMe = () => {
   const { t } = useTranslation(['about-me', 'common'])
@@ -66,14 +67,8 @@ export const AboutMe = () => {
             </div>
           </div>
         </div>
-        <div className='block basis-1/4 max-xl:hidden'>
-          <Image
-            src='/images/about-me/me.svg'
-            alt='Me'
-            width={500}
-            height={500}
-            priority
-          />
+        <div className='m-5'>
+          <AboutMeImageWrapper />
         </div>
       </div>
     </section>

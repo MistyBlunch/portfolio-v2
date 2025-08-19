@@ -1,0 +1,12 @@
+{
+  "embed": {
+    "title": "Resume PDF",
+    "aria": "Embedded resume document"
+  },
+  "fallback": {
+    "prefix": "If you can't view the PDF, you can",
+    "open": "open it in a new tab",
+    "or": "or",
+    "download": "download it"
+  }
+}
