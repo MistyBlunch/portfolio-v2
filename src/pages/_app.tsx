@@ -18,9 +18,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <Head>
         <title>Misty Blunch</title>
         <meta
-          name="description"
-          content="Misty Blunch is a full-stack developer with a passion for creating beautiful and functional websites."
-          key="desc"
+          name='description'
+          content='Misty Blunch is a full-stack developer with a passion for creating beautiful and functional websites.'
+          key='desc'
         />
       </Head>
       <main className={inter.className}>
