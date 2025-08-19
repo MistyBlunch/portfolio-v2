@@ -2,57 +2,24 @@
   "title": "Experience",
   "experience": [
     {
-      "name": "Krowdy",
-      "position": "Front End Developer",
-      "url": "https://www.krowdy.com/",
-      "startYear": "2018",
-      "startMonth": "Apr",
-      "endYear": "2019",
-      "endMonth": "Jul",
-      "summary": "Krowdy is a Human Resources company specialized in automating recruitment processes. My functions were to build landing pages and forms, upload banners, update and implement new features in Laborum's platform and send mass mailings.",
-      "keywords": [
-        "React",
-        "Angular",
-        "HTML5",
-        "Amazon S3",
-        "CSS3",
-        "TypeScript",
-        "JavaScript",
-        "emBlue",
-        "HubSpot",
-        "Google Ad Manager"
-      ]
-    },
-    {
-      "name": "Devant",
-      "location": "Perú",
-      "position": "Front End Developer",
-      "url": "https://www.devant.pe/",
-      "startMonth": "Sep",
-      "startYear": "2020",
-      "endYear": "2020",
-      "endMonth": "Dec",
-      "summary": "Devant is a group of developers committed to devising technology solutions for various companies. As a freelance, I was in charge of the implementation of forms for the medication of cancer patients for the biotech company Roche.",
-      "keywords": ["NodeJS", "TypeScript", "Angular", "Angular Material"]
-    },
-    {
-      "name": "Minsky",
+      "name": "Aimo",
       "location": "Perú",
       "position": "Full Stack Developer",
-      "url": "https://minsky.cc/es",
-      "startYear": "2021",
+      "url": "https://aimo.co/delivery",
+      "startYear": "2024",
       "startMonth": "May",
-      "endYear": "2021",
-      "endMonth": "Aug",
-      "summary": "Minsky is a development group dedicated to creating technology solutions. My role at Minsky was to build interfaces and put together the business logic for the companies that worked with Minsky.",
+      "summary": "At Aimo, I am responsible for creating services and building interfaces for Aimo's logistics, call center, tracking, and delivery platforms. The services and optimizations I build help automate processes from order taking to delivery to customers' homes.",
       "keywords": [
-        "Express",
-        "Typescript",
-        "NodeJS",
+        "Node",
         "NextJS",
         "React",
-        "ChakraUI",
-        "GraphQL"
+        "TypeScript",
+        "MoleculerJS",
+        "Redux",
+        "GCP",
+        "MongoDB",
+        "Ant Design",
+        "Docker"
       ]
     },
     {
@@ -64,16 +31,59 @@
       "startMonth": "Feb",
       "endYear": "2023",
       "endMonth": "Jul",
-      "summary": "Destacame is a well-positioned Fintech in Chile that provides various benefits to its customers. My main role consists in the improvement and maintenance of the different projects it has with Santander Bank, as well as bug fixing, code refactoring, and process optimization with the help of cloud technologies.",
+      "summary": "At Destacame, I developed various products and services for Santander Bank. I was also responsible for improving and maintaining Destacame's various projects, as well as debugging, code refactoring, and process optimization.",
       "keywords": [
         "Django",
         "VueJS",
         "TypeScript",
         "AWS Lambda",
-        "Amazon S3",
+        "AWS S3",
         "Vuetify",
         "PostgreSQL",
         "DynamoDB"
+      ]
+    },
+    {
+      "name": "Forma - Moov Media Group",
+      "location": "Chile",
+      "position": "Front End Developer",
+      "url": "https://moovmediagroup.com/",
+      "startYear": "2021",
+      "startMonth": "Abr",
+      "endYear": "2022",
+      "endMonth": "Feb",
+      "summary": "At Forma, I was responsible for maintenance, interface construction, business logic for web platforms, and forms for companies in various industries. In addition, I helped send mass mailings using various tools.",
+      "keywords": [
+        "React",
+        "Angular",
+        "Typescript",
+        "NextJS",
+        "Typescript",
+        "VanillaJS",
+        "MaterBase",
+        "Selligent",
+        "Webflow",
+        "MJML"
+      ]
+    },
+    {
+      "name": "Minsky",
+      "location": "Perú",
+      "position": "Full Stack Developer",
+      "url": "https://minsky.cc/es",
+      "startYear": "2021",
+      "startMonth": "May",
+      "endYear": "2021",
+      "endMonth": "Ago",
+      "summary": "At Minsky, my role was to build interfaces and put together the business logic for the various entities that worked with Minsky.",
+      "keywords": [
+        "Express",
+        "Typescript",
+        "NodeJS",
+        "NextJS",
+        "React",
+        "ChakraUI",
+        "GraphQL"
       ]
     }
   ],

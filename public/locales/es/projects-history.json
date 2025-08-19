@@ -28,12 +28,13 @@
       "year": 2023,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/portfolio-v2",
-      "description": "Mi portafolio actualizado con internacionalización, temas y mucho más.",
+      "description": "Un portafolio moderno y responsive construido con Next.js y TypeScript, con internacionalización (i18n), modo oscuro y animaciones suaves.",
       "tools": [
-        "Node",
+        "NodeJS",
         "Next",
         "React",
         "Tailwind",
+        "Firestore",
         "Framer Motion",
         "Typescript"
       ]
@@ -45,13 +46,13 @@
       "link": "",
       "description": "Backend para consultar canciones desde la API de iTunes que te permite guardar una canción como favoritos.",
       "tools": [
-        "Node",
+        "NodeJS",
         "Express",
         "Angular",
         "Axios",
         "Bulma",
         "Typescript",
-        "Mongo"
+        "MongoDB"
       ]
     },
     {
@@ -60,7 +61,7 @@
       "source": "",
       "link": "",
       "description": "Función lambda para crear, validar y guardar una tarjeta de crédito encriptada que devuelve un token.",
-      "tools": ["Node", "Typescript", "Serverless", "Redis", "Jest"]
+      "tools": ["NodeJS", "Typescript", "Serverless", "Redis", "Jest"]
     },
     {
       "name": "Minxy Viajes",

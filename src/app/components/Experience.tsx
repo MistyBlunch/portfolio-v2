@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react'
 import { processDate } from '../utils/helpers/processDate'
 
 export const Experience = () => {
-  const { t } = useTranslation('experience')
+  const { t, i18n } = useTranslation('experience')
   const [experienceData, setExperienceData] = useState<IExperience[]>([])
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export const Experience = () => {
                 ></motion.a>
                 <div className='grid max-md:gap-y-2 md:grid-cols-5 md:gap-x-5'>
                   <div className='text-sm uppercase'>
-                    <span>{processDate(exp)}</span>
+                    <span>{processDate(exp, i18n.language)}</span>
                   </div>
                   <div className='md:col-span-4'>
                     <div className='mb-2'>
