@@ -53,7 +53,7 @@ const ProjectHistory = () => {
         id='content'
         className='mt-6 w-full border-collapse text-left max-md:mt-5 md:mt-12'
       >
-        <thead className='bg-slate-900/75 sticky top-0 z-10 px-6 py-5 backdrop-blur'>
+        <thead className=' sticky top-0 z-10 px-6 py-5 backdrop-blur'>
           <tr>
             {navigationData.map((nav, i) => (
               <th key={i} className={nav.class}>
