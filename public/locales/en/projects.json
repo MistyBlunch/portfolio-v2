@@ -5,27 +5,30 @@
       "name": "Misty Blunch's Portfolio v2",
       "link": "https://github.com/MistyBlunch/portfolio-v2",
       "image": "/images/projects/portfolio-v2.webp",
-      "description": "A modern, responsive portfolio built with Next.js and TypeScript, featuring internationalization (i18n), dark mode, and smooth animations.",
+      "description": "High-accessibility portfolio built with industry best practices and a strong focus on user experience. Includes multi-language support (i18n), theme management, and fluid animations for an immersive navigation experience.",
+      "date": "2025",
       "tools": [
-        "NodeJS",
-        "Next",
+        "Node.js",
+        "Next.js",
+        "TypeScript",
         "React",
-        "Tailwind",
+        "Tailwind CSS",
         "Firestore",
-        "Framer Motion",
-        "Typescript"
+        "Framer Motion"
       ]
     },
     {
       "name": "Elegimos.pe",
       "link": "https://github.com/ELECCIONES-PERU-PROYECTO/webpage",
       "image": "/images/projects/elegimos.webp",
-      "description": "Web page with which you will be able to filter presidential and congressional candidates for the Peruvian elections of 2021.",
+      "description": "Political data analysis platform for the 2021 Elections featuring complex filters and a computer vision module for facial emotional recognition of candidates.",
+      "date": "2021",
       "tools": [
-        "Javascript",
+        "JavaScript",
         "Python",
         "Django",
         "PostgreSQL",
+        "Computer Vision",
         "HTML",
         "CSS",
         "UIkit"
@@ -35,18 +38,25 @@
       "name": "Misty Blunch's Portfolio v1",
       "link": "https://mistyblunch.github.io/",
       "image": "/images/projects/portfolio-v1.webp",
-      "description": "My first portfolio with internationalization using VanillaJS.",
-      "tools": ["Javascript", "HTML", "CSS", "Bulma"]
+      "description": "My initial exploration into frontend architectures and responsive design. Features a native internationalization implementation without external frameworks.",
+      "date": "2019",
+      "tools": [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Bulma"
+      ]
     },
     {
       "name": "Leauty Web Scraping",
       "link": "https://github.com/MistyBlunch/leauty",
       "image": "/images/projects/leauty.webp",
-      "description": "Website to search and list libgen books with a more user-friendly interface.",
+      "description": "Data extraction tool designed to optimize academic resource searches. Transforms raw data from Libgen into an intuitive and efficient interface.",
+      "date": "2018",
       "tools": [
-        "Javascript",
         "Python",
         "Flask",
+        "JavaScript",
         "BeautifulSoup",
         "HTML5",
         "CSS3",
@@ -54,6 +64,6 @@
       ]
     }
   ],
-  "cto-link": "/projects-history",
-  "cto-text": "Project History"
+  "cto-link": "/en/projects-history",
+  "cto-text": "Project history"
 }

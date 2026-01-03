@@ -1,11 +1,9 @@
 {
   "greeting": "Hola, soy",
-  "position": "Desarrolladora Full Stack",
+  "position": "Ingeniera de Software",
   "highlight": "Dog lover | Apasionada por la tecnología, la música y el arte",
-  "intro": "Hace unos años atrás, antes de comenzar la universidad, tuve mi primer acercamiento en el mundo del desarrollo de Software después de tomar algunos cursos en línea y asistir a talleres de diversas <anchorOrganizations>organizaciones</anchorOrganizations>.",
-  "denouement": "Con el tiempo obtuve más experiencia y perdí el miedo de aprender y explorar nuevas tecnologías. Actualmente soy desarrolladora Full Stack con más de 3 años de experiencia y me dedico a mejorar mis habilidades en el desarrollo de Software y compartir lo que aprendo.",
-  "hobbies": "En mi tiempo libre me gusta salir con mi perrita <anchorEmma>Emma</anchorEmma> a pasear, manejar mi scooter, ir a eventos tech y de mascotas, ver películas, ir a ferias y sobretodo escuchar <anchorMusic>música</anchorMusic>.",
-  "anchorOrganizations": "https://linktr.ee/mistyblunch",
-  "anchorMusic": "https://bit.ly/mistys2023songs",
+  "intro": "Mi viaje en el desarrollo de software comenzó antes de la universidad, impulsado por la curiosidad de los cursos en línea y la energía de las comunidades tech. Hoy en día soy una Ingeniera de Software con 4 años de experiencia, especializada en crear aplicaciones web robustas y escalables.",
+  "denouement": "A lo largo de mi carrera he transformado mi curiosidad inicial en el dominio de arquitecturas de microservicios y sistemas en tiempo real. Me apasiona resolver problemas complejos, optimizar el rendimiento del software y, sobre todo, seguir aprendiendo y compartiendo conocimiento con la comunidad.",
+  "hobbies": "Cuando no estoy escribiendo código, me encontrarás paseando con mi perrita <anchorEmma>Emma</anchorEmma>, explorando ferias locales, o recargando energías con buena música y cine.",
   "anchorEmma": "https://www.instagram.com/emma.la.perri"
 }

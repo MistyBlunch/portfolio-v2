@@ -55,12 +55,19 @@ export const Projects = () => {
                   <div className='max-md:col-start-1 max-md:row-start-1 sm:col-span-5 md:col-span-6'>
                     <div className='mb-2'>
                       <a
-                        className='link font-bold text-gray-700 dark:text-slate-200'
+                        className='link block w-full font-bold text-gray-700 dark:text-slate-200'
                         aria-label={project.name}
                         href={project.link}
                         target='_blank'
                       >
-                        <span>{project.name}</span>
+                        <span className='flex w-full items-center justify-between'>
+                          <span>{project.name}</span>
+                          {project.date && (
+                            <span className='text-sm font-normal text-gray-500 dark:text-slate-400'>
+                              {project.date}
+                            </span>
+                          )}
+                        </span>
                       </a>
                     </div>
                     <p className='mb-2 text-sm'>{project.description}</p>

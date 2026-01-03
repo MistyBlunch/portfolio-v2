@@ -8,4 +8,5 @@ export interface IExperience {
   endMonth: string
   summary: string
   keywords: string[]
+  contract?: string
 }

@@ -4,4 +4,5 @@ export interface IProject {
   link: string
   description: string
   tools: string[]
+  date?: string
 }
