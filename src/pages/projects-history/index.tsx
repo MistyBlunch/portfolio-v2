@@ -49,28 +49,26 @@ const ProjectHistory = () => {
       <h3 className='font-bold text-gray-700 dark:text-slate-200 max-md:mb-2 max-md:text-2xl md:mb-4 md:text-3xl'>
         {t('title')}
       </h3>
-      <table
+      <div
         id='content'
-        className='mt-6 w-full border-collapse text-left max-md:mt-5 md:mt-12'
+        className='mt-6 w-full text-left max-md:mt-5 md:mt-12'
       >
-        <thead className=' sticky top-0 z-10 px-6 py-5 backdrop-blur'>
-          <tr>
-            {navigationData.map((nav, i) => (
-              <th key={i} className={nav.class}>
-                {nav.name}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
+        <div className='sticky top-0 z-10 grid grid-cols-[6rem_1fr] gap-4 border-b border-slate-300/10 px-6 backdrop-blur sm:grid-cols-[6rem_2fr_1fr] md:grid-cols-[6rem_1.5fr_2fr_0.8fr] lg:grid-cols-[6rem_1.5fr_2fr_0.8fr_2.5fr]'>
+          {navigationData.map((nav, i) => (
+            <div key={i} className={nav.class}>
+              {nav.name}
+            </div>
+          ))}
+        </div>
+        <div className='flex flex-col'>
           {projectsData.map((project, i) => (
-            <tr
+            <div
               key={i}
-              className='border-b border-slate-300/10 last:border-none'
+              className='grid grid-cols-[6rem_1fr] gap-4 border-b border-slate-300/10 px-6 last:border-none sm:grid-cols-[6rem_2fr_1fr] md:grid-cols-[6rem_1.5fr_2fr_0.8fr] lg:grid-cols-[6rem_1.5fr_2fr_0.8fr_2.5fr]'
             >
-              <td className='py-4 pr-4 align-top text-sm'>{project.year}</td>
+              <div className='py-4 pr-4 align-top text-sm'>{project.year}</div>
 
-              <td className='flex py-4 pr-4 text-sm sm:hidden'>
+              <div className='flex py-4 pr-4 text-sm sm:hidden'>
                 {project.source !== '' ? (
                   <a
                     className='inline-flex items-center text-sm font-medium leading-tight text-gray-700 hover:text-gray-800 dark:text-slate-200'
@@ -87,12 +85,12 @@ const ProjectHistory = () => {
                     {project.name}
                   </span>
                 )}
-              </td>
-              <td className='py-4 pr-4 align-top text-sm font-medium leading-tight text-gray-700 dark:text-slate-200 max-sm:hidden'>
+              </div>
+              <div className='py-4 pr-4 align-top text-sm font-medium leading-tight text-gray-700 dark:text-slate-200 max-sm:hidden'>
                 {project.name}
-              </td>
-              <td className='py-4 pr-4 align-top max-md:hidden lg:table-cell'>
-                <ul className='flex -translate-y-1.5 flex-wrap'>
+              </div>
+              <div className='py-4 pr-4 align-top max-md:hidden'>
+                <ul className='flex flex-wrap'>
                   {project.tools.map((tool, i) => (
                     <li className='my-1 mr-1.5' key={i}>
                       <div className='flex items-center rounded-full bg-pink-light/10 px-3 py-1 text-xs font-bold leading-5 text-pink-dark '>
@@ -101,8 +99,8 @@ const ProjectHistory = () => {
                     </li>
                   ))}
                 </ul>
-              </td>
-              <td className='py-4 pr-4 align-top max-sm:hidden lg:table-cell'>
+              </div>
+              <div className='py-4 pr-4 align-top max-sm:hidden'>
                 {project.source ? (
                   <a
                     className='inline-flex items-center text-sm font-medium leading-tight text-gray-700 hover:text-gray-800 dark:text-slate-400 dark:hover:text-slate-200'
@@ -117,14 +115,14 @@ const ProjectHistory = () => {
                 ) : (
                   ''
                 )}
-              </td>
-              <td className='py-4 pr-4 align-top text-sm text-gray-700 dark:text-slate-200 max-lg:hidden'>
+              </div>
+              <div className='py-4 pr-4 align-top text-sm text-gray-700 dark:text-slate-200 max-lg:hidden'>
                 {project.description}
-              </td>
-            </tr>
+              </div>
+            </div>
           ))}
-        </tbody>
-      </table>
+        </div>
+      </div>
     </section>
   )
 }

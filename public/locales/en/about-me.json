@@ -1,11 +1,9 @@
 {
-  "greeting": "Hi, it's",
-  "position": "Full Stack Developer",
-  "highlight": "Dog lover | Tech, music & art enthusiast",
-  "intro": "A few years ago, before starting college, I had my first approach in the world of Software development after taking some online courses and attending workshops from various <anchorOrganizations>organizations</anchorOrganizations>.",
-  "denouement": "Over time I gained more experience and lost the fear of learning and exploring new technologies. Currently I am a Full Stack developer with more than 3 years of experience and I am dedicated to improve my skills in software development and share what I learn.",
-  "hobbies": "In my free time I like to go out with my dog <anchorEmma>Emma</anchorEmma> for walks, ride my scooter, go to tech and pet events, watch movies, go to fairs and above all listen to <anchorMusic>music</anchorMusic>.",
-  "anchorOrganizations": "https://linktr.ee/mistyblunch",
-  "anchorMusic": "https://bit.ly/mistys2023songs",
+  "greeting": "Hi, I'm",
+  "position": "Software Engineer",
+  "highlight": "Dog lover | Passionate about technology, music, and art",
+  "intro": "My journey into software development began even before university, fueled by curiosity through online courses and the energy of tech communities. Today, I am a Software Engineer with 4 years of experience, specialized in building robust and scalable web applications.",
+  "denouement": "Throughout my career, I have transformed that initial curiosity into expertise in microservices architectures and real-time systems. I am passionate about solving complex problems, optimizing software performance, and, above all, continuously learning and sharing knowledge with the community.",
+  "hobbies": "When I'm not coding, you'll find me out for a walk with my dog <anchorEmma>Emma</anchorEmma>, exploring local fairs, or recharging with great music and film.",
   "anchorEmma": "https://www.instagram.com/emma.la.perri"
 }

@@ -25,13 +25,13 @@
   "projects": [
     {
       "name": "Misty Blunch's Portafolio v2",
-      "year": 2023,
+      "year": 2025,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/portfolio-v2",
-      "description": "Un portafolio moderno y responsive construido con Next.js y TypeScript, con internacionalización (i18n), modo oscuro y animaciones suaves.",
+      "description": "Portafolio de alto accesibilidad, creado con buenas practicas y enfocado en la experiencia de usuario. Incluye soporte multiidioma (i18n), gestión de temas y animaciones fluidas para una navegación inmersiva.",
       "tools": [
-        "NodeJS",
-        "Next",
+        "Node.js",
+        "Next.js",
         "React",
         "Tailwind",
         "Firestore",
@@ -44,13 +44,12 @@
       "year": 2023,
       "source": "",
       "link": "",
-      "description": "Backend para consultar canciones desde la API de iTunes que te permite guardar una canción como favoritos.",
+      "description": "Servicio de consulta para la integración con iTunes API. Permite la persistencia de datos de usuario y gestión de colecciones musicales personalizadas.",
       "tools": [
         "NodeJS",
         "Express",
         "Angular",
         "Axios",
-        "Bulma",
         "Typescript",
         "MongoDB"
       ]
@@ -60,31 +59,60 @@
       "year": 2023,
       "source": "",
       "link": "",
-      "description": "Función lambda para crear, validar y guardar una tarjeta de crédito encriptada que devuelve un token.",
-      "tools": ["NodeJS", "Typescript", "Serverless", "Redis", "Jest"]
+      "description": "Microservicio serverless para el procesamiento seguro de datos financieros. Implementa encriptación, validación de tarjetas y almacenamiento en caché de tokens con alta disponibilidad.",
+      "tools": [
+        "Node.js",
+        "Typescript",
+        "Serverless",
+        "Redis",
+        "Jest"
+      ]
     },
     {
       "name": "Minxy Viajes",
       "year": 2022,
       "source": "",
       "link": "",
-      "description": "Gestiona los viajes, conductores, pasajeros y trayectos de tu empresa de transporte.",
-      "tools": ["Django", "Python", "Axios", "Vue", "Vuetify", "Sass"]
+      "description": "Sistema ERP básico para la gestión logística de transporte. Control centralizado de flotas, asignación de conductores y optimización de trayectos corporativos.",
+      "tools": [
+        "Django",
+        "Python",
+        "Axios",
+        "Vue",
+        "Vuetify",
+        "Sass"
+      ]
     },
     {
       "name": "Elegimos.pe",
       "year": 2021,
       "source": "Github",
       "link": "https://github.com/ELECCIONES-PERU-PROYECTO/webpage",
-      "description": "Página web con la que podrás filtrar a candidatos presidenciales y congresales de las elecciones peruanas del 2021.",
+      "description": "Plataforma de análisis de datos políticos para las Elecciones 2021 con filtros complejos y un módulo de visión artificial para el reconocimiento emocional facial de candidatos.",
       "tools": [
         "Javascript",
         "Python",
         "Django",
         "PostgreSQL",
+        "Computer Vision",
         "HTML",
         "CSS",
         "UIkit"
+      ]
+    },
+    {
+      "name": "Blockchain Transaction Generator",
+      "year": 2021,
+      "source": "",
+      "link": "",
+      "description": "Arquitectura distribuida para la gestión segura de activos digitales. Implementa protocolos de validación para registros de venta, retiros y transferencias inmutables.",
+      "tools": [
+        "C++",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "ChakraUI",
+        "Blockchain"
       ]
     },
     {
@@ -92,71 +120,108 @@
       "year": 2020,
       "source": "Github",
       "link": "https://github.com/cs2b01-lab1-01-2020-2/To-dos-Manager-CSERN",
-      "description": "Crea y busca las tareas que tienes pendientes, cambia el estado de tus tareas y crea tareas en común con otras personas.",
-      "tools": ["Python", "Flask", "PostgreSQL", "UIkit", "CSS", "Javascript"]
+      "description": "Aplicación colaborativa de gestión de tareas con sincronización de estado entre usuarios y persistencia de datos relacionales.",
+      "tools": [
+        "Python",
+        "Flask",
+        "PostgreSQL",
+        "UIkit",
+        "CSS",
+        "Javascript"
+      ]
     },
     {
       "name": "Tic Tac Toe C++",
       "year": 2020,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/tic-tac-toe-cpp",
-      "description": "Juega Tic Tac Toe desde tu consola y cambia el tamaño del tablero si desear retarte a ti mismo.",
-      "tools": ["C++"]
+      "description": "Implementación lógica de juego en consola con algoritmos de escalabilidad de tablero dinámico desarrollados en C++.",
+      "tools": [
+        "C++"
+      ]
     },
     {
       "name": "Blog con Redux",
       "year": 2020,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/Blog_redux",
-      "description": "Lee, crea, borra y lista tus post en un blog minimalista.",
-      "tools": ["React", "Redux", "Node", "Axios", "CSS"]
+      "description": "Single Page Application (SPA) centrada en la gestión de estado global complejo mediante Redux para el flujo de publicaciones CRUD.",
+      "tools": [
+        "React",
+        "Redux",
+        "Node",
+        "Axios",
+        "CSS"
+      ]
     },
     {
-      "name": "Página del club de Ciberseguridad de UTEC",
+      "name": "Ciberseguridad UTEC Web",
       "year": 2020,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/CyberSecurityClub",
-      "description": "Página web desarrollada en unos talleres para el Club de Ciberguridad de UTEC",
-      "tools": ["React", "Javascript", "Materialize", "CSS"]
+      "description": "Plataforma informativa institucional diseñada para la difusión de talleres y eventos de la comunidad de ciberseguridad.",
+      "tools": [
+        "React",
+        "Javascript",
+        "Materialize",
+        "CSS"
+      ]
     },
     {
-      "name": "Registro de Badges",
+      "name": "Platzi Conf Badges",
       "year": 2019,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/badgesRegistration",
-      "description": "Registra tu badge para asistir a la Platzi Conf del 2019.",
-      "tools": ["React", "Javascript", "Bootstrap", "CSS"]
+      "description": "Sistema de registro dinámico e impresión de credenciales para eventos de tecnología.",
+      "tools": [
+        "React",
+        "Javascript",
+        "Bootstrap",
+        "CSS"
+      ]
     },
     {
       "name": "Movies App",
       "year": 2019,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/moviesApp",
-      "description": "Mira a detalle las películas en tendencia de themoviedb API.",
-      "tools": ["React", "CSS"]
+      "description": "Cliente web de consumo de datos en tiempo real integrado con TheMovieDB API, enfocado en interfaces responsivas.",
+      "tools": [
+        "React",
+        "CSS"
+      ]
     },
     {
       "name": "Misty Blunch's Portafolio v1",
       "year": 2019,
       "source": "mistyblunch.github",
       "link": "https://mistyblunch.github.io/",
-      "description": "Mi primer portafolio con internacionalización usando VanillaJS.",
-      "tools": ["Javascript", "HTML", "CSS", "Bulma"]
+      "description": "Mi primer acercamiento a arquitecturas frontend y diseño responsivo. Implementación de internacionalización nativa sin frameworks externos.",
+      "tools": [
+        "Javascript",
+        "HTML",
+        "CSS",
+        "Bulma"
+      ]
     },
     {
       "name": "Yearbook",
       "year": 2019,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/basic-yearbook",
-      "description": "Anuario de ejemplo para el taller de desarrollo web del colegio Telésforo Catacora en Santa Clara - Ate.",
-      "tools": ["Javascript", "HTML", "CSS"]
+      "description": "Recurso educativo desarrollado para el taller de programación en el Colegio Telésforo Catacora. Implementación de una interfaz responsiva orientada a la enseñanza de fundamentos de maquetación web y estructura de documentos.",
+      "tools": [
+        "Javascript",
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "name": "Leauty Web Scraping",
       "year": 2018,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/leauty",
-      "description": "Página web para buscar y listar libros de libgen con una interfaz más amigable.",
+      "description": "Herramienta de extracción de datos diseñada para optimizar la búsqueda de recursos académicos. Transforma datos crudos de Libgen en una interfaz intuitiva y eficiente.",
       "tools": [
         "Python",
         "Flask",
@@ -172,32 +237,14 @@
       "year": 2018,
       "source": "Github",
       "link": "https://github.com/MistyBlunch/styve_app",
-      "description": "Aplicación para encontrar personas que te ayuden con tus tareas de cualquier materia.",
-      "tools": ["Angular", "Typescript", "Ionic", "Firebase", "CSS"]
-    },
-    {
-      "name": "Números Palíndromos",
-      "year": 2018,
-      "source": "Github",
-      "link": "https://github.com/MistyBlunch/palindrome_numbers",
-      "description": "Descubre si una palabra o número es palíndromo.",
-      "tools": ["Javascript", "HTML", "Bulma"]
-    },
-    {
-      "name": "Probando P5.js",
-      "year": 2018,
-      "source": "Github",
-      "link": "https://github.com/MistyBlunch/examples-with-p5.js",
-      "description": "Ejercicios simples para probar P5.js.",
-      "tools": ["Javascript", "P5.js"]
-    },
-    {
-      "name": "Mi Primer Blog",
-      "year": 2018,
-      "source": "Github",
-      "link": "https://github.com/MistyBlunch/my_first_blog",
-      "description": "Mi primer blog siguiendo la guía de Django Girls.",
-      "tools": ["Python", "Django", "Flask", "HTML", "CSS"]
+      "description": "Plataforma móvil híbrida para el aprendizaje colaborativo (P2P), integrando servicios en tiempo real con Firebase.",
+      "tools": [
+        "Angular",
+        "Typescript",
+        "Ionic",
+        "Firebase",
+        "CSS"
+      ]
     }
   ]
 }

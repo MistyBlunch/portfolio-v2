@@ -26,14 +26,7 @@ export const AboutMe = () => {
             <Trans
               i18nKey='about-me:intro'
               components={{
-                component: <Component />,
-                anchorOrganizations: (
-                  <a
-                    href={t('anchorOrganizations')}
-                    target='_blank'
-                    className='link font-bold'
-                  />
-                )
+                component: <Component />
               }}
             />
           </div>
@@ -48,13 +41,6 @@ export const AboutMe = () => {
                 i18nKey='about-me:hobbies'
                 components={{
                   component: <Component />,
-                  anchorMusic: (
-                    <a
-                      href={t('anchorMusic')}
-                      target='_blank'
-                      className='link font-bold'
-                    />
-                  ),
                   anchorEmma: (
                     <a
                       href={t('anchorEmma')}

@@ -52,8 +52,13 @@ export const Experience = () => {
                         aria-label={exp.name}
                         target='_blank'
                       >
-                        <span>
+                        <span className='flex items-center'>
                           {exp.position} · {exp.name}
+                          {exp.contract === 'freelance' && (
+                            <span className='ml-2 rounded-full border border-pink-dark/50 px-2 py-0.5 text-[0.6rem] uppercase tracking-wide text-pink-dark dark:text-pink-light'>
+                              Freelance
+                            </span>
+                          )}
                         </span>
                       </a>
                     </div>
