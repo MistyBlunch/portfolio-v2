@@ -2,8 +2,6 @@
 
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { doc, getDoc, updateDoc } from 'firebase/firestore'
-import db from '../utils/firestore'
 import { ThumbsUp } from 'iconoir-react'
 import { processNumber } from '../utils/helpers/processNumber'
 
@@ -13,29 +11,27 @@ export const LikeButton = () => {
 
   const iLikeIt = async () => {
     try {
-      const docRef = doc(db, 'application', 'data')
-      await updateDoc(docRef, { likes: likes + 1 })
-      setLikes(likes + 1)
+      const res = await fetch('/api/likes', { method: 'POST' })
+      const data = await res.json()
+      setLikes(data.likes)
     } catch (err) {
-      console.warn('Failed to update likes. Possibly offline.', err)
+      console.warn('Failed to update likes.', err)
     }
   }
 
   useEffect(() => {
-    const fetchItems = async () => {
+    const fetchLikes = async () => {
       try {
-        const docRef = doc(db, 'application', 'data')
-        const docSnap = await getDoc(docRef)
-        if (docSnap.exists()) {
-          setExistsLikes(true)
-          setLikes(docSnap.data().likes)
-        }
+        const res = await fetch('/api/likes')
+        const data = await res.json()
+        setLikes(data.likes)
+        setExistsLikes(true)
       } catch (err) {
-        console.warn('Failed to fetch likes. Possibly offline.', err)
+        console.warn('Failed to fetch likes.', err)
         setExistsLikes(true)
       }
     }
-    fetchItems()
+    fetchLikes()
   }, [])
 
   return (
