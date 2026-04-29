@@ -28,7 +28,7 @@ export const Experience = () => {
       <div className='flex flex-col items-center'>
         <ul>
           {experienceData.map(exp => (
-            <li key={exp.name} className='mb-2 flex justify-center'>
+            <li key={exp.name} className='mb-6 flex justify-center'>
               <div className='relative flex max-lg:p-2 lg:w-4/5 lg:p-4'>
                 <motion.a
                   aria-label={exp.name}
