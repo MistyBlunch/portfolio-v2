@@ -46,7 +46,7 @@ export const Navbar = () => {
                   href={href}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='navbar-link'
+                  className='navbar-link text-pink-dark hover:text-pink-dark/80'
                   aria-label='Open resume in new tab'
                 >
                   <div className='mx-3 flex flex-col items-center py-2 lg:mx-0 lg:py-4'>

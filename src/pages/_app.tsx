@@ -16,7 +16,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider attribute='class' defaultTheme='dark' enableSystem>
       <Head>
-        <title>Misty Blunch</title>
+        <title>Grace Alvarado | Software Engineer</title>
         <meta
           name='description'
           content='Software Engineer with 5 years of experience building scalable web applications and AI-powered products across Fintech, EdTech, and e-commerce.'
