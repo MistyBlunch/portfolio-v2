@@ -1,7 +1,3 @@
-'use client'
-
-import { useEffect, useState } from 'react'
-
 import type { GetStaticProps } from 'next'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -18,20 +14,8 @@ import { ArrowLeft, ArrowRight } from 'iconoir-react'
 
 const ProjectHistory = () => {
   const { t } = useTranslation(['projects-history', 'common'])
-  const [navigationData, setNavigationData] = useState<
-    IProjectHistoryNavigation[]
-  >([])
-  const [projectsData, setProjectsData] = useState<IProjectHistory[]>([])
-
-  useEffect(() => {
-    setNavigationData(
-      t('navigation', {
-        returnObjects: true
-      }) as IProjectHistoryNavigation[]
-    )
-
-    setProjectsData(t('projects', { returnObjects: true }) as IProjectHistory[])
-  }, [t])
+  const navigationData = t('navigation', { returnObjects: true }) as IProjectHistoryNavigation[]
+  const projectsData = t('projects', { returnObjects: true }) as IProjectHistory[]
 
   return (
     <section className='lg:pmd:container max-sm:-12 relative md:container max-sm:px-4 max-sm:py-8 sm:mx-auto sm:p-8'>

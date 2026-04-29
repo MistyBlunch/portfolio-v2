@@ -22,7 +22,6 @@ class MyDocument extends Document {
               bottom: 0,
               left: 0,
               zIndex: 2147483647,
-              display: 'grid',
               placeItems: 'center',
               transition: 'opacity 200ms ease'
             }}
@@ -42,7 +41,7 @@ class MyDocument extends Document {
               dangerouslySetInnerHTML={{
                 __html: `
                   /* Theme-aware background (no opacity) */
-                  #preloader { background: #fefeff; }
+                  #preloader { background: #fefeff; display: none; }
                   @media (prefers-color-scheme: dark) { #preloader { background: #0e162a; } }
                   .dark #preloader { background: #0e162a !important; }
                   .light #preloader { background: #fefeff !important; }
@@ -76,15 +75,15 @@ class MyDocument extends Document {
                   el.style.opacity = '0';
                   setTimeout(function(){ if(el && el.parentNode){ el.parentNode.removeChild(el); } }, 220);
                 }
-                if (document.readyState === 'complete') {
-                  // already loaded (from cache) -> wait a couple frames, then a longer delay so it's clearly visible
-                  requestAnimationFrame(function(){
-                    requestAnimationFrame(function(){ setTimeout(hide, 1500); });
-                  });
-                } else {
-                  window.addEventListener('load', function(){ setTimeout(hide, 1200); });
-                  // safety timeout in case 'load' never fires
-                  setTimeout(hide, 7000);
+                var isHome = window.location.pathname === '/' || window.location.pathname === '/en' || window.location.pathname === '/es';
+                if (isHome) {
+                  var el = document.getElementById('preloader');
+                  if (el) el.style.display = 'grid';
+                  if (document.readyState === 'complete') {
+                    requestAnimationFrame(function(){ requestAnimationFrame(function(){ setTimeout(hide, 1000); }); });
+                  } else {
+                    window.addEventListener('load', function(){ setTimeout(hide, 1000); });
+                  }
                 }
               })();
             `
