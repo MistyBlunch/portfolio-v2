@@ -2,8 +2,8 @@
   "greeting": "Hola, soy",
   "position": "Ingeniera de Software",
   "highlight": "Dog lover | Apasionada por la tecnología, la música y el arte",
-  "intro": "Mi viaje en el desarrollo de software comenzó antes de la universidad, impulsado por la curiosidad de los cursos en línea y la energía de las comunidades tech. Hoy en día soy una Ingeniera de Software con 4 años de experiencia, especializada en crear aplicaciones web robustas y escalables.",
-  "denouement": "A lo largo de mi carrera he transformado mi curiosidad inicial en el dominio de arquitecturas de microservicios y sistemas en tiempo real. Me apasiona resolver problemas complejos, optimizar el rendimiento del software y, sobre todo, seguir aprendiendo y compartiendo conocimiento con la comunidad.",
+  "intro": "Mi viaje en el desarrollo de software comenzó antes de la universidad, impulsado por la curiosidad de los cursos en línea y la energía de las comunidades tech. Hoy en día soy una Ingeniera de Software con 5 años de experiencia, versátil y con rápida adaptación a nuevas tecnologías, habiendo trabajado con React, Next.js, Node.js, Python, Django, Vue.js y AWS según lo que cada proyecto necesitara.",
+  "denouement": "A lo largo de mi carrera he evolucionado de construir aplicaciones web escalables a crear productos potenciados por IA, incluyendo flujos de onboarding conversacional, copilots in-app y skills y agentes personalizados con Claude AI. Me apasiona resolver problemas complejos, aprender nuevas tecnologías y compartir conocimiento con la comunidad.",
   "hobbies": "Cuando no estoy escribiendo código, me encontrarás paseando con mi perrita <anchorEmma>Emma</anchorEmma>, explorando ferias locales, o recargando energías con buena música y cine.",
   "anchorEmma": "https://www.instagram.com/emma.la.perri"
 }

@@ -33,35 +33,6 @@
         "CSS",
         "UIkit"
       ]
-    },
-    {
-      "name": "Misty Blunch's Portfolio v1",
-      "link": "https://mistyblunch.github.io/",
-      "image": "/images/projects/portfolio-v1.webp",
-      "description": "My initial exploration into frontend architectures and responsive design. Features a native internationalization implementation without external frameworks.",
-      "date": "2019",
-      "tools": [
-        "JavaScript",
-        "HTML",
-        "CSS",
-        "Bulma"
-      ]
-    },
-    {
-      "name": "Leauty Web Scraping",
-      "link": "https://github.com/MistyBlunch/leauty",
-      "image": "/images/projects/leauty.webp",
-      "description": "Data extraction tool designed to optimize academic resource searches. Transforms raw data from Libgen into an intuitive and efficient interface.",
-      "date": "2018",
-      "tools": [
-        "Python",
-        "Flask",
-        "JavaScript",
-        "BeautifulSoup",
-        "HTML5",
-        "CSS3",
-        "Bulma"
-      ]
     }
   ],
   "cto-link": "/en/projects-history",

@@ -2,46 +2,48 @@
   "title": "Experiencia",
   "experience": [
     {
+      "name": "YaVendio",
+      "location": "Remoto",
+      "position": "Software Engineer",
+      "url": "https://yavendio.com",
+      "startYear": "2026",
+      "startMonth": "Ene",
+      "summary": "Construcción de una plataforma de automatización de ventas por WhatsApp, impulsando la activación de merchants y crecimiento en LATAM con features potenciadas por IA y microservicios. Creación de skills y agentes con Claude AI usando Cursor y Claude Code, rediseño del flujo de onboarding mejorando la activación en un 85%, e implementación de microservicios backend en Python con AWS Lambda.",
+      "keywords": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Python",
+        "Microservicios",
+        "Claude AI",
+        "Cursor",
+        "AWS Lambda",
+        "API Gateway"
+      ]
+    },
+    {
       "name": "Aimo",
       "location": "Perú",
       "position": "Full Stack Developer",
       "url": "https://aimo.co/delivery",
       "startYear": "2024",
       "startMonth": "May",
-      "summary": "En Aimo me encargo del desarrollo de microservicios para el backend y componentes de interfaz para plataformas críticas de logística, seguimiento y delivery en tiempo real. Mi trabajo se centra en automatizar el flujo operativo completo, desde la captura del pedido hasta la última fase de entrega, garantizando una arquitectura escalable y eficiente.",
+      "endYear": "2025",
+      "endMonth": "Dic",
+      "summary": "Desarrollé aplicaciones web escalables para operaciones en tiempo real mediante microservicios, con un enfoque integral en performance, infraestructura cloud y experiencia de usuario. Desarrollo de microservicios y APIs para procesamiento de órdenes en tiempo real en 200+ locales, usando Windsurf como herramienta de desarrollo asistido por IA.",
       "keywords": [
-        "Node.js",
-        "Next.js",
         "React",
-        "TypeScript",
-        "MoleculerJs",
-        "Redux",
-        "GCP",
+        "Next.js",
+        "Node.js",
+        "NestJS",
+        "Django",
+        "GraphQL",
         "MongoDB",
-        "Antd",
-        "Docker"
-      ]
-    },
-    {
-      "name": "Gigstack",
-      "location": "México",
-      "position": "Full Stack Developer",
-      "contract": "freelance",
-      "url": "https://gigstack.pro/",
-      "startYear": "2024",
-      "startMonth": "Ene",
-      "endYear": "2024",
-      "endMonth": "Abr",
-      "summary": "Diseñé e implementé lógica de negocio para automatizar procesos financieros y administrativos complejos, facilitando la integración directa con el SAT. El proyecto se enfocó en reducir la carga operativa manual mediante soluciones en la nube.",
-      "keywords": [
-        "Node.js",
-        "Next.js",
-        "React",
-        "TypeScript",
+        "Docker",
         "GCP",
         "Firebase",
-        "Antd",
-        "CloudFunctions"
+        "AWS",
+        "Windsurf"
       ]
     },
     {
@@ -51,63 +53,40 @@
       "url": "https://www.destacame.cl/",
       "startYear": "2022",
       "startMonth": "Feb",
-      "endYear": "2023",
-      "endMonth": "Dic",
-      "summary": "Desarrollé diversas soluciones integrales para el sector Fintech, liderando la conexión con entidades bancarias como Santander y desplegando infraestructuras serverless de alta disponibilidad.",
+      "endYear": "2024",
+      "endMonth": "Abr",
+      "summary": "Desarrollo de soluciones web para el sector Fintech, liderando integraciones bancarias con Santander sirviendo a 4M+ usuarios y desplegando arquitecturas serverless en AWS con CDK.",
       "keywords": [
         "Django",
         "Flask",
         "Vue.js",
-        "Vuex",
         "TypeScript",
         "AWS Lambda",
+        "AWS CDK",
         "API Gateway",
         "Amazon S3",
         "DynamoDB",
-        "Vuetify",
-        "Flask"
+        "Vuetify"
       ]
     },
     {
       "name": "Forma - Moov Media Group",
       "location": "Chile",
-      "position": "Front End Developer",
+      "position": "Desarrolladora Frontend",
       "url": "https://moovmediagroup.com/",
       "startYear": "2021",
-      "startMonth": "May",
+      "startMonth": "Feb",
       "endYear": "2022",
       "endMonth": "Feb",
-      "summary": "Me encargué del mantenimiento y construcción de interfaces para plataformas web de grandes clientes como Clínicas Bupa, mejorando la lógica de negocio y la consistencia visual.",
+      "summary": "Mantenimiento y mejora de 10+ plataformas web para clientes corporativos incluyendo Clínicas Bupa, con comunicación directa con clientes y alta satisfacción constante. Automatización de campañas de marketing masivas con MJML.",
       "keywords": [
         "React",
         "Angular",
-        "Typescript",
-        "NextJS",
+        "TypeScript",
+        "PHP",
         "VanillaJS",
-        "Selligent",
-        "Webflow",
-        "MJML"
-      ]
-    },
-    {
-      "name": "Minsky",
-      "location": "Perú",
-      "position": "Frontend Developer",
-      "contract": "freelance",
-      "url": "https://minsky.cc/es",
-      "startYear": "2021",
-      "startMonth": "Ene",
-      "endYear": "2021",
-      "endMonth": "Abr",
-      "summary": "Desarrollé diversas soluciones tecnológicas para el sector agrícola (AgroTech), optimizando el flujo y la visualización de datos complejos mediante tecnologías modernas de frontend y backend.",
-      "keywords": [
-        "Express",
-        "Typescript",
-        "NodeJS",
-        "NextJS",
-        "React",
-        "ChakraUI",
-        "GraphQL"
+        "MJML",
+        "UI/UX"
       ]
     }
   ],

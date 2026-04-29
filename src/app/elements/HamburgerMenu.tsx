@@ -1,7 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
-import { useClickAway } from 'react-use'
+import { useState, useRef, useEffect, useCallback } from 'react'
 
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
@@ -15,10 +14,23 @@ import { Turn as Hamburger } from 'hamburger-react'
 export const HamburgerMenu = () => {
   const [isOpen, setOpen] = useState(false)
   const [navbarData, setNavbarData] = useState<INavbar[]>([])
-  const ref = useRef(null)
+  const ref = useRef<HTMLDivElement>(null)
   const { t } = useTranslation('navbar')
 
-  useClickAway(ref, () => setOpen(false))
+  const handleClickAway = useCallback((e: MouseEvent | TouchEvent) => {
+    if (ref.current && !ref.current.contains(e.target as Node)) {
+      setOpen(false)
+    }
+  }, [])
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickAway)
+    document.addEventListener('touchstart', handleClickAway)
+    return () => {
+      document.removeEventListener('mousedown', handleClickAway)
+      document.removeEventListener('touchstart', handleClickAway)
+    }
+  }, [handleClickAway])
 
   useEffect(() => {
     setNavbarData(

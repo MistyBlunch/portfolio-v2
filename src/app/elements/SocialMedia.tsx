@@ -1,7 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
-import { useClickAway } from 'react-use'
+import { useCallback, useEffect, useRef, useState } from 'react'
 
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
@@ -17,10 +16,23 @@ export const SocialMedia = () => {
   const [isOpen, setOpen] = useState(false)
   const [socialMediaData, setSocialMediaData] = useState<ISocialMedia[]>([])
 
-  const ref = useRef(null)
+  const ref = useRef<HTMLDivElement>(null)
   const { t } = useTranslation('socialmedia')
 
-  useClickAway(ref, () => setOpen(false))
+  const handleClickAway = useCallback((e: MouseEvent | TouchEvent) => {
+    if (ref.current && !ref.current.contains(e.target as Node)) {
+      setOpen(false)
+    }
+  }, [])
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickAway)
+    document.addEventListener('touchstart', handleClickAway)
+    return () => {
+      document.removeEventListener('mousedown', handleClickAway)
+      document.removeEventListener('touchstart', handleClickAway)
+    }
+  }, [handleClickAway])
 
   useEffect(() => {
     setSocialMediaData(

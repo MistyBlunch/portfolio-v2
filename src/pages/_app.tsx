@@ -19,18 +19,13 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <title>Misty Blunch</title>
         <meta
           name='description'
-          content='Misty Blunch is a full-stack developer with a passion for creating beautiful and functional websites.'
+          content='Software Engineer with 5 years of experience building scalable web applications and AI-powered products across Fintech, EdTech, and e-commerce.'
           key='desc'
         />
-        <meta
-          name='description'
-          content='Full-stack developer with a passion for creating beautiful and functional websites.'
-          key='desc'
-        />
-        <meta property='og:title' content="Misty Blunch's Portfolio"></meta>
+        <meta property='og:title' content="Grace Alvarado | Software Engineer"></meta>
         <meta
           property='og:description'
-          content='Full-stack developer with a passion for creating beautiful and functional websites.'
+          content='Software Engineer with 5 years of experience building scalable web applications and AI-powered products across Fintech, EdTech, and e-commerce.'
         />
         <meta property='og:image' content='https://i.ibb.co/sH7DKqt/me.jpg' />
       </Head>

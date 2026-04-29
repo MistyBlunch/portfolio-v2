@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
+import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 
 import { INavbar } from '../interfaces/locales/navbar.interface'
@@ -14,6 +15,7 @@ import { Logo } from '../elements/icons/Logo'
 export const Navbar = () => {
   const [navbarData, setNavbarData] = useState<INavbar[]>([])
   const { t } = useTranslation(['navbar', 'common'])
+  const { locale } = useRouter()
 
   useEffect(() => {
     setNavbarData(t('navigation', { returnObjects: true }) as INavbar[])
@@ -33,20 +35,43 @@ export const Navbar = () => {
           <HamburgerMenu />
         </div>
         <div className='hidden sm:flex lg:block'>
-          {navbarData.map((item, key) => (
-            <Link
-              key={key}
-              href={item.url}
-              scroll={false}
-              className='navbar-link'
-              aria-label='Navigate to section'
-            >
-              <div className='mx-3 flex flex-col items-center py-2 lg:mx-0 lg:py-4'>
-                <RenderNavbarIcon icon={item.name} />
-                <h5 className='text-center text-sm'>{item.title}</h5>
-              </div>
-            </Link>
-          ))}
+          {navbarData.map((item, key) => {
+            const isResume = item.name === 'resume'
+            const href = isResume ? `/pdfs/grace-alvarado_resume_${locale}.pdf` : item.url
+
+            if (isResume) {
+              return (
+                <a
+                  key={key}
+                  href={href}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='navbar-link'
+                  aria-label='Open resume in new tab'
+                >
+                  <div className='mx-3 flex flex-col items-center py-2 lg:mx-0 lg:py-4'>
+                    <RenderNavbarIcon icon={item.name} />
+                    <h5 className='text-center text-sm'>{item.title}</h5>
+                  </div>
+                </a>
+              )
+            }
+
+            return (
+              <Link
+                key={key}
+                href={href}
+                scroll={false}
+                className='navbar-link'
+                aria-label='Navigate to section'
+              >
+                <div className='mx-3 flex flex-col items-center py-2 lg:mx-0 lg:py-4'>
+                  <RenderNavbarIcon icon={item.name} />
+                  <h5 className='text-center text-sm'>{item.title}</h5>
+                </div>
+              </Link>
+            )
+          })}
         </div>
         <div className='flex lg:block'>
           <LocaleSwitcher icon={true} />
