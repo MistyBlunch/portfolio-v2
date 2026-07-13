@@ -1,7 +1,7 @@
 {
   "navigation": [
     {
-      "title": "Acerca de mí",
+      "title": "Sobre Mi",
       "name": "aboutme",
       "url": "#aboutme",
       "current": false

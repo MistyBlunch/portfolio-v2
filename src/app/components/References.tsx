@@ -55,13 +55,6 @@ export const References = () => {
                 target='_blank'
                 className='link font-bold'
               />
-            ),
-            anchorVSCode: (
-              <a
-                href={t('anchorVSCode')}
-                target='_blank'
-                className='link font-bold'
-              />
             )
           }}
         />
@@ -72,6 +65,13 @@ export const References = () => {
             anchorInterFont: (
               <a
                 href={t('anchorInterFont')}
+                target='_blank'
+                className='link font-bold'
+              />
+            ),
+            anchorKuba: (
+              <a
+                href={t('anchorKuba')}
                 target='_blank'
                 className='link font-bold'
               />
