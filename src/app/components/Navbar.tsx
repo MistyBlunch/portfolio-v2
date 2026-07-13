@@ -36,26 +36,7 @@ export const Navbar = () => {
         </div>
         <div className='hidden sm:flex lg:block'>
           {navbarData.map((item, key) => {
-            const isResume = item.name === 'resume'
-            const href = isResume ? `/pdfs/grace-alvarado_resume_${locale}.pdf` : item.url
-
-            if (isResume) {
-              return (
-                <a
-                  key={key}
-                  href={href}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className='navbar-link text-pink-dark hover:text-pink-dark/80'
-                  aria-label='Open resume in new tab'
-                >
-                  <div className='mx-3 flex flex-col items-center py-2 lg:mx-0 lg:py-4'>
-                    <RenderNavbarIcon icon={item.name} />
-                    <h5 className='text-center text-sm'>{item.title}</h5>
-                  </div>
-                </a>
-              )
-            }
+            const href = item.url
 
             return (
               <Link

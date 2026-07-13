@@ -1,12 +1,12 @@
 {
   "designRef": "Diseñado en marcha desde mi mente y tomando como referencia el <anchorRefPortfolio>portafolio de Brittany Chiang</anchorRefPortfolio> y la página de <anchorRefAngular>angular.dev</anchorRefAngular>. ",
-  "builtWithRef": "Construido con <anchorNextJS>Next.js</anchorNextJS> y <anchorTailwindCSS>Tailwind CSS</anchorTailwindCSS>, deployado con <anchorVercel>Vercel</anchorVercel> y programado en <anchorVSCode>VS Code</anchorVSCode>. ",
-  "textFontRef": "Todos los textos tienen tipo de letra <anchorInterFont>Inter</anchorInterFont>.",
+  "builtWithRef": "Construido con <anchorNextJS>Next.js</anchorNextJS> y <anchorTailwindCSS>Tailwind CSS</anchorTailwindCSS>, deployado con <anchorVercel>Vercel</anchorVercel>.",
+  "textFontRef": "Todos los textos tienen tipo de letra <anchorInterFont>Inter</anchorInterFont> y mi propia fuente creada usando <anchorKuba>symmetrical-fiesta</anchorKuba>.",
   "anchorRefPortfolio": "https://brittanychiang.com/",
   "anchorRefAngular": "https://angular.dev/",
   "anchorNextJS": "https://nextjs.org/",
   "anchorTailwindCSS": "https://tailwindcss.com/",
   "anchorVercel": "https://vercel.com/",
-  "anchorVSCode": "https://code.visualstudio.com/",
+  "anchorKuba": "https://github.com/jdlugosz963/symmetrical-fiesta",
   "anchorInterFont": "https://rsms.me/inter/"
 }
