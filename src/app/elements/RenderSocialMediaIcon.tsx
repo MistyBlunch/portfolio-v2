@@ -1,6 +1,6 @@
 'use client'
 
-import { GithubCircle, Instagram, Linkedin, Mail, Youtube } from 'iconoir-react'
+import { GithubCircle, Linkedin, Mail, Youtube } from 'iconoir-react'
 import NoSsr from './NoSsr'
 
 export const RenderSocialMediaIcon = (props: { icon: string }) => {
@@ -8,9 +8,6 @@ export const RenderSocialMediaIcon = (props: { icon: string }) => {
     <NoSsr>
       {props.icon === 'github' && (
         <GithubCircle className='social-icon h-10 w-10' />
-      )}
-      {props.icon === 'instagram' && (
-        <Instagram className='social-icon h-10 w-10' />
       )}
       {props.icon === 'linkedin' && (
         <Linkedin className='social-icon h-10 w-10' />

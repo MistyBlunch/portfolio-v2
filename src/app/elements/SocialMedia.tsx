@@ -72,28 +72,51 @@ export const SocialMedia = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.ul className='my-2 grid gap-y-2'>
-            {socialMediaData.map((item, id) => (
-              <Link
-                key={id}
-                href={item.url}
-                target='_blank'
-                onClick={() => setOpen(false)}
-              >
-                <motion.li
-                  initial={{ scale: 0, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  exit={{ scale: 0, opacity: 0 }}
-                  transition={{
-                    type: 'spring',
-                    stiffness: 260,
-                    damping: 20,
-                    delay: 0.1 + id / 10
-                  }}
+            {socialMediaData.map((item, id) =>
+              item.url.startsWith('mailto:') ? (
+                <a
+                  key={id}
+                  href={item.url}
+                  onClick={() => setOpen(false)}
                 >
-                  <RenderSocialMediaIcon icon={item.name} />
-                </motion.li>
-              </Link>
-            ))}
+                  <motion.li
+                    initial={{ scale: 0, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    exit={{ scale: 0, opacity: 0 }}
+                    transition={{
+                      type: 'spring',
+                      stiffness: 260,
+                      damping: 20,
+                      delay: 0.1 + id / 10
+                    }}
+                  >
+                    <RenderSocialMediaIcon icon={item.name} />
+                  </motion.li>
+                </a>
+              ) : (
+                <Link
+                  key={id}
+                  href={item.url}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  onClick={() => setOpen(false)}
+                >
+                  <motion.li
+                    initial={{ scale: 0, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
+                    exit={{ scale: 0, opacity: 0 }}
+                    transition={{
+                      type: 'spring',
+                      stiffness: 260,
+                      damping: 20,
+                      delay: 0.1 + id / 10
+                    }}
+                  >
+                    <RenderSocialMediaIcon icon={item.name} />
+                  </motion.li>
+                </Link>
+              )
+            )}
           </motion.ul>
         )}
       </AnimatePresence>
