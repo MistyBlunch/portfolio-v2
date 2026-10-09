@@ -32,7 +32,7 @@ export const Experience = () => {
               <div className='relative flex max-lg:p-2 lg:w-4/5 lg:p-4'>
                 <motion.a
                   aria-label={exp.name}
-                  className='link-wrapper absolute m-[-14px] h-full w-full rounded-lg max-lg:hidden'
+                  className='link-wrapper absolute z-10 m-[-14px] h-full w-full rounded-lg max-lg:hidden'
                   whileHover={{
                     transition: { duration: 0.3 },
                     backgroundColor: 'rgba(219, 152, 206, .05)'
@@ -66,7 +66,7 @@ export const Experience = () => {
                     <ul className='flex -translate-y-1.5 flex-wrap '>
                       {exp.keywords.map(keyword => (
                         <li key={keyword} className='mr-1.5 mt-1.5'>
-                          <div className='rounded-full bg-pink-light/10 px-3 py-1 text-xs font-semibold leading-5 text-pink-dark'>
+                          <div className='cursor-pointer rounded-full bg-pink-light/10 px-3 py-1 text-xs font-semibold leading-5 text-pink-dark'>
                             {keyword}
                           </div>
                         </li>

@@ -24,6 +24,25 @@
   ],
   "projects": [
     {
+      "name": "Anoty",
+      "year": 2026,
+      "source": "anoty-rho.vercel.app",
+      "link": "https://anoty-rho.vercel.app/",
+      "description": "Full-stack collaborative board platform to send and receive anonymous handwritten notes, drawings, and stickers. Features an infinite canvas, real-time WebSocket sync, public showcase boards with SSR & OpenGraph, Excalidraw integration, and automated email notifications.",
+      "tools": [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "Tailwind CSS",
+        "Hono",
+        "MongoDB",
+        "WebSockets",
+        "Excalidraw",
+        "Framer Motion",
+        "Resend"
+      ]
+    },
+    {
       "name": "Misty Blunch's Portfolio v2",
       "year": 2025,
       "source": "Github",
