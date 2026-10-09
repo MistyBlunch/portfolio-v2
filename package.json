@@ -17,6 +17,8 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
     "dotenv": "^16.4.5",
     "framer-motion": "^10.16.16",
     "hamburger-react": "^2.5.0",

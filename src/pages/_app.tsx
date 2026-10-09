@@ -8,6 +8,8 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import { appWithTranslation } from 'next-i18next'
+import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { ThemeProvider } from '../app/providers/ThemeProvider'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -31,6 +33,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       </Head>
       <main className={inter.className}>
         <Component {...pageProps} />
+        <Analytics />
+        <SpeedInsights />
       </main>
     </ThemeProvider>
   )
