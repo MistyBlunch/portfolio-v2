@@ -2,6 +2,25 @@
   "title": "Projects",
   "projects": [
     {
+      "name": "Anoty",
+      "link": "https://anoty-rho.vercel.app/",
+      "image": "/images/projects/anoty.webp",
+      "description": "Full-stack collaborative board platform to send and receive anonymous handwritten notes, drawings, and stickers. Features an infinite canvas, real-time WebSocket sync, public showcase boards with SSR & OpenGraph, Excalidraw integration, and automated email notifications.",
+      "date": "2026",
+      "tools": [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "Tailwind CSS",
+        "Hono",
+        "MongoDB",
+        "WebSockets",
+        "Excalidraw",
+        "Framer Motion",
+        "Resend"
+      ]
+    },
+    {
       "name": "Misty Blunch's Portfolio v2",
       "link": "https://github.com/MistyBlunch/portfolio-v2",
       "image": "/images/projects/portfolio-v2.webp",

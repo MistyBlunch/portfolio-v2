@@ -24,6 +24,25 @@
   ],
   "projects": [
     {
+      "name": "Anoty",
+      "year": 2026,
+      "source": "anoty-rho.vercel.app",
+      "link": "https://anoty-rho.vercel.app/",
+      "description": "Plataforma full-stack de tableros interactivos para enviar y recibir notas, dibujos a mano alzada y stickers anónimos. Incluye lienzo infinito, sincronización en tiempo real con WebSockets, tableros públicos con SSR y OpenGraph, integración con Excalidraw y notificaciones por correo.",
+      "tools": [
+        "Next.js",
+        "TypeScript",
+        "React",
+        "Tailwind CSS",
+        "Hono",
+        "MongoDB",
+        "WebSockets",
+        "Excalidraw",
+        "Framer Motion",
+        "Resend"
+      ]
+    },
+    {
       "name": "Misty Blunch's Portafolio v2",
       "year": 2025,
       "source": "Github",
