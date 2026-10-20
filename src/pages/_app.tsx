@@ -18,16 +18,16 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider attribute='class' defaultTheme='dark' enableSystem>
       <Head>
-        <title>MistyBlunch | Software Engineer</title>
+        <title>MistyBlunch | Full Stack Engineer</title>
         <meta
           name='description'
-          content='Software Engineer with 4 years of experience building scalable web applications and AI-powered products across Fintech, EdTech, and e-commerce.'
+          content='Full Stack Engineer with 4 years of experience building scalable web applications and AI-powered products across Fintech, EdTech, and e-commerce.'
           key='desc'
         />
-        <meta property='og:title' content="MistyBlunch | Software Engineer"></meta>
+        <meta property='og:title' content="MistyBlunch | Full Stack Engineer"></meta>
         <meta
           property='og:description'
-          content='Software Engineer with 4 years of experience building scalable web applications and AI-powered products across Fintech, EdTech, and e-commerce.'
+          content='Full Stack Engineer with 4 years of experience building scalable web applications and AI-powered products across Fintech, EdTech, and e-commerce.'
         />
         <meta property='og:image' content='https://i.ibb.co/sH7DKqt/me.jpg' />
       </Head>

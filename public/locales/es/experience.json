@@ -4,10 +4,12 @@
     {
       "name": "YaVendio",
       "location": "Remoto",
-      "position": "Software Engineer",
+      "position": "Full Stack Engineer",
       "url": "https://yavendio.com",
       "startYear": "2026",
       "startMonth": "Ene",
+      "endYear": "2026",
+      "endMonth": "Ago",
       "summary": "Construcción de una plataforma de automatización de ventas por WhatsApp, impulsando la activación de merchants y crecimiento en LATAM con features potenciadas por IA y microservicios. Creación de skills y agentes con Claude AI usando Cursor y Claude Code, rediseño del flujo de onboarding mejorando la activación en un 85%, e implementación de microservicios backend en Python con AWS Lambda.",
       "keywords": [
         "React",
